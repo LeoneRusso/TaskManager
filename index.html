@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TaskManager</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.8.1.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot; data-theme=&quot;dark&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;TaskManager&lt;/title&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=Rajdhani:wght@300;400;500;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;style&gt;
 :root{
   --bg:#0a0c14;--bg2:#111422;--bg3:#181d2e;--bg4:#1e2540;
   --border:#242b45;--border2:#2e3760;
@@ -16,7 +33,7 @@
   --radius:8px;--neg:#ff4757;
   --hdr:48px;--ftr:44px;
 }
-[data-theme="light"]{
+[data-theme=&quot;light&quot;]{
   --bg:#f0f2fa;--bg2:#fff;--bg3:#e8ecf8;--bg4:#dde2f0;
   --border:#c8d0e8;--border2:#b0bce0;
   --text:#1a1e35;--muted:#8090b8;--muted2:#6070a0;
@@ -37,7 +54,7 @@ header{
   backdrop-filter:blur(12px);
   position:relative;z-index:100;
 }
-[data-theme="light"] header{background:rgba(240,242,250,.97);}
+[data-theme=&quot;light&quot;] header{background:rgba(240,242,250,.97);}
 .logo{font-family:'Orbitron',monospace;font-size:1.05rem;font-weight:900;color:var(--accent);letter-spacing:3px;text-shadow:0 0 16px rgba(0,229,255,.4);white-space:nowrap;}
 .btn-new{background:var(--accent);color:var(--bg);border:none;padding:6px 14px;font-family:'Rajdhani',sans-serif;font-size:.88rem;font-weight:700;letter-spacing:1px;cursor:pointer;border-radius:6px;transition:all .2s;white-space:nowrap;}
 .btn-new:hover{background:#fff;box-shadow:0 0 16px rgba(0,229,255,.5);}
@@ -339,10 +356,10 @@ header{
 .cal-day.has-tasks .cal-dn{color:#a8c8ff;font-weight:700;}
 .cal-day.today.has-tasks{background:rgba(0,60,160,.65);border:1px solid var(--accent);}
 .cal-day.today.has-tasks .cal-dn{color:var(--accent);}
-[data-theme="light"] .cal-day.has-tasks{background:rgba(30,80,200,.12);border:1px solid rgba(30,80,200,.4);}
-[data-theme="light"] .cal-day.has-tasks:hover{background:rgba(30,80,200,.22);border-color:rgba(30,80,200,.7);}
-[data-theme="light"] .cal-day.has-tasks .cal-dn{color:#1a4fb0;font-weight:700;}
-[data-theme="light"] .cal-day.today.has-tasks{background:rgba(0,100,255,.1);border:1px solid #1a6eff;}
+[data-theme=&quot;light&quot;] .cal-day.has-tasks{background:rgba(30,80,200,.12);border:1px solid rgba(30,80,200,.4);}
+[data-theme=&quot;light&quot;] .cal-day.has-tasks:hover{background:rgba(30,80,200,.22);border-color:rgba(30,80,200,.7);}
+[data-theme=&quot;light&quot;] .cal-day.has-tasks .cal-dn{color:#1a4fb0;font-weight:700;}
+[data-theme=&quot;light&quot;] .cal-day.today.has-tasks{background:rgba(0,100,255,.1);border:1px solid #1a6eff;}
 .cal-dn{font-size:.78rem;font-weight:600;line-height:1;}
 .cal-dots{display:flex;gap:2px;justify-content:center;flex-wrap:wrap;max-width:32px;}
 .cal-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;border:1px solid rgba(255,255,255,.25);}
@@ -350,8 +367,8 @@ header{
 .cal-dot-neg{background:var(--neg);}
 .cal-dot-neu{background:var(--accent3);}
 .cal-dot-done{background:rgba(255,255,255,.35);}
-[data-theme="light"] .cal-dot{border:1px solid rgba(0,0,0,.15);}
-[data-theme="light"] .cal-dot-done{background:rgba(0,0,0,.2);}
+[data-theme=&quot;light&quot;] .cal-dot{border:1px solid rgba(0,0,0,.15);}
+[data-theme=&quot;light&quot;] .cal-dot-done{background:rgba(0,0,0,.2);}
 .cal-popup{position:fixed;z-index:500;background:var(--bg2);border:1px solid var(--border2);border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,.5);padding:0;min-width:220px;max-width:300px;max-height:60vh;overflow-y:auto;}
 .cal-popup-hdr{padding:10px 14px 8px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
 .cal-popup-date{font-family:'Orbitron',monospace;font-size:.68rem;color:var(--accent);letter-spacing:1px;}
@@ -383,7 +400,7 @@ header{
   gap:10px;
   position:relative;z-index:100;
 }
-[data-theme="light"] .bottom-bar{background:rgba(240,242,250,.97);}
+[data-theme=&quot;light&quot;] .bottom-bar{background:rgba(240,242,250,.97);}
 .bot-level{font-family:'Orbitron',monospace;font-size:.72rem;color:var(--gold);white-space:nowrap;background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);padding:3px 9px;border-radius:4px;flex-shrink:0;}
 .bot-xp-wrap{flex:0 1 45%;display:flex;align-items:center;gap:7px;}
 .bot-xp-bar{flex:1;height:9px;background:var(--bg3);border-radius:5px;overflow:hidden;border:1px solid var(--border);}
@@ -420,7 +437,7 @@ header{
 .fr2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .fr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
 .fr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
-/* ── AI BUTTON & PANEL ── */
+/* ── AI BUTTON &amp; PANEL ── */
 .ai-row{display:flex;gap:6px;align-items:stretch;}
 .btn-ai{display:flex;align-items:center;gap:4px;padding:0 11px;background:linear-gradient(135deg,var(--accent3),var(--accent));border:none;color:#fff;border-radius:6px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.5px;flex-shrink:0;transition:opacity .15s,transform .1s;white-space:nowrap;}
 .btn-ai:hover:not(:disabled){opacity:.85;transform:translateY(-1px);}
@@ -524,489 +541,489 @@ header{
 .tpl-divider{display:flex;align-items:center;gap:8px;margin:4px 0;}
 .tpl-divider::before,.tpl-divider::after{content:'';flex:1;height:1px;background:var(--border);}
 .tpl-divider span{font-size:.65rem;color:var(--muted);white-space:nowrap;}
-</style>
-</head>
-<body>
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-<!-- TOASTS -->
-<div class="toast-c" id="toastC"></div>
+&lt;!-- TOASTS --&gt;
+&lt;div class=&quot;toast-c&quot; id=&quot;toastC&quot;&gt;&lt;/div&gt;
 
-<!-- HEADER -->
-<header>
-  <button class="btn-hamburger" onclick="toggleSidebar()" title="Toggle sidebar" id="hamburgerBtn">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="logo">TASKMANAGER</div>
-  <button class="btn-new" onclick="openModal()" id="btnNewTask">+ Nueva Tarea</button>
-</header>
+&lt;!-- HEADER --&gt;
+&lt;header&gt;
+  &lt;button class=&quot;btn-hamburger&quot; onclick=&quot;toggleSidebar()&quot; title=&quot;Toggle sidebar&quot; id=&quot;hamburgerBtn&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;logo&quot;&gt;TASKMANAGER&lt;/div&gt;
+  &lt;button class=&quot;btn-new&quot; onclick=&quot;openModal()&quot; id=&quot;btnNewTask&quot;&gt;+ Nueva Tarea&lt;/button&gt;
+&lt;/header&gt;
 
-<!-- APP BODY -->
-<div class="app-body">
+&lt;!-- APP BODY --&gt;
+&lt;div class=&quot;app-body&quot;&gt;
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-inner">
+  &lt;!-- SIDEBAR --&gt;
+  &lt;aside class=&quot;sidebar&quot; id=&quot;sidebar&quot;&gt;
+    &lt;div class=&quot;sidebar-inner&quot;&gt;
 
-      <!-- Profile -->
-      <div class="sb-section">
-        <div class="sb-hdr" onclick="toggleSb('profile')">
-          <span class="sb-hdr-title" data-i18n="profile">Perfil</span>
-          <span class="sb-chevron" id="chev-profile">▾</span>
-        </div>
-        <div class="sb-body" id="sb-profile">
-          <div class="profile-card">
-            <div class="avatar-wrap" onclick="openAvatarModal()" title="Cambiar foto de perfil" style="cursor:pointer;">
-              <div class="avatar" id="pAvatar">🧙</div>
-              <div class="avatar-lvl" id="pLevel">1</div>
-              <div class="avatar-edit-hint">✏️</div>
-            </div>
-            <div class="profile-name"><input id="profileName" value="Aventurero" onchange="saveMeta()"></div>
-            <div class="profile-xp">⚡ <span id="pXP">0</span> XP</div>
-          </div>
-        </div>
-      </div>
+      &lt;!-- Profile --&gt;
+      &lt;div class=&quot;sb-section&quot;&gt;
+        &lt;div class=&quot;sb-hdr&quot; onclick=&quot;toggleSb('profile')&quot;&gt;
+          &lt;span class=&quot;sb-hdr-title&quot; data-i18n=&quot;profile&quot;&gt;Perfil&lt;/span&gt;
+          &lt;span class=&quot;sb-chevron&quot; id=&quot;chev-profile&quot;&gt;▾&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sb-body&quot; id=&quot;sb-profile&quot;&gt;
+          &lt;div class=&quot;profile-card&quot;&gt;
+            &lt;div class=&quot;avatar-wrap&quot; onclick=&quot;openAvatarModal()&quot; title=&quot;Cambiar foto de perfil&quot; style=&quot;cursor:pointer;&quot;&gt;
+              &lt;div class=&quot;avatar&quot; id=&quot;pAvatar&quot;&gt;🧙&lt;/div&gt;
+              &lt;div class=&quot;avatar-lvl&quot; id=&quot;pLevel&quot;&gt;1&lt;/div&gt;
+              &lt;div class=&quot;avatar-edit-hint&quot;&gt;✏️&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;profile-name&quot;&gt;&lt;input id=&quot;profileName&quot; value=&quot;Aventurero&quot; onchange=&quot;saveMeta()&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;profile-xp&quot;&gt;⚡ &lt;span id=&quot;pXP&quot;&gt;0&lt;/span&gt; XP&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <!-- Language -->
-      <div class="sb-section">
-        <div class="sb-hdr" onclick="toggleSb('lang')">
-          <span class="sb-hdr-title" data-i18n="language">Idioma</span>
-          <span class="sb-chevron" id="chev-lang">▾</span>
-        </div>
-        <div class="sb-body" id="sb-lang">
-          <div class="lang-picker">
-            <button class="lang-btn active" onclick="setLang('es',this)">🇪🇸 ES</button>
-            <button class="lang-btn" onclick="setLang('en',this)">🇬🇧 EN</button>
-            <button class="lang-btn" onclick="setLang('it',this)">🇮🇹 IT</button>
-            <button class="lang-btn" onclick="setLang('fr',this)">🇫🇷 FR</button>
-          </div>
-        </div>
-      </div>
+      &lt;!-- Language --&gt;
+      &lt;div class=&quot;sb-section&quot;&gt;
+        &lt;div class=&quot;sb-hdr&quot; onclick=&quot;toggleSb('lang')&quot;&gt;
+          &lt;span class=&quot;sb-hdr-title&quot; data-i18n=&quot;language&quot;&gt;Idioma&lt;/span&gt;
+          &lt;span class=&quot;sb-chevron&quot; id=&quot;chev-lang&quot;&gt;▾&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sb-body&quot; id=&quot;sb-lang&quot;&gt;
+          &lt;div class=&quot;lang-picker&quot;&gt;
+            &lt;button class=&quot;lang-btn active&quot; onclick=&quot;setLang('es',this)&quot;&gt;🇪🇸 ES&lt;/button&gt;
+            &lt;button class=&quot;lang-btn&quot; onclick=&quot;setLang('en',this)&quot;&gt;🇬🇧 EN&lt;/button&gt;
+            &lt;button class=&quot;lang-btn&quot; onclick=&quot;setLang('it',this)&quot;&gt;🇮🇹 IT&lt;/button&gt;
+            &lt;button class=&quot;lang-btn&quot; onclick=&quot;setLang('fr',this)&quot;&gt;🇫🇷 FR&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <!-- Filters -->
-      <div class="sb-section">
-        <div class="sb-hdr" onclick="toggleSb('filters')">
-          <span class="sb-hdr-title" data-i18n="filters">Filtros</span>
-          <span class="sb-chevron" id="chev-filters">▾</span>
-        </div>
-        <div class="sb-body" id="sb-filters">
-          <button class="filter-btn active" onclick="setFilter('all',this)"><span class="fi">🌐</span><span data-i18n="all">Todas</span><span class="fc" id="fc-all">0</span></button>
-          <button class="filter-btn" onclick="setFilter('once',this)"><span class="fi">1️⃣</span><span data-i18n="once">Una vez</span><span class="fc" id="fc-once">0</span></button>
-          <button class="filter-btn" onclick="setFilter('daily',this)"><span class="fi">🔁</span><span data-i18n="daily">Diarias</span><span class="fc" id="fc-daily">0</span></button>
-          <button class="filter-btn" onclick="setFilter('weekly',this)"><span class="fi">📅</span><span data-i18n="weekly">Semanales</span><span class="fc" id="fc-weekly">0</span></button>
-          <button class="filter-btn" onclick="setFilter('annual',this)"><span class="fi">📆</span><span data-i18n="annual">Anuales</span><span class="fc" id="fc-annual">0</span></button>
-          <button class="filter-btn" onclick="setFilter('progress',this)"><span class="fi">📊</span><span data-i18n="progress">Progreso</span><span class="fc" id="fc-progress">0</span></button>
-          <button class="filter-btn" onclick="setFilter('negative',this)"><span class="fi">⚠️</span><span data-i18n="negative">Negativas</span><span class="fc" id="fc-negative">0</span></button>
-          <button class="filter-btn" onclick="setFilter('neutral',this)"><span class="fi">⚖️</span><span data-i18n="neutral">Neutrales</span><span class="fc" id="fc-neutral">0</span></button>
-          <button class="filter-btn" onclick="setFilter('done',this)"><span class="fi">✅</span><span data-i18n="done">Hechas</span><span class="fc" id="fc-done">0</span></button>
-        </div>
-      </div>
+      &lt;!-- Filters --&gt;
+      &lt;div class=&quot;sb-section&quot;&gt;
+        &lt;div class=&quot;sb-hdr&quot; onclick=&quot;toggleSb('filters')&quot;&gt;
+          &lt;span class=&quot;sb-hdr-title&quot; data-i18n=&quot;filters&quot;&gt;Filtros&lt;/span&gt;
+          &lt;span class=&quot;sb-chevron&quot; id=&quot;chev-filters&quot;&gt;▾&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sb-body&quot; id=&quot;sb-filters&quot;&gt;
+          &lt;button class=&quot;filter-btn active&quot; onclick=&quot;setFilter('all',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;🌐&lt;/span&gt;&lt;span data-i18n=&quot;all&quot;&gt;Todas&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-all&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;filter-btn&quot; onclick=&quot;setFilter('once',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;1️⃣&lt;/span&gt;&lt;span data-i18n=&quot;once&quot;&gt;Una vez&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-once&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;filter-btn&quot; onclick=&quot;setFilter('daily',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;🔁&lt;/span&gt;&lt;span data-i18n=&quot;daily&quot;&gt;Diarias&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-daily&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;filter-btn&quot; onclick=&quot;setFilter('weekly',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;📅&lt;/span&gt;&lt;span data-i18n=&quot;weekly&quot;&gt;Semanales&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-weekly&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;filter-btn&quot; onclick=&quot;setFilter('annual',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;📆&lt;/span&gt;&lt;span data-i18n=&quot;annual&quot;&gt;Anuales&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-annual&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;filter-btn&quot; onclick=&quot;setFilter('progress',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;📊&lt;/span&gt;&lt;span data-i18n=&quot;progress&quot;&gt;Progreso&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-progress&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;filter-btn&quot; onclick=&quot;setFilter('negative',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;⚠️&lt;/span&gt;&lt;span data-i18n=&quot;negative&quot;&gt;Negativas&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-negative&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;filter-btn&quot; onclick=&quot;setFilter('neutral',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;⚖️&lt;/span&gt;&lt;span data-i18n=&quot;neutral&quot;&gt;Neutrales&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-neutral&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;filter-btn&quot; onclick=&quot;setFilter('done',this)&quot;&gt;&lt;span class=&quot;fi&quot;&gt;✅&lt;/span&gt;&lt;span data-i18n=&quot;done&quot;&gt;Hechas&lt;/span&gt;&lt;span class=&quot;fc&quot; id=&quot;fc-done&quot;&gt;0&lt;/span&gt;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <!-- Groups -->
-      <div class="sb-section">
-        <div class="sb-hdr" onclick="toggleSb('groups')">
-          <span class="sb-hdr-title" data-i18n="groups">Grupos</span>
-          <span class="sb-chevron" id="chev-groups">▾</span>
-        </div>
-        <div class="sb-body" id="sb-groups">
-          <button class="group-btn active" onclick="setGF('all',this)">🌐 <span data-i18n="all">Todos</span></button>
-          <button class="group-btn" onclick="setGF('personal',this)">🏠 <span data-i18n="g_personal">Personal</span></button>
-          <button class="group-btn" onclick="setGF('salud',this)">💪 <span data-i18n="g_health">Salud</span></button>
-          <button class="group-btn" onclick="setGF('trabajo',this)">💼 <span data-i18n="g_work">Trabajo</span></button>
-          <button class="group-btn" onclick="setGF('estudio',this)">📚 <span data-i18n="g_study">Estudio</span></button>
-          <button class="group-btn" onclick="setGF('finanzas',this)">💰 <span data-i18n="g_finance">Finanzas</span></button>
-          <button class="group-btn" onclick="setGF('hogar',this)">🧹 <span data-i18n="g_home">Hogar</span></button>
-          <button class="group-btn" onclick="setGF('social',this)">👥 <span data-i18n="g_social">Social</span></button>
-          <button class="group-btn" onclick="setGF('creatividad',this)">🎨 <span data-i18n="g_creative">Creatividad</span></button>
-        </div>
-      </div>
+      &lt;!-- Groups --&gt;
+      &lt;div class=&quot;sb-section&quot;&gt;
+        &lt;div class=&quot;sb-hdr&quot; onclick=&quot;toggleSb('groups')&quot;&gt;
+          &lt;span class=&quot;sb-hdr-title&quot; data-i18n=&quot;groups&quot;&gt;Grupos&lt;/span&gt;
+          &lt;span class=&quot;sb-chevron&quot; id=&quot;chev-groups&quot;&gt;▾&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sb-body&quot; id=&quot;sb-groups&quot;&gt;
+          &lt;button class=&quot;group-btn active&quot; onclick=&quot;setGF('all',this)&quot;&gt;🌐 &lt;span data-i18n=&quot;all&quot;&gt;Todos&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;group-btn&quot; onclick=&quot;setGF('personal',this)&quot;&gt;🏠 &lt;span data-i18n=&quot;g_personal&quot;&gt;Personal&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;group-btn&quot; onclick=&quot;setGF('salud',this)&quot;&gt;💪 &lt;span data-i18n=&quot;g_health&quot;&gt;Salud&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;group-btn&quot; onclick=&quot;setGF('trabajo',this)&quot;&gt;💼 &lt;span data-i18n=&quot;g_work&quot;&gt;Trabajo&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;group-btn&quot; onclick=&quot;setGF('estudio',this)&quot;&gt;📚 &lt;span data-i18n=&quot;g_study&quot;&gt;Estudio&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;group-btn&quot; onclick=&quot;setGF('finanzas',this)&quot;&gt;💰 &lt;span data-i18n=&quot;g_finance&quot;&gt;Finanzas&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;group-btn&quot; onclick=&quot;setGF('hogar',this)&quot;&gt;🧹 &lt;span data-i18n=&quot;g_home&quot;&gt;Hogar&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;group-btn&quot; onclick=&quot;setGF('social',this)&quot;&gt;👥 &lt;span data-i18n=&quot;g_social&quot;&gt;Social&lt;/span&gt;&lt;/button&gt;
+          &lt;button class=&quot;group-btn&quot; onclick=&quot;setGF('creatividad',this)&quot;&gt;🎨 &lt;span data-i18n=&quot;g_creative&quot;&gt;Creatividad&lt;/span&gt;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <!-- Stats -->
-      <div class="sb-section">
-        <div class="sb-hdr" onclick="toggleSb('stats')">
-          <span class="sb-hdr-title" data-i18n="stats">Stats</span>
-          <span class="sb-chevron" id="chev-stats">▾</span>
-        </div>
-        <div class="sb-body" id="sb-stats">
-          <div class="stats-grid">
-            <div class="stat-box"><div class="stat-val c-accent" id="sTotalXP">0</div><div class="stat-lbl" data-i18n="net_xp">XP Neto</div></div>
-            <div class="stat-box"><div class="stat-val c-green" id="sDone">0</div><div class="stat-lbl" data-i18n="done_lbl">Hechas</div></div>
-            <div class="stat-box"><div class="stat-val c-gold" id="sStreak">0</div><div class="stat-lbl" data-i18n="streak">Racha</div></div>
-            <div class="stat-box"><div class="stat-val c-red" id="sNeg">0</div><div class="stat-lbl" data-i18n="xp_lost">XP −</div></div>
-          </div>
-        </div>
-      </div>
+      &lt;!-- Stats --&gt;
+      &lt;div class=&quot;sb-section&quot;&gt;
+        &lt;div class=&quot;sb-hdr&quot; onclick=&quot;toggleSb('stats')&quot;&gt;
+          &lt;span class=&quot;sb-hdr-title&quot; data-i18n=&quot;stats&quot;&gt;Stats&lt;/span&gt;
+          &lt;span class=&quot;sb-chevron&quot; id=&quot;chev-stats&quot;&gt;▾&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sb-body&quot; id=&quot;sb-stats&quot;&gt;
+          &lt;div class=&quot;stats-grid&quot;&gt;
+            &lt;div class=&quot;stat-box&quot;&gt;&lt;div class=&quot;stat-val c-accent&quot; id=&quot;sTotalXP&quot;&gt;0&lt;/div&gt;&lt;div class=&quot;stat-lbl&quot; data-i18n=&quot;net_xp&quot;&gt;XP Neto&lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;stat-box&quot;&gt;&lt;div class=&quot;stat-val c-green&quot; id=&quot;sDone&quot;&gt;0&lt;/div&gt;&lt;div class=&quot;stat-lbl&quot; data-i18n=&quot;done_lbl&quot;&gt;Hechas&lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;stat-box&quot;&gt;&lt;div class=&quot;stat-val c-gold&quot; id=&quot;sStreak&quot;&gt;0&lt;/div&gt;&lt;div class=&quot;stat-lbl&quot; data-i18n=&quot;streak&quot;&gt;Racha&lt;/div&gt;&lt;/div&gt;
+            &lt;div class=&quot;stat-box&quot;&gt;&lt;div class=&quot;stat-val c-red&quot; id=&quot;sNeg&quot;&gt;0&lt;/div&gt;&lt;div class=&quot;stat-lbl&quot; data-i18n=&quot;xp_lost&quot;&gt;XP −&lt;/div&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <!-- Pomodoro -->
-      <div class="sb-section">
-        <div class="sb-hdr" onclick="toggleSb('pomo')">
-          <span class="sb-hdr-title">Pomodoro</span>
-          <span class="sb-chevron" id="chev-pomo">▾</span>
-        </div>
-        <div class="sb-body" id="sb-pomo">
-          <div class="pomo-wrap">
-            <div class="pomo-lbl" id="pomoLbl" data-i18n="focus">CONCENTRACIÓN</div>
-            <div class="pomo-ring">
-              <svg width="68" height="68" viewBox="0 0 68 68">
-                <circle class="pr-bg" cx="34" cy="34" r="28"/>
-                <circle class="pr-fill" id="pomoRing" cx="34" cy="34" r="28" stroke-dasharray="175.9" stroke-dashoffset="0"/>
-              </svg>
-              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-                <div class="pomo-time" id="pomoTime">25:00</div>
-              </div>
-            </div>
-            <div class="pomo-btns">
-              <button class="pomo-btn" id="pomoBtnS" onclick="pomoStart()">▶</button>
-              <button class="pomo-btn" onclick="pomoReset()">↺</button>
-              <button class="pomo-btn" onclick="pomoToggle()">☕</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      &lt;!-- Pomodoro --&gt;
+      &lt;div class=&quot;sb-section&quot;&gt;
+        &lt;div class=&quot;sb-hdr&quot; onclick=&quot;toggleSb('pomo')&quot;&gt;
+          &lt;span class=&quot;sb-hdr-title&quot;&gt;Pomodoro&lt;/span&gt;
+          &lt;span class=&quot;sb-chevron&quot; id=&quot;chev-pomo&quot;&gt;▾&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;sb-body&quot; id=&quot;sb-pomo&quot;&gt;
+          &lt;div class=&quot;pomo-wrap&quot;&gt;
+            &lt;div class=&quot;pomo-lbl&quot; id=&quot;pomoLbl&quot; data-i18n=&quot;focus&quot;&gt;CONCENTRACIÓN&lt;/div&gt;
+            &lt;div class=&quot;pomo-ring&quot;&gt;
+              &lt;svg width=&quot;68&quot; height=&quot;68&quot; viewBox=&quot;0 0 68 68&quot;&gt;
+                &lt;circle class=&quot;pr-bg&quot; cx=&quot;34&quot; cy=&quot;34&quot; r=&quot;28&quot;/&gt;
+                &lt;circle class=&quot;pr-fill&quot; id=&quot;pomoRing&quot; cx=&quot;34&quot; cy=&quot;34&quot; r=&quot;28&quot; stroke-dasharray=&quot;175.9&quot; stroke-dashoffset=&quot;0&quot;/&gt;
+              &lt;/svg&gt;
+              &lt;div style=&quot;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;&quot;&gt;
+                &lt;div class=&quot;pomo-time&quot; id=&quot;pomoTime&quot;&gt;25:00&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pomo-btns&quot;&gt;
+              &lt;button class=&quot;pomo-btn&quot; id=&quot;pomoBtnS&quot; onclick=&quot;pomoStart()&quot;&gt;▶&lt;/button&gt;
+              &lt;button class=&quot;pomo-btn&quot; onclick=&quot;pomoReset()&quot;&gt;↺&lt;/button&gt;
+              &lt;button class=&quot;pomo-btn&quot; onclick=&quot;pomoToggle()&quot;&gt;☕&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-    </div>
-  </aside>
+    &lt;/div&gt;
+  &lt;/aside&gt;
 
-  <!-- MAIN -->
-  <main class="main">
-    <div class="main-toolbar">
-      <div class="main-title" id="mainTitle" data-i18n="all_tasks">// TODAS LAS TAREAS</div>
-      <input class="search-box" type="text" id="searchInput" oninput="render()" data-i18n-placeholder="search">
-      <select class="sort-sel" id="sortSel" onchange="render()">
-        <option value="importance" data-i18n="sort_imp">Importancia</option>
-        <option value="name" data-i18n="sort_name">Nombre</option>
-        <option value="xp">XP</option>
-        <option value="created" data-i18n="sort_date">Fecha</option>
-        <option value="deadline" data-i18n="sort_dl">Deadline</option>
-      </select>
-    </div>
+  &lt;!-- MAIN --&gt;
+  &lt;main class=&quot;main&quot;&gt;
+    &lt;div class=&quot;main-toolbar&quot;&gt;
+      &lt;div class=&quot;main-title&quot; id=&quot;mainTitle&quot; data-i18n=&quot;all_tasks&quot;&gt;// TODAS LAS TAREAS&lt;/div&gt;
+      &lt;input class=&quot;search-box&quot; type=&quot;text&quot; id=&quot;searchInput&quot; oninput=&quot;render()&quot; data-i18n-placeholder=&quot;search&quot;&gt;
+      &lt;select class=&quot;sort-sel&quot; id=&quot;sortSel&quot; onchange=&quot;render()&quot;&gt;
+        &lt;option value=&quot;importance&quot; data-i18n=&quot;sort_imp&quot;&gt;Importancia&lt;/option&gt;
+        &lt;option value=&quot;name&quot; data-i18n=&quot;sort_name&quot;&gt;Nombre&lt;/option&gt;
+        &lt;option value=&quot;xp&quot;&gt;XP&lt;/option&gt;
+        &lt;option value=&quot;created&quot; data-i18n=&quot;sort_date&quot;&gt;Fecha&lt;/option&gt;
+        &lt;option value=&quot;deadline&quot; data-i18n=&quot;sort_dl&quot;&gt;Deadline&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
 
-    <div class="view-tabs">
-      <button class="vtab active" onclick="setView('tasks',this)" data-i18n="tab_tasks">📋 Tareas</button>
-      <button class="vtab" onclick="setView('agenda',this)" data-i18n="tab_agenda">🕐 Agenda</button>
-      <button class="vtab" onclick="setView('chart',this)" data-i18n="tab_chart">📈 Gráficas</button>
-      <button class="vtab" onclick="setView('achievements',this)" data-i18n="tab_ach">🏆 Logros</button>
-      <button class="vtab" onclick="setView('history',this)" data-i18n="tab_hist">📜 Historial</button>
-    </div>
+    &lt;div class=&quot;view-tabs&quot;&gt;
+      &lt;button class=&quot;vtab active&quot; onclick=&quot;setView('tasks',this)&quot; data-i18n=&quot;tab_tasks&quot;&gt;📋 Tareas&lt;/button&gt;
+      &lt;button class=&quot;vtab&quot; onclick=&quot;setView('agenda',this)&quot; data-i18n=&quot;tab_agenda&quot;&gt;🕐 Agenda&lt;/button&gt;
+      &lt;button class=&quot;vtab&quot; onclick=&quot;setView('chart',this)&quot; data-i18n=&quot;tab_chart&quot;&gt;📈 Gráficas&lt;/button&gt;
+      &lt;button class=&quot;vtab&quot; onclick=&quot;setView('achievements',this)&quot; data-i18n=&quot;tab_ach&quot;&gt;🏆 Logros&lt;/button&gt;
+      &lt;button class=&quot;vtab&quot; onclick=&quot;setView('history',this)&quot; data-i18n=&quot;tab_hist&quot;&gt;📜 Historial&lt;/button&gt;
+    &lt;/div&gt;
 
-    <div class="polarity-bar" id="polarityBar">
-      <button class="pol-btn active-all" id="polAll" onclick="setPol('all')" data-i18n-pol="pol_all">
-        <span class="pol-dot pol-dot-all"></span><span data-i18n="pol_all">Todas</span>
-      </button>
-      <button class="pol-btn" id="polPos" onclick="setPol('pos')">
-        <span class="pol-dot pol-dot-pos"></span>✅ <span data-i18n="pol_pos">Positivas</span>
-      </button>
-      <button class="pol-btn" id="polNeu" onclick="setPol('neu')">
-        <span class="pol-dot" style="background:var(--accent3)"></span>⚖️ <span data-i18n="pol_neu">Neutrales</span>
-      </button>
-      <button class="pol-btn" id="polNeg" onclick="setPol('neg')">
-        <span class="pol-dot pol-dot-neg"></span>⚠️ <span data-i18n="pol_neg">Negativas</span>
-      </button>
-      <div class="pol-spacer"></div>
-      <div class="day-switch" id="daySwitch">
-        <button class="dsw-btn active" id="dswAll" onclick="setDayFilter('all',this)" data-i18n="sw_all">Todas</button>
-        <button class="dsw-btn" id="dswToday" onclick="setDayFilter('today',this)" data-i18n="sw_today">Hoy</button>
-      </div>
-    </div>
+    &lt;div class=&quot;polarity-bar&quot; id=&quot;polarityBar&quot;&gt;
+      &lt;button class=&quot;pol-btn active-all&quot; id=&quot;polAll&quot; onclick=&quot;setPol('all')&quot; data-i18n-pol=&quot;pol_all&quot;&gt;
+        &lt;span class=&quot;pol-dot pol-dot-all&quot;&gt;&lt;/span&gt;&lt;span data-i18n=&quot;pol_all&quot;&gt;Todas&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button class=&quot;pol-btn&quot; id=&quot;polPos&quot; onclick=&quot;setPol('pos')&quot;&gt;
+        &lt;span class=&quot;pol-dot pol-dot-pos&quot;&gt;&lt;/span&gt;✅ &lt;span data-i18n=&quot;pol_pos&quot;&gt;Positivas&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button class=&quot;pol-btn&quot; id=&quot;polNeu&quot; onclick=&quot;setPol('neu')&quot;&gt;
+        &lt;span class=&quot;pol-dot&quot; style=&quot;background:var(--accent3)&quot;&gt;&lt;/span&gt;⚖️ &lt;span data-i18n=&quot;pol_neu&quot;&gt;Neutrales&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;button class=&quot;pol-btn&quot; id=&quot;polNeg&quot; onclick=&quot;setPol('neg')&quot;&gt;
+        &lt;span class=&quot;pol-dot pol-dot-neg&quot;&gt;&lt;/span&gt;⚠️ &lt;span data-i18n=&quot;pol_neg&quot;&gt;Negativas&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;pol-spacer&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;day-switch&quot; id=&quot;daySwitch&quot;&gt;
+        &lt;button class=&quot;dsw-btn active&quot; id=&quot;dswAll&quot; onclick=&quot;setDayFilter('all',this)&quot; data-i18n=&quot;sw_all&quot;&gt;Todas&lt;/button&gt;
+        &lt;button class=&quot;dsw-btn&quot; id=&quot;dswToday&quot; onclick=&quot;setDayFilter('today',this)&quot; data-i18n=&quot;sw_today&quot;&gt;Hoy&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
 
-    <div class="task-scroll" id="taskArea">
-      <div class="task-list" id="taskList"></div>
-    </div>
-  </main>
-</div>
+    &lt;div class=&quot;task-scroll&quot; id=&quot;taskArea&quot;&gt;
+      &lt;div class=&quot;task-list&quot; id=&quot;taskList&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+&lt;/div&gt;
 
-<!-- BOTTOM BAR -->
-<div class="bottom-bar">
-  <div class="bot-level">LVL <span id="bLvl">1</span></div>
-  <div class="bot-xp-wrap">
-    <div class="bot-xp-bar"><div class="bot-xp-fill" id="bXpBar" style="width:0%"></div></div>
-    <div class="bot-xp-num"><span id="bXpCur">0</span>/<span id="bXpNxt">500</span></div>
-  </div>
-  <div class="bot-streak" id="bStreak">🔥 <span id="bStreakN">0</span>d <span class="bot-mult" id="bMult"></span></div>
-  <div class="bot-spacer"></div>
-  <div class="bot-right">
-    <button class="btn-bot" onclick="exportData()" title="Exportar datos">💾</button>
-    <button class="btn-bot" onclick="toggleTheme()" id="themeBtn" title="Cambiar tema">🌙</button>
-  </div>
-</div>
+&lt;!-- BOTTOM BAR --&gt;
+&lt;div class=&quot;bottom-bar&quot;&gt;
+  &lt;div class=&quot;bot-level&quot;&gt;LVL &lt;span id=&quot;bLvl&quot;&gt;1&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;bot-xp-wrap&quot;&gt;
+    &lt;div class=&quot;bot-xp-bar&quot;&gt;&lt;div class=&quot;bot-xp-fill&quot; id=&quot;bXpBar&quot; style=&quot;width:0%&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;bot-xp-num&quot;&gt;&lt;span id=&quot;bXpCur&quot;&gt;0&lt;/span&gt;/&lt;span id=&quot;bXpNxt&quot;&gt;500&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;bot-streak&quot; id=&quot;bStreak&quot;&gt;🔥 &lt;span id=&quot;bStreakN&quot;&gt;0&lt;/span&gt;d &lt;span class=&quot;bot-mult&quot; id=&quot;bMult&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;bot-spacer&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;bot-right&quot;&gt;
+    &lt;button class=&quot;btn-bot&quot; onclick=&quot;exportData()&quot; title=&quot;Exportar datos&quot;&gt;💾&lt;/button&gt;
+    &lt;button class=&quot;btn-bot&quot; onclick=&quot;toggleTheme()&quot; id=&quot;themeBtn&quot; title=&quot;Cambiar tema&quot;&gt;🌙&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-<!-- MODAL -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal">
-    <div class="modal-hdr">
-      <div class="modal-ttl" id="modalTtl">// NUEVA TAREA</div>
-      <button class="btn-close" onclick="closeModal()">✕</button>
-    </div>
-    <div class="modal-body">
+&lt;!-- MODAL --&gt;
+&lt;div class=&quot;modal-overlay&quot; id=&quot;modalOverlay&quot;&gt;
+  &lt;div class=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal-hdr&quot;&gt;
+      &lt;div class=&quot;modal-ttl&quot; id=&quot;modalTtl&quot;&gt;// NUEVA TAREA&lt;/div&gt;
+      &lt;button class=&quot;btn-close&quot; onclick=&quot;closeModal()&quot;&gt;✕&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-body&quot;&gt;
 
-      <!-- TEMPLATE PICKER -->
-      <div class="tpl-section">
-        <div class="tpl-header">
-          <span class="tpl-title" data-i18n="tpl_title">// SUGERENCIAS RÁPIDAS</span>
-          <input class="tpl-search" type="text" id="tplSearch" oninput="filterTpls()" data-i18n-placeholder="tpl_search">
-        </div>
-        <div class="tpl-cats" id="tplCats"></div>
-        <div class="tpl-grid" id="tplGrid"></div>
-      </div>
+      &lt;!-- TEMPLATE PICKER --&gt;
+      &lt;div class=&quot;tpl-section&quot;&gt;
+        &lt;div class=&quot;tpl-header&quot;&gt;
+          &lt;span class=&quot;tpl-title&quot; data-i18n=&quot;tpl_title&quot;&gt;// SUGERENCIAS RÁPIDAS&lt;/span&gt;
+          &lt;input class=&quot;tpl-search&quot; type=&quot;text&quot; id=&quot;tplSearch&quot; oninput=&quot;filterTpls()&quot; data-i18n-placeholder=&quot;tpl_search&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tpl-cats&quot; id=&quot;tplCats&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;tpl-grid&quot; id=&quot;tplGrid&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="tpl-divider"><span data-i18n="tpl_or">o crea una tarea personalizada</span></div>
+      &lt;div class=&quot;tpl-divider&quot;&gt;&lt;span data-i18n=&quot;tpl_or&quot;&gt;o crea una tarea personalizada&lt;/span&gt;&lt;/div&gt;
 
-      <!-- Task type selector -->
-      <div style="display:flex;gap:6px;">
-        <button type="button" class="neu-type-btn sel" id="typeBtnPos" onclick="setTaskType('positive')" style="flex:1;">
-          <span class="nt-ico">✅</span><span data-i18n="type_pos">Positiva</span>
-        </button>
-        <button type="button" class="neu-type-btn" id="typeBtnNeu" onclick="setTaskType('neutral')" style="flex:1;">
-          <span class="nt-ico">⚖️</span><span data-i18n="type_neu">Neutral</span>
-        </button>
-        <button type="button" class="neu-type-btn" id="typeBtnNeg" onclick="setTaskType('negative')" style="flex:1;border-color:rgba(255,71,87,.3);color:var(--neg);">
-          <span class="nt-ico">⚠️</span><span data-i18n="type_neg">Negativa</span>
-        </button>
-      </div>
+      &lt;!-- Task type selector --&gt;
+      &lt;div style=&quot;display:flex;gap:6px;&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;neu-type-btn sel&quot; id=&quot;typeBtnPos&quot; onclick=&quot;setTaskType('positive')&quot; style=&quot;flex:1;&quot;&gt;
+          &lt;span class=&quot;nt-ico&quot;&gt;✅&lt;/span&gt;&lt;span data-i18n=&quot;type_pos&quot;&gt;Positiva&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;neu-type-btn&quot; id=&quot;typeBtnNeu&quot; onclick=&quot;setTaskType('neutral')&quot; style=&quot;flex:1;&quot;&gt;
+          &lt;span class=&quot;nt-ico&quot;&gt;⚖️&lt;/span&gt;&lt;span data-i18n=&quot;type_neu&quot;&gt;Neutral&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;neu-type-btn&quot; id=&quot;typeBtnNeg&quot; onclick=&quot;setTaskType('negative')&quot; style=&quot;flex:1;border-color:rgba(255,71,87,.3);color:var(--neg);&quot;&gt;
+          &lt;span class=&quot;nt-ico&quot;&gt;⚠️&lt;/span&gt;&lt;span data-i18n=&quot;type_neg&quot;&gt;Negativa&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
 
-      <!-- Neutral config (shows when neutral selected) -->
-      <div class="neu-wrap cond" id="neuConfig">
-        <div class="fg">
-          <label class="fl" data-i18n="neu_type">Tipo de medición</label>
-          <div class="neu-types">
-            <button type="button" class="neu-type-btn sel" id="neuTypVal" onclick="setNeuType('value')">
-              <span class="nt-ico">🔢</span><span data-i18n="neu_value">Valor</span>
-            </button>
-            <button type="button" class="neu-type-btn" id="neuTypTime" onclick="setNeuType('time')">
-              <span class="nt-ico">🕐</span><span data-i18n="neu_time">Hora</span>
-            </button>
-            <button type="button" class="neu-type-btn" id="neuTypDate" onclick="setNeuType('date')">
-              <span class="nt-ico">📅</span><span data-i18n="neu_date">Fecha</span>
-            </button>
-          </div>
-        </div>
+      &lt;!-- Neutral config (shows when neutral selected) --&gt;
+      &lt;div class=&quot;neu-wrap cond&quot; id=&quot;neuConfig&quot;&gt;
+        &lt;div class=&quot;fg&quot;&gt;
+          &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_type&quot;&gt;Tipo de medición&lt;/label&gt;
+          &lt;div class=&quot;neu-types&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;neu-type-btn sel&quot; id=&quot;neuTypVal&quot; onclick=&quot;setNeuType('value')&quot;&gt;
+              &lt;span class=&quot;nt-ico&quot;&gt;🔢&lt;/span&gt;&lt;span data-i18n=&quot;neu_value&quot;&gt;Valor&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;neu-type-btn&quot; id=&quot;neuTypTime&quot; onclick=&quot;setNeuType('time')&quot;&gt;
+              &lt;span class=&quot;nt-ico&quot;&gt;🕐&lt;/span&gt;&lt;span data-i18n=&quot;neu_time&quot;&gt;Hora&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type=&quot;button&quot; class=&quot;neu-type-btn&quot; id=&quot;neuTypDate&quot; onclick=&quot;setNeuType('date')&quot;&gt;
+              &lt;span class=&quot;nt-ico&quot;&gt;📅&lt;/span&gt;&lt;span data-i18n=&quot;neu_date&quot;&gt;Fecha&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
 
-        <!-- Value config -->
-        <div id="neuValCfg">
-          <div class="fr3" style="gap:8px;">
-            <div class="fg">
-              <label class="fl" data-i18n="neu_target">Objetivo</label>
-              <input class="fi" id="fNeuTarget" type="number" value="100" oninput="updateNeuPreview()">
-            </div>
-            <div class="fg">
-              <label class="fl" data-i18n="unit">Unidad</label>
-              <input class="fi" id="fNeuUnit" type="text" value="reps" oninput="updateNeuPreview()">
-            </div>
-            <div class="fg">
-              <label class="fl" data-i18n="neu_base_xp">XP exacto</label>
-              <input class="fi" id="fNeuBaseXP" type="number" value="75" min="1" max="500" oninput="updateNeuPreview()">
-            </div>
-          </div>
-          <!-- Tolerance zone -->
-          <div style="margin-top:8px;background:var(--bg4);border:1px solid var(--border);border-radius:6px;padding:8px 10px;">
-            <div class="trow">
-              <span class="dir-label">📐 <span data-i18n="neu_use_tolerance">Zona de tolerancia</span></span>
-              <label class="tgl"><input type="checkbox" id="fNeuUseTol" onchange="onTolToggle()"><div class="tgl-sl"></div></label>
-            </div>
-            <div id="neuTolFields" style="display:none;margin-top:8px;">
-              <div class="fr2" style="gap:8px;">
-                <div class="fg">
-                  <label class="fl" data-i18n="neu_tol_min">Mínimo aceptable</label>
-                  <input class="fi" id="fNeuTolMin" type="number" placeholder="80" oninput="updateNeuPreview()">
-                </div>
-                <div class="fg">
-                  <label class="fl" data-i18n="neu_tol_max">Máximo (XP extra)</label>
-                  <input class="fi" id="fNeuTolMax" type="number" placeholder="120" oninput="updateNeuPreview()">
-                </div>
-              </div>
-              <div class="fhint" style="margin-top:4px;color:var(--accent3);" data-i18n="neu_tol_hint">Min–Max = XP completo. Fuera del rango = exponencial.</div>
-            </div>
-          </div>
-          <div class="direction-row" style="margin-top:8px;">
-            <span class="dir-label" data-i18n="neu_more_is">¿Más es mejor?</span>
-            <div class="dir-options">
-              <button type="button" class="dir-btn plus sel" id="dirPlus" onclick="setDir('more')" data-i18n="neu_yes">Sí ↑</button>
-              <button type="button" class="dir-btn minus" id="dirMinus" onclick="setDir('less')" data-i18n="neu_no">No ↓</button>
-            </div>
-          </div>
-        </div>
+        &lt;!-- Value config --&gt;
+        &lt;div id=&quot;neuValCfg&quot;&gt;
+          &lt;div class=&quot;fr3&quot; style=&quot;gap:8px;&quot;&gt;
+            &lt;div class=&quot;fg&quot;&gt;
+              &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_target&quot;&gt;Objetivo&lt;/label&gt;
+              &lt;input class=&quot;fi&quot; id=&quot;fNeuTarget&quot; type=&quot;number&quot; value=&quot;100&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;fg&quot;&gt;
+              &lt;label class=&quot;fl&quot; data-i18n=&quot;unit&quot;&gt;Unidad&lt;/label&gt;
+              &lt;input class=&quot;fi&quot; id=&quot;fNeuUnit&quot; type=&quot;text&quot; value=&quot;reps&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;fg&quot;&gt;
+              &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_base_xp&quot;&gt;XP exacto&lt;/label&gt;
+              &lt;input class=&quot;fi&quot; id=&quot;fNeuBaseXP&quot; type=&quot;number&quot; value=&quot;75&quot; min=&quot;1&quot; max=&quot;500&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- Tolerance zone --&gt;
+          &lt;div style=&quot;margin-top:8px;background:var(--bg4);border:1px solid var(--border);border-radius:6px;padding:8px 10px;&quot;&gt;
+            &lt;div class=&quot;trow&quot;&gt;
+              &lt;span class=&quot;dir-label&quot;&gt;📐 &lt;span data-i18n=&quot;neu_use_tolerance&quot;&gt;Zona de tolerancia&lt;/span&gt;&lt;/span&gt;
+              &lt;label class=&quot;tgl&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;fNeuUseTol&quot; onchange=&quot;onTolToggle()&quot;&gt;&lt;div class=&quot;tgl-sl&quot;&gt;&lt;/div&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;neuTolFields&quot; style=&quot;display:none;margin-top:8px;&quot;&gt;
+              &lt;div class=&quot;fr2&quot; style=&quot;gap:8px;&quot;&gt;
+                &lt;div class=&quot;fg&quot;&gt;
+                  &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_tol_min&quot;&gt;Mínimo aceptable&lt;/label&gt;
+                  &lt;input class=&quot;fi&quot; id=&quot;fNeuTolMin&quot; type=&quot;number&quot; placeholder=&quot;80&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;fg&quot;&gt;
+                  &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_tol_max&quot;&gt;Máximo (XP extra)&lt;/label&gt;
+                  &lt;input class=&quot;fi&quot; id=&quot;fNeuTolMax&quot; type=&quot;number&quot; placeholder=&quot;120&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;fhint&quot; style=&quot;margin-top:4px;color:var(--accent3);&quot; data-i18n=&quot;neu_tol_hint&quot;&gt;Min–Max = XP completo. Fuera del rango = exponencial.&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;direction-row&quot; style=&quot;margin-top:8px;&quot;&gt;
+            &lt;span class=&quot;dir-label&quot; data-i18n=&quot;neu_more_is&quot;&gt;¿Más es mejor?&lt;/span&gt;
+            &lt;div class=&quot;dir-options&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;dir-btn plus sel&quot; id=&quot;dirPlus&quot; onclick=&quot;setDir('more')&quot; data-i18n=&quot;neu_yes&quot;&gt;Sí ↑&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;dir-btn minus&quot; id=&quot;dirMinus&quot; onclick=&quot;setDir('less')&quot; data-i18n=&quot;neu_no&quot;&gt;No ↓&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
 
-        <!-- Time config -->
-        <div id="neuTimeCfg" style="display:none;">
-          <div class="fr3" style="gap:8px;">
-            <div class="fg">
-              <label class="fl" data-i18n="neu_target_time">Hora objetivo</label>
-              <input class="fi" id="fNeuTimeTarget" type="time" value="07:00" oninput="updateNeuPreview()">
-            </div>
-            <div class="fg">
-              <label class="fl" data-i18n="neu_tolerance">Tolerancia ±min</label>
-              <input class="fi" id="fNeuTimeTol" type="number" value="15" min="0" oninput="updateNeuPreview()">
-            </div>
-            <div class="fg">
-              <label class="fl" data-i18n="neu_base_xp">XP exacto</label>
-              <input class="fi" id="fNeuTimeBaseXP" type="number" value="75" min="1" max="500" oninput="updateNeuPreview()">
-            </div>
-          </div>
-          <div class="direction-row" style="margin-top:8px;">
-            <span class="dir-label" data-i18n="neu_earlier_is">¿Antes es mejor?</span>
-            <div class="dir-options">
-              <button type="button" class="dir-btn plus sel" id="tdirPlus" onclick="setTDir('early')" data-i18n="neu_yes">Sí ↑</button>
-              <button type="button" class="dir-btn minus" id="tdirMinus" onclick="setTDir('late')" data-i18n="neu_no">No ↓</button>
-            </div>
-          </div>
-        </div>
+        &lt;!-- Time config --&gt;
+        &lt;div id=&quot;neuTimeCfg&quot; style=&quot;display:none;&quot;&gt;
+          &lt;div class=&quot;fr3&quot; style=&quot;gap:8px;&quot;&gt;
+            &lt;div class=&quot;fg&quot;&gt;
+              &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_target_time&quot;&gt;Hora objetivo&lt;/label&gt;
+              &lt;input class=&quot;fi&quot; id=&quot;fNeuTimeTarget&quot; type=&quot;time&quot; value=&quot;07:00&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;fg&quot;&gt;
+              &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_tolerance&quot;&gt;Tolerancia ±min&lt;/label&gt;
+              &lt;input class=&quot;fi&quot; id=&quot;fNeuTimeTol&quot; type=&quot;number&quot; value=&quot;15&quot; min=&quot;0&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;fg&quot;&gt;
+              &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_base_xp&quot;&gt;XP exacto&lt;/label&gt;
+              &lt;input class=&quot;fi&quot; id=&quot;fNeuTimeBaseXP&quot; type=&quot;number&quot; value=&quot;75&quot; min=&quot;1&quot; max=&quot;500&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;direction-row&quot; style=&quot;margin-top:8px;&quot;&gt;
+            &lt;span class=&quot;dir-label&quot; data-i18n=&quot;neu_earlier_is&quot;&gt;¿Antes es mejor?&lt;/span&gt;
+            &lt;div class=&quot;dir-options&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;dir-btn plus sel&quot; id=&quot;tdirPlus&quot; onclick=&quot;setTDir('early')&quot; data-i18n=&quot;neu_yes&quot;&gt;Sí ↑&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;dir-btn minus&quot; id=&quot;tdirMinus&quot; onclick=&quot;setTDir('late')&quot; data-i18n=&quot;neu_no&quot;&gt;No ↓&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
 
-        <!-- Date config -->
-        <div id="neuDateCfg" style="display:none;">
-          <div class="fr2" style="gap:8px;">
-            <div class="fg">
-              <label class="fl" data-i18n="neu_target_date">Fecha objetivo</label>
-              <input class="fi" id="fNeuDateTarget" type="date" oninput="updateNeuPreview()">
-            </div>
-            <div class="fg">
-              <label class="fl" data-i18n="neu_base_xp">XP en fecha exacta</label>
-              <input class="fi" id="fNeuDateBaseXP" type="number" value="75" min="1" max="500" oninput="updateNeuPreview()">
-            </div>
-          </div>
-          <div class="direction-row" style="margin-top:8px;">
-            <span class="dir-label" data-i18n="neu_earlier_date">¿Antes = mejor?</span>
-            <div class="dir-options">
-              <button type="button" class="dir-btn plus sel" id="ddirPlus" onclick="setDDir('early')" data-i18n="neu_yes">Sí ↑</button>
-              <button type="button" class="dir-btn minus" id="ddirMinus" onclick="setDDir('late')" data-i18n="neu_no">No ↓</button>
-            </div>
-          </div>
-        </div>
+        &lt;!-- Date config --&gt;
+        &lt;div id=&quot;neuDateCfg&quot; style=&quot;display:none;&quot;&gt;
+          &lt;div class=&quot;fr2&quot; style=&quot;gap:8px;&quot;&gt;
+            &lt;div class=&quot;fg&quot;&gt;
+              &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_target_date&quot;&gt;Fecha objetivo&lt;/label&gt;
+              &lt;input class=&quot;fi&quot; id=&quot;fNeuDateTarget&quot; type=&quot;date&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;fg&quot;&gt;
+              &lt;label class=&quot;fl&quot; data-i18n=&quot;neu_base_xp&quot;&gt;XP en fecha exacta&lt;/label&gt;
+              &lt;input class=&quot;fi&quot; id=&quot;fNeuDateBaseXP&quot; type=&quot;number&quot; value=&quot;75&quot; min=&quot;1&quot; max=&quot;500&quot; oninput=&quot;updateNeuPreview()&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;direction-row&quot; style=&quot;margin-top:8px;&quot;&gt;
+            &lt;span class=&quot;dir-label&quot; data-i18n=&quot;neu_earlier_date&quot;&gt;¿Antes = mejor?&lt;/span&gt;
+            &lt;div class=&quot;dir-options&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;dir-btn plus sel&quot; id=&quot;ddirPlus&quot; onclick=&quot;setDDir('early')&quot; data-i18n=&quot;neu_yes&quot;&gt;Sí ↑&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;dir-btn minus&quot; id=&quot;ddirMinus&quot; onclick=&quot;setDDir('late')&quot; data-i18n=&quot;neu_no&quot;&gt;No ↓&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
 
-        <div class="fhint" style="color:var(--accent3);font-size:.7rem;" data-i18n="neu_hint">
+        &lt;div class=&quot;fhint&quot; style=&quot;color:var(--accent3);font-size:.7rem;&quot; data-i18n=&quot;neu_hint&quot;&gt;
           💡 Al completar ingresarás el valor real y el XP se calcula automáticamente.
-        </div>
-      </div>
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="fg">
-        <label class="fl" data-i18n="name">Nombre</label>
-        <div class="ai-row">
-          <input class="fi" id="fName" type="text" data-i18n-placeholder="name_ph" style="flex:1;">
-          <button type="button" id="btnAiTask" onclick="aiCalcTask()" class="btn-ai" title="Sugerir configuración con IA">
-            <span id="aiBtnIco">✨</span><span id="aiBtnTxt">IA</span>
-          </button>
-        </div>
-        <div id="aiPanel" style="display:none;"></div>
-      </div>
+      &lt;div class=&quot;fg&quot;&gt;
+        &lt;label class=&quot;fl&quot; data-i18n=&quot;name&quot;&gt;Nombre&lt;/label&gt;
+        &lt;div class=&quot;ai-row&quot;&gt;
+          &lt;input class=&quot;fi&quot; id=&quot;fName&quot; type=&quot;text&quot; data-i18n-placeholder=&quot;name_ph&quot; style=&quot;flex:1;&quot;&gt;
+          &lt;button type=&quot;button&quot; id=&quot;btnAiTask&quot; onclick=&quot;aiCalcTask()&quot; class=&quot;btn-ai&quot; title=&quot;Sugerir configuración con IA&quot;&gt;
+            &lt;span id=&quot;aiBtnIco&quot;&gt;✨&lt;/span&gt;&lt;span id=&quot;aiBtnTxt&quot;&gt;IA&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;aiPanel&quot; style=&quot;display:none;&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="fg">
-        <label class="fl" data-i18n="notes">Notas (opcional)</label>
-        <textarea class="ft" id="fNotes" data-i18n-placeholder="notes_ph"></textarea>
-      </div>
+      &lt;div class=&quot;fg&quot;&gt;
+        &lt;label class=&quot;fl&quot; data-i18n=&quot;notes&quot;&gt;Notas (opcional)&lt;/label&gt;
+        &lt;textarea class=&quot;ft&quot; id=&quot;fNotes&quot; data-i18n-placeholder=&quot;notes_ph&quot;&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
 
-      <div class="fg">
-        <label class="fl"><span data-i18n="importance">Importancia</span> (1–100) <span id="fImpLbl" style="color:hsl(120,100%,55%)">50 → 75 XP</span></label>
-        <input class="frange" type="range" id="fImp" min="1" max="100" value="50" oninput="onImpChg()">
-        <div class="sval" id="fImpVal">50</div>
-      </div>
+      &lt;div class=&quot;fg&quot;&gt;
+        &lt;label class=&quot;fl&quot;&gt;&lt;span data-i18n=&quot;importance&quot;&gt;Importancia&lt;/span&gt; (1–100) &lt;span id=&quot;fImpLbl&quot; style=&quot;color:hsl(120,100%,55%)&quot;&gt;50 → 75 XP&lt;/span&gt;&lt;/label&gt;
+        &lt;input class=&quot;frange&quot; type=&quot;range&quot; id=&quot;fImp&quot; min=&quot;1&quot; max=&quot;100&quot; value=&quot;50&quot; oninput=&quot;onImpChg()&quot;&gt;
+        &lt;div class=&quot;sval&quot; id=&quot;fImpVal&quot;&gt;50&lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="fr2">
-        <div class="fg">
-          <label class="fl" data-i18n="group">Grupo</label>
-          <select class="fs" id="fGroup">
-            <option value="personal" data-i18n="g_personal">🏠 Personal</option>
-            <option value="salud" data-i18n="g_health">💪 Salud</option>
-            <option value="trabajo" data-i18n="g_work">💼 Trabajo</option>
-            <option value="estudio" data-i18n="g_study">📚 Estudio</option>
-            <option value="finanzas" data-i18n="g_finance">💰 Finanzas</option>
-            <option value="hogar" data-i18n="g_home">🧹 Hogar</option>
-            <option value="social" data-i18n="g_social">👥 Social</option>
-            <option value="creatividad" data-i18n="g_creative">🎨 Creatividad</option>
-          </select>
-        </div>
-        <div class="fg">
-          <label class="fl" data-i18n="schedule">Horario (opcional)</label>
-          <input class="fi" id="fTime" type="time">
-        </div>
-      </div>
+      &lt;div class=&quot;fr2&quot;&gt;
+        &lt;div class=&quot;fg&quot;&gt;
+          &lt;label class=&quot;fl&quot; data-i18n=&quot;group&quot;&gt;Grupo&lt;/label&gt;
+          &lt;select class=&quot;fs&quot; id=&quot;fGroup&quot;&gt;
+            &lt;option value=&quot;personal&quot; data-i18n=&quot;g_personal&quot;&gt;🏠 Personal&lt;/option&gt;
+            &lt;option value=&quot;salud&quot; data-i18n=&quot;g_health&quot;&gt;💪 Salud&lt;/option&gt;
+            &lt;option value=&quot;trabajo&quot; data-i18n=&quot;g_work&quot;&gt;💼 Trabajo&lt;/option&gt;
+            &lt;option value=&quot;estudio&quot; data-i18n=&quot;g_study&quot;&gt;📚 Estudio&lt;/option&gt;
+            &lt;option value=&quot;finanzas&quot; data-i18n=&quot;g_finance&quot;&gt;💰 Finanzas&lt;/option&gt;
+            &lt;option value=&quot;hogar&quot; data-i18n=&quot;g_home&quot;&gt;🧹 Hogar&lt;/option&gt;
+            &lt;option value=&quot;social&quot; data-i18n=&quot;g_social&quot;&gt;👥 Social&lt;/option&gt;
+            &lt;option value=&quot;creatividad&quot; data-i18n=&quot;g_creative&quot;&gt;🎨 Creatividad&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fg&quot;&gt;
+          &lt;label class=&quot;fl&quot; data-i18n=&quot;schedule&quot;&gt;Horario (opcional)&lt;/label&gt;
+          &lt;input class=&quot;fi&quot; id=&quot;fTime&quot; type=&quot;time&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="fg">
-        <label class="fl" data-i18n="icon">Ícono</label>
-        <div class="icon-grid" id="iconGrid"></div>
-      </div>
+      &lt;div class=&quot;fg&quot;&gt;
+        &lt;label class=&quot;fl&quot; data-i18n=&quot;icon&quot;&gt;Ícono&lt;/label&gt;
+        &lt;div class=&quot;icon-grid&quot; id=&quot;iconGrid&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="fg">
-        <label class="fl" data-i18n="frequency">Frecuencia</label>
-        <select class="fs" id="fRepeat" onchange="onRepeatChg()">
-          <option value="once" data-i18n="r_once">1️⃣ Una sola vez</option>
-          <option value="daily" data-i18n="r_daily">🔁 Diariamente</option>
-          <option value="weekly" data-i18n="r_weekly">📅 Semanal (días específicos)</option>
-          <option value="annual" data-i18n="r_annual">📆 Anualmente</option>
-        </select>
-      </div>
+      &lt;div class=&quot;fg&quot;&gt;
+        &lt;label class=&quot;fl&quot; data-i18n=&quot;frequency&quot;&gt;Frecuencia&lt;/label&gt;
+        &lt;select class=&quot;fs&quot; id=&quot;fRepeat&quot; onchange=&quot;onRepeatChg()&quot;&gt;
+          &lt;option value=&quot;once&quot; data-i18n=&quot;r_once&quot;&gt;1️⃣ Una sola vez&lt;/option&gt;
+          &lt;option value=&quot;daily&quot; data-i18n=&quot;r_daily&quot;&gt;🔁 Diariamente&lt;/option&gt;
+          &lt;option value=&quot;weekly&quot; data-i18n=&quot;r_weekly&quot;&gt;📅 Semanal (días específicos)&lt;/option&gt;
+          &lt;option value=&quot;annual&quot; data-i18n=&quot;r_annual&quot;&gt;📆 Anualmente&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
 
-      <div class="cond" id="daysPick">
-        <div class="fg">
-          <label class="fl" data-i18n="weekdays">Días de la semana</label>
-          <div class="days-pick" id="daysPickBtns"></div>
-        </div>
-      </div>
+      &lt;div class=&quot;cond&quot; id=&quot;daysPick&quot;&gt;
+        &lt;div class=&quot;fg&quot;&gt;
+          &lt;label class=&quot;fl&quot; data-i18n=&quot;weekdays&quot;&gt;Días de la semana&lt;/label&gt;
+          &lt;div class=&quot;days-pick&quot; id=&quot;daysPickBtns&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="fr2">
-        <div class="fg">
-          <label class="fl" data-i18n="deadline">Fecha límite (opcional)</label>
-          <input class="fi" id="fDeadline" type="date">
-        </div>
-        <div class="fg" style="align-self:flex-end;">
-          <div class="trow">
-            <span class="tlbl" style="font-size:.82rem;">📊 <span data-i18n="with_progress">Con progreso</span></span>
-            <label class="tgl"><input type="checkbox" id="fHasProg" onchange="onProgToggle()"><div class="tgl-sl"></div></label>
-          </div>
-        </div>
-      </div>
+      &lt;div class=&quot;fr2&quot;&gt;
+        &lt;div class=&quot;fg&quot;&gt;
+          &lt;label class=&quot;fl&quot; data-i18n=&quot;deadline&quot;&gt;Fecha límite (opcional)&lt;/label&gt;
+          &lt;input class=&quot;fi&quot; id=&quot;fDeadline&quot; type=&quot;date&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fg&quot; style=&quot;align-self:flex-end;&quot;&gt;
+          &lt;div class=&quot;trow&quot;&gt;
+            &lt;span class=&quot;tlbl&quot; style=&quot;font-size:.82rem;&quot;&gt;📊 &lt;span data-i18n=&quot;with_progress&quot;&gt;Con progreso&lt;/span&gt;&lt;/span&gt;
+            &lt;label class=&quot;tgl&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;fHasProg&quot; onchange=&quot;onProgToggle()&quot;&gt;&lt;div class=&quot;tgl-sl&quot;&gt;&lt;/div&gt;&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-      <div class="cond" id="progCfg">
-        <div class="fr3">
-          <div class="fg"><label class="fl" data-i18n="current">Actual</label><input class="fi" id="fProgCur" type="number" value="0" min="0"></div>
-          <div class="fg"><label class="fl" data-i18n="goal">Meta</label><input class="fi" id="fProgTarget" type="number" value="2000" min="1"></div>
-          <div class="fg">
-            <label class="fl" data-i18n="unit">Unidad</label>
-            <select class="fs" id="fProgUnit" onchange="onUnitChg()">
-              <option value="ml">ml</option><option value="L">L</option>
-              <option value="g">g</option><option value="kg">kg</option>
-              <option value="lb">lb</option><option value="km">km</option>
-              <option value="m">m</option><option value="pasos" data-i18n="steps">pasos</option>
-              <option value="cal">cal</option><option value="min">min</option>
-              <option value="h">h</option><option value="rep">reps</option>
-              <option value="páginas" data-i18n="pages">páginas</option><option value="veces" data-i18n="times">veces</option>
-              <option value="usd">USD</option><option value="%">%</option>
-              <option value="custom" data-i18n="custom">personalizado</option>
-            </select>
-          </div>
-        </div>
-        <div class="fr2">
-          <div class="fg" id="custUnitG" style="display:none"><label class="fl" data-i18n="custom_unit">Unidad personalizada</label><input class="fi" id="fCustUnit" type="text" data-i18n-placeholder="custom_unit_ph"></div>
-          <div class="fg"><label class="fl" data-i18n="step">Paso (+/−)</label><input class="fi" id="fProgStep" type="number" value="250" min="1"></div>
-        </div>
-      </div>
+      &lt;div class=&quot;cond&quot; id=&quot;progCfg&quot;&gt;
+        &lt;div class=&quot;fr3&quot;&gt;
+          &lt;div class=&quot;fg&quot;&gt;&lt;label class=&quot;fl&quot; data-i18n=&quot;current&quot;&gt;Actual&lt;/label&gt;&lt;input class=&quot;fi&quot; id=&quot;fProgCur&quot; type=&quot;number&quot; value=&quot;0&quot; min=&quot;0&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;fg&quot;&gt;&lt;label class=&quot;fl&quot; data-i18n=&quot;goal&quot;&gt;Meta&lt;/label&gt;&lt;input class=&quot;fi&quot; id=&quot;fProgTarget&quot; type=&quot;number&quot; value=&quot;2000&quot; min=&quot;1&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;fg&quot;&gt;
+            &lt;label class=&quot;fl&quot; data-i18n=&quot;unit&quot;&gt;Unidad&lt;/label&gt;
+            &lt;select class=&quot;fs&quot; id=&quot;fProgUnit&quot; onchange=&quot;onUnitChg()&quot;&gt;
+              &lt;option value=&quot;ml&quot;&gt;ml&lt;/option&gt;&lt;option value=&quot;L&quot;&gt;L&lt;/option&gt;
+              &lt;option value=&quot;g&quot;&gt;g&lt;/option&gt;&lt;option value=&quot;kg&quot;&gt;kg&lt;/option&gt;
+              &lt;option value=&quot;lb&quot;&gt;lb&lt;/option&gt;&lt;option value=&quot;km&quot;&gt;km&lt;/option&gt;
+              &lt;option value=&quot;m&quot;&gt;m&lt;/option&gt;&lt;option value=&quot;pasos&quot; data-i18n=&quot;steps&quot;&gt;pasos&lt;/option&gt;
+              &lt;option value=&quot;cal&quot;&gt;cal&lt;/option&gt;&lt;option value=&quot;min&quot;&gt;min&lt;/option&gt;
+              &lt;option value=&quot;h&quot;&gt;h&lt;/option&gt;&lt;option value=&quot;rep&quot;&gt;reps&lt;/option&gt;
+              &lt;option value=&quot;páginas&quot; data-i18n=&quot;pages&quot;&gt;páginas&lt;/option&gt;&lt;option value=&quot;veces&quot; data-i18n=&quot;times&quot;&gt;veces&lt;/option&gt;
+              &lt;option value=&quot;usd&quot;&gt;USD&lt;/option&gt;&lt;option value=&quot;%&quot;&gt;%&lt;/option&gt;
+              &lt;option value=&quot;custom&quot; data-i18n=&quot;custom&quot;&gt;personalizado&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;fr2&quot;&gt;
+          &lt;div class=&quot;fg&quot; id=&quot;custUnitG&quot; style=&quot;display:none&quot;&gt;&lt;label class=&quot;fl&quot; data-i18n=&quot;custom_unit&quot;&gt;Unidad personalizada&lt;/label&gt;&lt;input class=&quot;fi&quot; id=&quot;fCustUnit&quot; type=&quot;text&quot; data-i18n-placeholder=&quot;custom_unit_ph&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;fg&quot;&gt;&lt;label class=&quot;fl&quot; data-i18n=&quot;step&quot;&gt;Paso (+/−)&lt;/label&gt;&lt;input class=&quot;fi&quot; id=&quot;fProgStep&quot; type=&quot;number&quot; value=&quot;250&quot; min=&quot;1&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-    </div>
-    <div class="modal-ftr">
-      <button class="btn-cancel" onclick="closeModal()" data-i18n="cancel">Cancelar</button>
-      <button class="btn-save" id="btnSave" onclick="saveTask()" data-i18n="create_task">⚡ Crear Tarea</button>
-    </div>
-  </div>
-</div>
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-ftr&quot;&gt;
+      &lt;button class=&quot;btn-cancel&quot; onclick=&quot;closeModal()&quot; data-i18n=&quot;cancel&quot;&gt;Cancelar&lt;/button&gt;
+      &lt;button class=&quot;btn-save&quot; id=&quot;btnSave&quot; onclick=&quot;saveTask()&quot; data-i18n=&quot;create_task&quot;&gt;⚡ Crear Tarea&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-<!-- NEUTRAL COMPLETE DIALOG -->
-<div class="neu-complete-modal" id="neuCompleteModal">
-  <div class="neu-complete-box">
-    <div class="ncd-title" id="ncdTitle">⚖️ TAREA NEUTRAL</div>
-    <div class="ncd-task" id="ncdTaskName"></div>
-    <div class="ncd-input-wrap">
-      <div class="ncd-label" id="ncdLabel">Valor real alcanzado</div>
-      <input class="ncd-input" type="number" id="ncdInput" oninput="ncdPreview()" step="any">
-      <div class="ncd-preview">
-        <div class="ncd-xp-preview" id="ncdXpPrev">0 XP</div>
-        <div class="ncd-xp-label" id="ncdXpLabel">vs objetivo</div>
-      </div>
-    </div>
-    <div class="ncd-btns">
-      <button class="ncd-cancel" onclick="closeNcdModal()" data-i18n="cancel">Cancelar</button>
-      <button class="ncd-confirm" onclick="confirmNcd()" data-i18n="ncd_confirm">⚡ Confirmar</button>
-    </div>
-  </div>
-</div>
+&lt;!-- NEUTRAL COMPLETE DIALOG --&gt;
+&lt;div class=&quot;neu-complete-modal&quot; id=&quot;neuCompleteModal&quot;&gt;
+  &lt;div class=&quot;neu-complete-box&quot;&gt;
+    &lt;div class=&quot;ncd-title&quot; id=&quot;ncdTitle&quot;&gt;⚖️ TAREA NEUTRAL&lt;/div&gt;
+    &lt;div class=&quot;ncd-task&quot; id=&quot;ncdTaskName&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;ncd-input-wrap&quot;&gt;
+      &lt;div class=&quot;ncd-label&quot; id=&quot;ncdLabel&quot;&gt;Valor real alcanzado&lt;/div&gt;
+      &lt;input class=&quot;ncd-input&quot; type=&quot;number&quot; id=&quot;ncdInput&quot; oninput=&quot;ncdPreview()&quot; step=&quot;any&quot;&gt;
+      &lt;div class=&quot;ncd-preview&quot;&gt;
+        &lt;div class=&quot;ncd-xp-preview&quot; id=&quot;ncdXpPrev&quot;&gt;0 XP&lt;/div&gt;
+        &lt;div class=&quot;ncd-xp-label&quot; id=&quot;ncdXpLabel&quot;&gt;vs objetivo&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ncd-btns&quot;&gt;
+      &lt;button class=&quot;ncd-cancel&quot; onclick=&quot;closeNcdModal()&quot; data-i18n=&quot;cancel&quot;&gt;Cancelar&lt;/button&gt;
+      &lt;button class=&quot;ncd-confirm&quot; onclick=&quot;confirmNcd()&quot; data-i18n=&quot;ncd_confirm&quot;&gt;⚡ Confirmar&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-<script>
+&lt;script&gt;
 // ── CONSTANTS ──
 const ICONS=['💧','🏃','📚','💪','🍎','😴','💊','🧘','💼','📝','🎯','🎨','🎵','🏋️','🚴','🧹','🍳','☕','🌿','💰','📱','✈️','🧠','❤️','🐾','🌅','🔑','⚽','🎮','📊','🔥','⭐','🏠','👥','🎓','🛒','💻','🌙','🍺','🚬','🎲','🍕','😤','⚠️','🔔','📌'];
 const GL={personal:'🏠 Personal',salud:'💪 Salud',trabajo:'💼 Trabajo',estudio:'📚 Estudio',finanzas:'💰 Finanzas',hogar:'🧹 Hogar',social:'👥 Social',creatividad:'🎨 Creatividad'};
@@ -1015,8 +1032,8 @@ const DN=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
 // Exponential XP curve: XP needed to reach each level from level 1
 // [0] unused, [1]=XP to reach lvl2, [2]=XP to reach lvl3, etc.
 const XP_CURVE=[0,200,450,800,1300,2000,3000,4200,5700,7500,9800,12600,16000,20000,25000,31000,38500,47500,58500,72000,88000];
-function xpForLevel(lvl){return lvl>=XP_CURVE.length?XP_CURVE[XP_CURVE.length-1]+((lvl-XP_CURVE.length+1)*30000):XP_CURVE[lvl];}
-function getLevelFromXP(totalXP){let lvl=1;while(totalXP>=xpForLevel(lvl))lvl++;return lvl-1;}
+function xpForLevel(lvl){return lvl&gt;=XP_CURVE.length?XP_CURVE[XP_CURVE.length-1]+((lvl-XP_CURVE.length+1)*30000):XP_CURVE[lvl];}
+function getLevelFromXP(totalXP){let lvl=1;while(totalXP&gt;=xpForLevel(lvl))lvl++;return lvl-1;}
 function getXPIntoLevel(totalXP){let lvl=getLevelFromXP(totalXP);let base=xpForLevel(lvl);return totalXP-base;}
 function getXPForThisLevel(lvl){return xpForLevel(lvl+1)-xpForLevel(lvl);}
 const AVT=['🧙','⚔️','🦸','🏆','👑','🌟','💎','🚀'];
@@ -1212,53 +1229,53 @@ const ACH_SECTIONS_LANG={
 
 const ACHS=[
   // Tasks
-  {id:'first',sec:'tasks',icon:'🎯',check:s=>s.done>=1},
-  {id:'tasks10',sec:'tasks',icon:'🔥',check:s=>s.done>=10},
-  {id:'tasks50',sec:'tasks',icon:'💪',check:s=>s.done>=50},
-  {id:'tasks100',sec:'tasks',icon:'💯',check:s=>s.done>=100},
-  {id:'tasks250',sec:'tasks',icon:'🎖️',check:s=>s.done>=250},
-  {id:'tasks500',sec:'tasks',icon:'🏅',check:s=>s.done>=500},
-  {id:'tasks1000',sec:'tasks',icon:'🏆',check:s=>s.done>=1000},
+  {id:'first',sec:'tasks',icon:'🎯',check:s=&gt;s.done&gt;=1},
+  {id:'tasks10',sec:'tasks',icon:'🔥',check:s=&gt;s.done&gt;=10},
+  {id:'tasks50',sec:'tasks',icon:'💪',check:s=&gt;s.done&gt;=50},
+  {id:'tasks100',sec:'tasks',icon:'💯',check:s=&gt;s.done&gt;=100},
+  {id:'tasks250',sec:'tasks',icon:'🎖️',check:s=&gt;s.done&gt;=250},
+  {id:'tasks500',sec:'tasks',icon:'🏅',check:s=&gt;s.done&gt;=500},
+  {id:'tasks1000',sec:'tasks',icon:'🏆',check:s=&gt;s.done&gt;=1000},
   // XP
-  {id:'xp500',sec:'xp',icon:'⚡',check:s=>s.xp>=500},
-  {id:'xp2000',sec:'xp',icon:'🌩️',check:s=>s.xp>=2000},
-  {id:'xp5000',sec:'xp',icon:'🦸',check:s=>s.xp>=5000},
-  {id:'xp15000',sec:'xp',icon:'💥',check:s=>s.xp>=15000},
-  {id:'xp50000',sec:'xp',icon:'🌟',check:s=>s.xp>=50000},
-  {id:'xp100000',sec:'xp',icon:'👑',check:s=>s.xp>=100000},
+  {id:'xp500',sec:'xp',icon:'⚡',check:s=&gt;s.xp&gt;=500},
+  {id:'xp2000',sec:'xp',icon:'🌩️',check:s=&gt;s.xp&gt;=2000},
+  {id:'xp5000',sec:'xp',icon:'🦸',check:s=&gt;s.xp&gt;=5000},
+  {id:'xp15000',sec:'xp',icon:'💥',check:s=&gt;s.xp&gt;=15000},
+  {id:'xp50000',sec:'xp',icon:'🌟',check:s=&gt;s.xp&gt;=50000},
+  {id:'xp100000',sec:'xp',icon:'👑',check:s=&gt;s.xp&gt;=100000},
   // Streak
-  {id:'streak3',sec:'streak',icon:'📅',check:s=>s.streak>=3},
-  {id:'streak7',sec:'streak',icon:'🔥',check:s=>s.streak>=7},
-  {id:'streak14',sec:'streak',icon:'💎',check:s=>s.streak>=14},
-  {id:'streak30',sec:'streak',icon:'👑',check:s=>s.streak>=30},
-  {id:'streak60',sec:'streak',icon:'⚔️',check:s=>s.streak>=60},
-  {id:'streak100',sec:'streak',icon:'🛡️',check:s=>s.streak>=100},
-  {id:'streak365',sec:'streak',icon:'🌈',check:s=>s.streak>=365},
+  {id:'streak3',sec:'streak',icon:'📅',check:s=&gt;s.streak&gt;=3},
+  {id:'streak7',sec:'streak',icon:'🔥',check:s=&gt;s.streak&gt;=7},
+  {id:'streak14',sec:'streak',icon:'💎',check:s=&gt;s.streak&gt;=14},
+  {id:'streak30',sec:'streak',icon:'👑',check:s=&gt;s.streak&gt;=30},
+  {id:'streak60',sec:'streak',icon:'⚔️',check:s=&gt;s.streak&gt;=60},
+  {id:'streak100',sec:'streak',icon:'🛡️',check:s=&gt;s.streak&gt;=100},
+  {id:'streak365',sec:'streak',icon:'🌈',check:s=&gt;s.streak&gt;=365},
   // Level
-  {id:'lv5',sec:'level',icon:'🌱',check:s=>getLevelFromXP(s.xp)>=5},
-  {id:'lv10',sec:'level',icon:'🌟',check:s=>getLevelFromXP(s.xp)>=10},
-  {id:'lv20',sec:'level',icon:'💫',check:s=>getLevelFromXP(s.xp)>=20},
-  {id:'lv50',sec:'level',icon:'🔮',check:s=>getLevelFromXP(s.xp)>=50},
-  {id:'lv100',sec:'level',icon:'💎',check:s=>getLevelFromXP(s.xp)>=100},
+  {id:'lv5',sec:'level',icon:'🌱',check:s=&gt;getLevelFromXP(s.xp)&gt;=5},
+  {id:'lv10',sec:'level',icon:'🌟',check:s=&gt;getLevelFromXP(s.xp)&gt;=10},
+  {id:'lv20',sec:'level',icon:'💫',check:s=&gt;getLevelFromXP(s.xp)&gt;=20},
+  {id:'lv50',sec:'level',icon:'🔮',check:s=&gt;getLevelFromXP(s.xp)&gt;=50},
+  {id:'lv100',sec:'level',icon:'💎',check:s=&gt;getLevelFromXP(s.xp)&gt;=100},
   // Negative
-  {id:'neg1',sec:'negative',icon:'🪞',check:s=>s.negDone>=1},
-  {id:'neg10',sec:'negative',icon:'⚠️',check:s=>s.negDone>=10},
-  {id:'neg50',sec:'negative',icon:'📊',check:s=>s.negDone>=50},
+  {id:'neg1',sec:'negative',icon:'🪞',check:s=&gt;s.negDone&gt;=1},
+  {id:'neg10',sec:'negative',icon:'⚠️',check:s=&gt;s.negDone&gt;=10},
+  {id:'neg50',sec:'negative',icon:'📊',check:s=&gt;s.negDone&gt;=50},
   // Neutral
-  {id:'neu1',sec:'neutral',icon:'⚖️',check:s=>s.neuDone>=1},
-  {id:'neu25',sec:'neutral',icon:'🧘',check:s=>s.neuDone>=25},
-  {id:'neu100',sec:'neutral',icon:'☯️',check:s=>s.neuDone>=100},
+  {id:'neu1',sec:'neutral',icon:'⚖️',check:s=&gt;s.neuDone&gt;=1},
+  {id:'neu25',sec:'neutral',icon:'🧘',check:s=&gt;s.neuDone&gt;=25},
+  {id:'neu100',sec:'neutral',icon:'☯️',check:s=&gt;s.neuDone&gt;=100},
   // Pomodoro
-  {id:'pomo1',sec:'pomodoro',icon:'🍅',check:s=>s.pomos>=1},
-  {id:'pomo10',sec:'pomodoro',icon:'⚙️',check:s=>s.pomos>=10},
-  {id:'pomo50',sec:'pomodoro',icon:'🧠',check:s=>s.pomos>=50},
-  {id:'pomo100',sec:'pomodoro',icon:'🏯',check:s=>s.pomos>=100},
+  {id:'pomo1',sec:'pomodoro',icon:'🍅',check:s=&gt;s.pomos&gt;=1},
+  {id:'pomo10',sec:'pomodoro',icon:'⚙️',check:s=&gt;s.pomos&gt;=10},
+  {id:'pomo50',sec:'pomodoro',icon:'🧠',check:s=&gt;s.pomos&gt;=50},
+  {id:'pomo100',sec:'pomodoro',icon:'🏯',check:s=&gt;s.pomos&gt;=100},
   // Special
-  {id:'allInDay',sec:'special',icon:'🌠',check:s=>s.maxTasksInDay>=10},
-  {id:'nightOwl',sec:'special',icon:'🦉',check:s=>s.nightOwl},
-  {id:'earlyBird',sec:'special',icon:'🌅',check:s=>s.earlyBird},
-  {id:'xpBig',sec:'special',icon:'💰',check:s=>s.maxXPInDay>=500},
-  {id:'noNeg30',sec:'special',icon:'🌿',check:s=>s.noNegDays>=30},
+  {id:'allInDay',sec:'special',icon:'🌠',check:s=&gt;s.maxTasksInDay&gt;=10},
+  {id:'nightOwl',sec:'special',icon:'🦉',check:s=&gt;s.nightOwl},
+  {id:'earlyBird',sec:'special',icon:'🌅',check:s=&gt;s.earlyBird},
+  {id:'xpBig',sec:'special',icon:'💰',check:s=&gt;s.maxXPInDay&gt;=500},
+  {id:'noNeg30',sec:'special',icon:'🌿',check:s=&gt;s.noNegDays&gt;=30},
 ];
 
 // Template name translations per lang
@@ -1291,7 +1308,7 @@ const TPL_NAMES={
     'tpl_water':'Drink 2L of water','tpl_exercise':'Exercise','tpl_sleep':'Sleep 8 hours',
     'tpl_vitamins':'Take vitamins','tpl_meditate':'Meditate 10 min','tpl_stretch':'Stretching',
     'tpl_weight':'Log weight','tpl_breakfast':'Healthy breakfast','tpl_no_sugar':'No sugar',
-    'tpl_cook':'Cook at home','tpl_meals':"Don't skip meals",'tpl_veggies':'Eat fruits & veggies',
+    'tpl_cook':'Cook at home','tpl_meals':&quot;Don't skip meals&quot;,'tpl_veggies':'Eat fruits &amp; veggies',
     'tpl_emails':'Check emails','tpl_todo':'Complete daily list','tpl_project':'Work on project',
     'tpl_plan':'Plan tomorrow','tpl_meetings':'Attend meetings','tpl_read':'Read 20 pages',
     'tpl_language':'Study a language','tpl_class':'Watch online class','tpl_notes':'Review notes',
@@ -1312,7 +1329,7 @@ const TPL_NAMES={
     'tpl_neu_bill':'Pay bill','tpl_neu_doctor':'Doctor appointment',
   },
   it:{
-    'tpl_water':"Bere 2L d'acqua",'tpl_exercise':'Fare esercizio','tpl_sleep':'Dormire 8 ore',
+    'tpl_water':&quot;Bere 2L d'acqua&quot;,'tpl_exercise':'Fare esercizio','tpl_sleep':'Dormire 8 ore',
     'tpl_vitamins':'Prendere vitamine','tpl_meditate':'Meditare 10 min','tpl_stretch':'Stretching',
     'tpl_weight':'Registrare peso','tpl_breakfast':'Colazione sana','tpl_no_sugar':'Niente zucchero',
     'tpl_cook':'Cucinare a casa','tpl_meals':'Non saltare i pasti','tpl_veggies':'Mangiare frutta e verdura',
@@ -1325,7 +1342,7 @@ const TPL_NAMES={
     'tpl_laundry':'Fare il bucato','tpl_social':'Parlare con famiglia/amico',
     'tpl_noscreens':'Niente schermi 1h prima di dormire','tpl_journal':'Journaling / Diario',
     'tpl_walk':'Uscire a camminare','tpl_art':'Praticare strumento/arte',
-    'tpl_alcohol':'Bere alcolici','tpl_smoke':'Fumare','tpl_late_night':"Rimanere svegli oltre l'1",
+    'tpl_alcohol':'Bere alcolici','tpl_smoke':'Fumare','tpl_late_night':&quot;Rimanere svegli oltre l'1&quot;,
     'tpl_junk':'Mangiare cibo spazzatura','tpl_social_media':'+3h sui social media',
     'tpl_neu_water':'Acqua (litri)','tpl_neu_calories':'Calorie del giorno',
     'tpl_neu_steps':'Passi fatti','tpl_neu_screen':'Tempo schermo',
@@ -1336,7 +1353,7 @@ const TPL_NAMES={
     'tpl_neu_bill':'Pagare bolletta','tpl_neu_doctor':'Visita medica',
   },
   fr:{
-    'tpl_water':"Boire 2L d'eau",'tpl_exercise':"Faire de l'exercice",'tpl_sleep':'Dormir 8 heures',
+    'tpl_water':&quot;Boire 2L d'eau&quot;,'tpl_exercise':&quot;Faire de l'exercice&quot;,'tpl_sleep':'Dormir 8 heures',
     'tpl_vitamins':'Prendre des vitamines','tpl_meditate':'Méditer 10 min','tpl_stretch':'Étirements',
     'tpl_weight':'Enregistrer le poids','tpl_breakfast':'Petit-déjeuner sain','tpl_no_sugar':'Sans sucre',
     'tpl_cook':'Cuisiner à la maison','tpl_meals':'Ne pas sauter les repas','tpl_veggies':'Manger fruits et légumes',
@@ -1344,16 +1361,16 @@ const TPL_NAMES={
     'tpl_plan':'Planifier demain','tpl_meetings':'Assister aux réunions','tpl_read':'Lire 20 pages',
     'tpl_language':'Étudier une langue','tpl_class':'Suivre cours en ligne','tpl_notes':'Réviser ses notes',
     'tpl_skill':'Pratiquer compétence technique','tpl_expenses':'Enregistrer les dépenses',
-    'tpl_bank':'Vérifier compte bancaire','tpl_save':"Économiser aujourd'hui",'tpl_no_impulse':"Pas d'achats impulsifs",
+    'tpl_bank':'Vérifier compte bancaire','tpl_save':&quot;Économiser aujourd'hui&quot;,'tpl_no_impulse':&quot;Pas d'achats impulsifs&quot;,
     'tpl_bed':'Faire le lit','tpl_dishes':'Laver la vaisselle','tpl_clean':'Nettoyer la chambre',
     'tpl_laundry':'Faire la lessive','tpl_social':'Parler à famille/ami',
-    'tpl_noscreens':"Pas d'écran 1h avant de dormir",'tpl_journal':'Journaling / Journal',
+    'tpl_noscreens':&quot;Pas d'écran 1h avant de dormir&quot;,'tpl_journal':'Journaling / Journal',
     'tpl_walk':'Sortir marcher','tpl_art':'Pratiquer instrument/art',
-    'tpl_alcohol':"Boire de l'alcool",'tpl_smoke':'Fumer','tpl_late_night':'Veiller après 1h du matin',
+    'tpl_alcohol':&quot;Boire de l'alcool&quot;,'tpl_smoke':'Fumer','tpl_late_night':'Veiller après 1h du matin',
     'tpl_junk':'Manger de la junk food','tpl_social_media':'+3h sur les réseaux sociaux',
     'tpl_neu_water':'Eau (litres)','tpl_neu_calories':'Calories du jour',
-    'tpl_neu_steps':'Pas parcourus','tpl_neu_screen':"Temps d'écran",
-    'tpl_neu_exercise':"Minutes d'exercice",'tpl_neu_pages':'Pages lues',
+    'tpl_neu_steps':'Pas parcourus','tpl_neu_screen':&quot;Temps d'écran&quot;,
+    'tpl_neu_exercise':&quot;Minutes d'exercice&quot;,'tpl_neu_pages':'Pages lues',
     'tpl_neu_sleep_h':'Heures de sommeil','tpl_neu_wakeup':'Heure de réveil',
     'tpl_neu_bedtime':'Heure de coucher','tpl_neu_work_start':'Heure début travail',
     'tpl_neu_gym_start':'Heure début exercice','tpl_neu_deliver':'Remettre devoir/projet',
@@ -1538,7 +1555,7 @@ const LANGS={
     gl:{personal:'🏠 Personal',salud:'💪 Health',trabajo:'💼 Work',estudio:'📚 Study',finanzas:'💰 Finance',hogar:'🧹 Home',social:'👥 Social',creatividad:'🎨 Creative'},
     rl:{once:'One-time',daily:'Daily',weekly:'Weekly',annual:'Annual'},
     sw_all:'All',sw_today:'Today',mn:['January','February','March','April','May','June','July','August','September','October','November','December'],
-    agenda_today:"Today's Tasks",agenda_month:'Monthly Calendar',agenda_no_tasks:'No tasks',agenda_with_time:'Scheduled',agenda_no_time:'Unscheduled',
+    agenda_today:&quot;Today's Tasks&quot;,agenda_month:'Monthly Calendar',agenda_no_tasks:'No tasks',agenda_with_time:'Scheduled',agenda_no_time:'Unscheduled',
   },
   it:{
     profile:'Profilo',language:'Lingua',filters:'Filtri',groups:'Gruppi',stats:'Stats',
@@ -1579,12 +1596,12 @@ const LANGS={
     neu_target:'Obiettivo',neu_target_time:'Ora obiettivo',neu_target_date:'Data obiettivo',
     neu_tolerance:'Tolleranza (min)',neu_more_is:'Di più è meglio?',neu_earlier_is:'Prima è meglio?',neu_earlier_date:'Prima = meglio?',
     neu_yes:'Sì ↑',neu_no:'No ↓',
-    ncd_label_value:'Valore reale raggiunto',ncd_label_time:"Ora in cui è successo",ncd_label_date:'Data in cui è successo',
+    ncd_label_value:'Valore reale raggiunto',ncd_label_time:&quot;Ora in cui è successo&quot;,ncd_label_date:'Data in cui è successo',
     ncd_vs:'vs obiettivo',ncd_confirm:'⚡ Conferma',sb_toggle:'Comprimi sezione',
     neu_base_xp:'XP esatto',neu_use_tolerance:'Zona di tolleranza',neu_tol_min:'Minimo accettabile',neu_tol_max:'Massimo (XP extra)',
     neu_tol_hint:'Min–Obiettivo = XP completo. Oltre = bonus esponenziale. Sotto = penalità.',
     neu_hint:'💡 Al completamento inserisci il valore reale e gli XP vengono calcolati esponenzialmente.',
-    ai_calc:'✨ IA in calcolo...',ai_applied:"✅ Valori applicati dall'IA",ai_error:'Errore IA',
+    ai_calc:'✨ IA in calcolo...',ai_applied:&quot;✅ Valori applicati dall'IA&quot;,ai_error:'Errore IA',
     hist_undo_xp:'↩ Annulla XP',hist_undone:'XP annullato',
     penalty_toast:'😴 Nessuna attività −',tpl_cat_neg:'⚠️ Negative',tpl_cat_neu:'⚖️ Neutrali',tpl_cat_hlth:'💪 Salute',tpl_cat_fit:'🏃 Fitness',tpl_cat_prod:'📋 Produttività',tpl_cat_fin:'💰 Finanze',tpl_cat_mind:'🧘 Benessere',
     prog_lbl:'Progresso',sub_ph:'+ Sotto-attività...',tpl_all:'Tutti',
@@ -1624,7 +1641,7 @@ const LANGS={
     with_schedule:'AVEC HORAIRE',no_schedule:'SANS HORAIRE',
     summary:'// RÉSUMÉ',xp_chart:'// XP — 7 DERNIERS JOURS',group_chart:'// TÂCHES PAR GROUPE',
     net_xp_lbl:'XP NET TOTAL',tasks_done_lbl:'TÂCHES TERMINÉES',xp_lost_lbl:'XP PERDU (NÉGATIVES)',streak_lbl:'SÉRIE ACTUELLE',days:'jours',
-    ach_date_lbl:'',confirm_delete:'Supprimer cette tâche?',today:"Aujourd'hui!",tomorrow:'Demain',last_val:'Dernier',penalty_info:'Pénalité inactivité',level_lbl:'Niveau',
+    ach_date_lbl:'',confirm_delete:'Supprimer cette tâche?',today:&quot;Aujourd'hui!&quot;,tomorrow:'Demain',last_val:'Dernier',penalty_info:'Pénalité inactivité',level_lbl:'Niveau',
     toast_saved:'sauvegardée',toast_pomo:'Pomodoro ! +50 XP',toast_export:'Données exportées',
     neutral:'Neutres',pol_neu:'Neutres',
     type_pos:'Positive',type_neu:'Neutre',type_neg:'Négative',
@@ -1643,8 +1660,8 @@ const LANGS={
     prog_lbl:'Progrès',sub_ph:'+ Sous-tâche...',tpl_all:'Tous',
     gl:{personal:'🏠 Personnel',salud:'💪 Santé',trabajo:'💼 Travail',estudio:'📚 Études',finanzas:'💰 Finances',hogar:'🧹 Maison',social:'👥 Social',creatividad:'🎨 Créativité'},
     rl:{once:'Une fois',daily:'Quotidienne',weekly:'Hebdomadaire',annual:'Annuelle'},
-    sw_all:'Toutes',sw_today:"Aujourd'hui",mn:['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
-    agenda_today:"Tâches du jour",agenda_month:'Calendrier mensuel',agenda_no_tasks:'Aucune tâche',agenda_with_time:'Avec horaire',agenda_no_time:'Sans horaire',
+    sw_all:'Toutes',sw_today:&quot;Aujourd'hui&quot;,mn:['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],
+    agenda_today:&quot;Tâches du jour&quot;,agenda_month:'Calendrier mensuel',agenda_no_tasks:'Aucune tâche',agenda_with_time:'Avec horaire',agenda_no_time:'Sans horaire',
   }
 };
 
@@ -1653,12 +1670,12 @@ function t(key){return (LANGS[UI.lang]||LANGS.es)[key]||key;}
 function applyLang(){
   const L=LANGS[UI.lang]||LANGS.es;
   // All data-i18n elements
-  document.querySelectorAll('[data-i18n]').forEach(el=>{
+  document.querySelectorAll('[data-i18n]').forEach(el=&gt;{
     const key=el.getAttribute('data-i18n');
     if(L[key]!==undefined)el.textContent=L[key];
   });
   // Placeholders
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=&gt;{
     const key=el.getAttribute('data-i18n-placeholder');
     if(L[key]!==undefined)el.placeholder=L[key];
   });
@@ -1676,7 +1693,7 @@ function applyLang(){
 function setLang(lang,btn){
   UI.lang=lang;
   localStorage.setItem('tm_lang',lang);
-  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(b=&gt;b.classList.remove('active'));
   btn.classList.add('active');
   applyLang();
 }
@@ -1685,7 +1702,7 @@ function loadLang(){
   const saved=localStorage.getItem('tm_lang')||'es';
   UI.lang=saved;
   // Mark active button
-  document.querySelectorAll('.lang-btn').forEach(b=>{
+  document.querySelectorAll('.lang-btn').forEach(b=&gt;{
     if(b.getAttribute('onclick').includes(`'${saved}'`))b.classList.add('active');
     else b.classList.remove('active');
   });
@@ -1695,7 +1712,7 @@ function buildDaysPicker(){
   const L=LANGS[UI.lang]||LANGS.es;
   const el=document.getElementById('daysPickBtns');
   if(!el)return;
-  el.innerHTML=L.dn.map((d,i)=>`<button type="button" class="day-btn ${UI.selDays.includes(i)?'sel':''}" data-day="${i}" onclick="toggleDay(this)">${d}</button>`).join('');
+  el.innerHTML=L.dn.map((d,i)=&gt;`&lt;button type=&quot;button&quot; class=&quot;day-btn ${UI.selDays.includes(i)?'sel':''}&quot; data-day=&quot;${i}&quot; onclick=&quot;toggleDay(this)&quot;&gt;${d}&lt;/button&gt;`).join('');
 }
 
 // ── SIDEBAR TOGGLE ──
@@ -1720,18 +1737,18 @@ function toggleSb(key){
 }
 function loadSbState(){
   try{const s=localStorage.getItem('tm_sb');if(s)SB={...SB,...JSON.parse(s)};}catch(e){}
-  Object.keys(SB).forEach(k=>{
+  Object.keys(SB).forEach(k=&gt;{
     const body=document.getElementById('sb-'+k);
     const chev=document.getElementById('chev-'+k);
-    if(body&&!SB[k]){body.classList.add('closed');}
-    if(chev&&!SB[k]){chev.style.transform='rotate(-90deg)';}
+    if(body&amp;&amp;!SB[k]){body.classList.add('closed');}
+    if(chev&amp;&amp;!SB[k]){chev.style.transform='rotate(-90deg)';}
   });
 }
 
 // ── NEUTRAL TASK FORM ──
 function setTaskType(type){
   NUI.taskType=type;
-  ['positive','neutral','negative'].forEach(tp=>{
+  ['positive','neutral','negative'].forEach(tp=&gt;{
     const id={positive:'typeBtnPos',neutral:'typeBtnNeu',negative:'typeBtnNeg'}[tp];
     const el=document.getElementById(id);
     if(el)el.classList.toggle('sel',tp===type);
@@ -1741,7 +1758,7 @@ function setTaskType(type){
 }
 function setNeuType(type){
   NUI.neuType=type;
-  ['value','time','date'].forEach(tp=>{
+  ['value','time','date'].forEach(tp=&gt;{
     const id={value:'neuTypVal',time:'neuTypTime',date:'neuTypDate'}[tp];
     const el=document.getElementById(id);if(el)el.classList.toggle('sel',tp===type);
   });
@@ -1770,40 +1787,40 @@ async function aiCalcTask() {
   if (!name) {
     document.getElementById('fName').focus();
     panel.style.display = 'block';
-    panel.innerHTML = '<div class="ai-error">⚠️ Escribe un nombre primero</div>';
-    setTimeout(() => { panel.style.display = 'none'; }, 2000);
+    panel.innerHTML = '&lt;div class=&quot;ai-error&quot;&gt;⚠️ Escribe un nombre primero&lt;/div&gt;';
+    setTimeout(() =&gt; { panel.style.display = 'none'; }, 2000);
     return;
   }
 
   _aiResult = null;
   btn.disabled = true;
-  document.getElementById('aiBtnIco').innerHTML = '<span class="spin">⟳</span>';
+  document.getElementById('aiBtnIco').innerHTML = '&lt;span class=&quot;spin&quot;&gt;⟳&lt;/span&gt;';
   document.getElementById('aiBtnTxt').textContent = '...';
   panel.style.display = 'block';
-  panel.innerHTML = '<div class="ai-loading"><div class="ai-dots"><span></span><span></span><span></span></div><span>Analizando...</span></div>';
+  panel.innerHTML = '&lt;div class=&quot;ai-loading&quot;&gt;&lt;div class=&quot;ai-dots&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;Analizando...&lt;/span&gt;&lt;/div&gt;';
 
   const lang = UI.lang || 'es';
   const langFull = { es: 'Spanish', en: 'English', it: 'Italian', fr: 'French' }[lang] || 'Spanish';
 
   const prompt = [
     'Analyze this productivity task and return ONLY a JSON object, no extra text.',
-    'Task name: "' + name + '"',
+    'Task name: &quot;' + name + '&quot;',
     'Reasoning must be in ' + langFull + '.',
     '',
     'JSON schema:',
     '{',
-    '  "icon": "<single emoji>",',
-    '  "importance": <integer 1-100>,',
-    '  "taskType": "<positive|negative|neutral>",',
-    '  "repeat": "<once|daily|weekly|annual>",',
-    '  "group": "<personal|salud|trabajo|estudio|finanzas|hogar|social|creatividad>",',
-    '  "baseXP": <integer 10-200>,',
-    '  "reasoning": "<one sentence>",',
-    '  "neutralConfig": null',
+    '  &quot;icon&quot;: &quot;&lt;single emoji&gt;&quot;,',
+    '  &quot;importance&quot;: &lt;integer 1-100&gt;,',
+    '  &quot;taskType&quot;: &quot;&lt;positive|negative|neutral&gt;&quot;,',
+    '  &quot;repeat&quot;: &quot;&lt;once|daily|weekly|annual&gt;&quot;,',
+    '  &quot;group&quot;: &quot;&lt;personal|salud|trabajo|estudio|finanzas|hogar|social|creatividad&gt;&quot;,',
+    '  &quot;baseXP&quot;: &lt;integer 10-200&gt;,',
+    '  &quot;reasoning&quot;: &quot;&lt;one sentence&gt;&quot;,',
+    '  &quot;neutralConfig&quot;: null',
     '}',
     '',
     'taskType: positive=good habit, negative=bad habit to log, neutral=has numeric/time target',
-    'If neutral, set neutralConfig to: {"type":"value","target":10000,"unit":"steps","dir":"more"}',
+    'If neutral, set neutralConfig to: {&quot;type&quot;:&quot;value&quot;,&quot;target&quot;:10000,&quot;unit&quot;:&quot;steps&quot;,&quot;dir&quot;:&quot;more&quot;}',
     '  type: value=numeric, time=HH:MM target, date=YYYY-MM-DD deadline',
     '  dir: more=higher is better, less=lower is better'
   ].join('\n');
@@ -1830,7 +1847,7 @@ async function aiCalcTask() {
     const data = await res.json();
     if (data.error) throw new Error(data.error.message || 'Error de API');
 
-    const raw = (data.content || []).map(c => c.type === 'text' ? c.text : '').join('').trim();
+    const raw = (data.content || []).map(c =&gt; c.type === 'text' ? c.text : '').join('').trim();
     const clean = raw.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '').trim();
     const j = JSON.parse(clean);
     _aiResult = j;
@@ -1840,33 +1857,33 @@ async function aiCalcTask() {
     const typeColors = { positive: 'var(--green)', negative: 'var(--neg)', neutral: 'var(--accent3)' };
     const typeLabels = { positive: t('type_pos') || 'Positiva', negative: t('type_neg') || 'Negativa', neutral: t('type_neu') || 'Neutral' };
     const impColor = j.taskType === 'negative' ? 'var(--neg)' : j.taskType === 'neutral' ? 'var(--accent3)' : ('hsl(' + Math.round((j.importance || 50) * 1.2) + ',90%,55%)');
-    const groupLabel = (L.gl && L.gl[j.group]) || j.group || '—';
-    const repeatLabel = (L.rl && L.rl[j.repeat]) || j.repeat || '—';
+    const groupLabel = (L.gl &amp;&amp; L.gl[j.group]) || j.group || '—';
+    const repeatLabel = (L.rl &amp;&amp; L.rl[j.repeat]) || j.repeat || '—';
     const xp = j.baseXP || Math.round((j.importance || 50) * 1.5);
 
     let neutralRow = '';
-    if (j.taskType === 'neutral' && j.neutralConfig) {
+    if (j.taskType === 'neutral' &amp;&amp; j.neutralConfig) {
       const nc = j.neutralConfig;
       const nd = nc.type === 'time' ? ('🕐 ' + nc.target)
                : nc.type === 'date' ? ('📅 ' + nc.target)
                : (nc.target + ' ' + (nc.unit || '') + ' ' + (nc.dir === 'more' ? '↑' : '↓'));
-      neutralRow = '<div class="ai-row2"><span class="ai-lbl">Neutral</span><span class="ai-val" style="color:var(--accent3)">⚖️ ' + nd + '</span></div>';
+      neutralRow = '&lt;div class=&quot;ai-row2&quot;&gt;&lt;span class=&quot;ai-lbl&quot;&gt;Neutral&lt;/span&gt;&lt;span class=&quot;ai-val&quot; style=&quot;color:var(--accent3)&quot;&gt;⚖️ ' + nd + '&lt;/span&gt;&lt;/div&gt;';
     }
 
     panel.innerHTML =
-      '<div class="ai-preview">' +
-        '<div class="ai-row2"><span class="ai-lbl">Ícono</span><span class="ai-val" style="font-size:1.3rem">' + (j.icon || '⭐') + '</span></div>' +
-        '<div class="ai-row2"><span class="ai-lbl">Tipo</span><span class="ai-val" style="color:' + (typeColors[j.taskType] || 'var(--text)') + '">' + (typeLabels[j.taskType] || j.taskType) + '</span></div>' +
-        '<div class="ai-row2"><span class="ai-lbl">Importancia</span><span class="ai-val" style="color:' + impColor + '">' + j.importance + '/100 → ' + xp + ' XP</span></div>' +
-        '<div class="ai-row2"><span class="ai-lbl">Grupo</span><span class="ai-val">' + groupLabel + '</span></div>' +
-        '<div class="ai-row2"><span class="ai-lbl">Frecuencia</span><span class="ai-val">' + repeatLabel + '</span></div>' +
+      '&lt;div class=&quot;ai-preview&quot;&gt;' +
+        '&lt;div class=&quot;ai-row2&quot;&gt;&lt;span class=&quot;ai-lbl&quot;&gt;Ícono&lt;/span&gt;&lt;span class=&quot;ai-val&quot; style=&quot;font-size:1.3rem&quot;&gt;' + (j.icon || '⭐') + '&lt;/span&gt;&lt;/div&gt;' +
+        '&lt;div class=&quot;ai-row2&quot;&gt;&lt;span class=&quot;ai-lbl&quot;&gt;Tipo&lt;/span&gt;&lt;span class=&quot;ai-val&quot; style=&quot;color:' + (typeColors[j.taskType] || 'var(--text)') + '&quot;&gt;' + (typeLabels[j.taskType] || j.taskType) + '&lt;/span&gt;&lt;/div&gt;' +
+        '&lt;div class=&quot;ai-row2&quot;&gt;&lt;span class=&quot;ai-lbl&quot;&gt;Importancia&lt;/span&gt;&lt;span class=&quot;ai-val&quot; style=&quot;color:' + impColor + '&quot;&gt;' + j.importance + '/100 → ' + xp + ' XP&lt;/span&gt;&lt;/div&gt;' +
+        '&lt;div class=&quot;ai-row2&quot;&gt;&lt;span class=&quot;ai-lbl&quot;&gt;Grupo&lt;/span&gt;&lt;span class=&quot;ai-val&quot;&gt;' + groupLabel + '&lt;/span&gt;&lt;/div&gt;' +
+        '&lt;div class=&quot;ai-row2&quot;&gt;&lt;span class=&quot;ai-lbl&quot;&gt;Frecuencia&lt;/span&gt;&lt;span class=&quot;ai-val&quot;&gt;' + repeatLabel + '&lt;/span&gt;&lt;/div&gt;' +
         neutralRow +
-        '<div class="ai-reason">💬 ' + (j.reasoning || '') + '</div>' +
-      '</div>' +
-      '<div class="ai-actions">' +
-        '<button class="ai-btn-dismiss" onclick="aiDismiss()">✕ Descartar</button>' +
-        '<button class="ai-btn-apply" onclick="aiApply()">⚡ Aplicar</button>' +
-      '</div>';
+        '&lt;div class=&quot;ai-reason&quot;&gt;💬 ' + (j.reasoning || '') + '&lt;/div&gt;' +
+      '&lt;/div&gt;' +
+      '&lt;div class=&quot;ai-actions&quot;&gt;' +
+        '&lt;button class=&quot;ai-btn-dismiss&quot; onclick=&quot;aiDismiss()&quot;&gt;✕ Descartar&lt;/button&gt;' +
+        '&lt;button class=&quot;ai-btn-apply&quot; onclick=&quot;aiApply()&quot;&gt;⚡ Aplicar&lt;/button&gt;' +
+      '&lt;/div&gt;';
 
   } catch (err) {
     _aiResult = null;
@@ -1874,8 +1891,8 @@ async function aiCalcTask() {
     if (msg.includes('Failed to fetch') || msg.includes('NetworkError') || msg.includes('network')) msg = 'Sin conexión a internet.';
     else if (msg.includes('JSON') || msg.includes('parse') || msg.includes('Unexpected')) msg = 'Respuesta inesperada. Intenta de nuevo.';
     panel.innerHTML =
-      '<div class="ai-error">❌ ' + msg + '</div>' +
-      '<div class="ai-actions"><button class="ai-btn-dismiss" onclick="aiDismiss()">✕ Cerrar</button></div>';
+      '&lt;div class=&quot;ai-error&quot;&gt;❌ ' + msg + '&lt;/div&gt;' +
+      '&lt;div class=&quot;ai-actions&quot;&gt;&lt;button class=&quot;ai-btn-dismiss&quot; onclick=&quot;aiDismiss()&quot;&gt;✕ Cerrar&lt;/button&gt;&lt;/div&gt;';
   } finally {
     btn.disabled = false;
     document.getElementById('aiBtnIco').textContent = '✨';
@@ -1891,7 +1908,7 @@ function aiApply() {
   if (j.group) document.getElementById('fGroup').value = j.group;
   if (j.icon) { UI.selIcon = j.icon; buildIcons(); }
   if (j.taskType) setTaskType(j.taskType);
-  if (j.taskType === 'neutral' && j.neutralConfig) {
+  if (j.taskType === 'neutral' &amp;&amp; j.neutralConfig) {
     const nc = j.neutralConfig;
     setNeuType(nc.type || 'value');
     const bxp = nc.baseXP || j.baseXP;
@@ -1936,13 +1953,13 @@ function calcNeuXP(task,realVal){
     const real=parseFloat(realVal)||0;
     const moreGood=nc.dir==='more';
 
-    if(nc.useTol&&nc.tolMin!==undefined&&nc.tolMax!==undefined){
+    if(nc.useTol&amp;&amp;nc.tolMin!==undefined&amp;&amp;nc.tolMax!==undefined){
       const lo=parseFloat(nc.tolMin);
       const hi=parseFloat(nc.tolMax);
-      if(real>=lo&&real<=hi){
+      if(real&gt;=lo&amp;&amp;real&lt;=hi){
         // Within zone → full base XP
         return Math.round(baseXP*sm);
-      }else if(real>hi){
+      }else if(real&gt;hi){
         // Above max → bonus (exponential), regardless of direction preference
         const excess=(real-hi)/Math.max(1,hi-lo);
         const bonus=Math.round(baseXP*(1+Math.pow(excess,0.65)*1.5)*sm);
@@ -1958,8 +1975,8 @@ function calcNeuXP(task,realVal){
       const diff=real-target;
       const pctDiff=diff/Math.max(1,Math.abs(target));
       const signed=moreGood?pctDiff:-pctDiff;
-      if(Math.abs(signed)<0.01)return Math.round(baseXP*sm); // exact
-      if(signed>0){
+      if(Math.abs(signed)&lt;0.01)return Math.round(baseXP*sm); // exact
+      if(signed&gt;0){
         const bonus=Math.round(baseXP*(1+Math.pow(signed,0.65)*1.5)*sm);
         return Math.min(baseXP*3,bonus);
       }else{
@@ -1973,14 +1990,14 @@ function calcNeuXP(task,realVal){
     const [th,tm]=nc.target.split(':').map(Number);
     const targetMin=th*60+tm;
     const parts=String(realVal).split(':').map(Number);
-    if(parts.length<2||isNaN(parts[0]))return 0;
+    if(parts.length&lt;2||isNaN(parts[0]))return 0;
     const realMin=parts[0]*60+parts[1];
     const diffMin=realMin-targetMin; // positive=late, negative=early
     const tol=parseInt(nc.tolerance)||15;
     const absDiff=Math.abs(diffMin);
-    if(absDiff<=tol)return Math.round(baseXP*sm); // within tolerance = full XP
+    if(absDiff&lt;=tol)return Math.round(baseXP*sm); // within tolerance = full XP
     const earlyGood=nc.tdir==='early';
-    const good=earlyGood?(diffMin<0):(diffMin>0);
+    const good=earlyGood?(diffMin&lt;0):(diffMin&gt;0);
     const overDiff=absDiff-tol;
     if(good){
       const bonus=Math.round(baseXP*(1+Math.pow(overDiff/tol,0.65)*1.2)*sm);
@@ -1998,7 +2015,7 @@ function calcNeuXP(task,realVal){
     const diffDays=Math.round((real-target)/(864e5)); // positive=late, negative=early
     if(diffDays===0)return Math.round(baseXP*sm); // exact = full baseXP
     const earlyGood=nc.ddir==='early';
-    const good=earlyGood?(diffDays<0):(diffDays>0);
+    const good=earlyGood?(diffDays&lt;0):(diffDays&gt;0);
     const absDays=Math.abs(diffDays);
     if(good){
       const bonus=Math.round(baseXP*(1+Math.pow(absDays*0.25,0.7))*sm);
@@ -2014,7 +2031,7 @@ function calcNeuXP(task,realVal){
 // ── NEUTRAL COMPLETE DIALOG ──
 let ncdTaskId=null;
 function openNcdModal(id){
-  const tk=S.tasks.find(x=>x.id===id);if(!tk||!tk.neutral)return;
+  const tk=S.tasks.find(x=&gt;x.id===id);if(!tk||!tk.neutral)return;
   ncdTaskId=id;
   document.getElementById('ncdTaskName').textContent=tk.icon+' '+tk.name;
   const nc=tk.neutral;
@@ -2024,42 +2041,42 @@ function openNcdModal(id){
   else{inp.type='number';inp.value=nc.target||0;inp.step='any';document.getElementById('ncdLabel').textContent=t('ncd_label_value')+' ('+nc.unit+')';}
   ncdPreview();
   document.getElementById('neuCompleteModal').classList.add('open');
-  setTimeout(()=>inp.focus(),80);
+  setTimeout(()=&gt;inp.focus(),80);
 }
 function closeNcdModal(){document.getElementById('neuCompleteModal').classList.remove('open');ncdTaskId=null;}
 function ncdPreview(){
-  const tk=S.tasks.find(x=>x.id===ncdTaskId);if(!tk)return;
+  const tk=S.tasks.find(x=&gt;x.id===ncdTaskId);if(!tk)return;
   const val=document.getElementById('ncdInput').value;
   const xp=calcNeuXP(tk,val);
   const el=document.getElementById('ncdXpPrev');
-  el.textContent=(xp>=0?'+':'')+xp+' XP';
-  el.className='ncd-xp-preview '+(xp>0?'neu-xp-pos':xp<0?'neu-xp-neg':'neu-xp-zero');
+  el.textContent=(xp&gt;=0?'+':'')+xp+' XP';
+  el.className='ncd-xp-preview '+(xp&gt;0?'neu-xp-pos':xp&lt;0?'neu-xp-neg':'neu-xp-zero');
   document.getElementById('ncdXpLabel').textContent=t('ncd_vs');
 }
 function confirmNcd(){
-  const tk=S.tasks.find(x=>x.id===ncdTaskId);if(!tk)return;
+  const tk=S.tasks.find(x=&gt;x.id===ncdTaskId);if(!tk)return;
   const val=document.getElementById('ncdInput').value;
   const finalXP=calcNeuXP(tk,val);
   const now=new Date();
   tk.done=true;tk.lastDone=now.toISOString();tk.lastNeuVal=val;
-  if(finalXP>=0){S.done++;S.neuDone=(S.neuDone||0)+1;}else S.negDone++;
+  if(finalXP&gt;=0){S.done++;S.neuDone=(S.neuDone||0)+1;}else S.negDone++;
   S.xp=Math.max(0,S.xp+finalXP);
-  if(finalXP>=0){
+  if(finalXP&gt;=0){
     const today=todayS();
     if(S.lastDoneDate!==today){const y=new Date();y.setDate(y.getDate()-1);const yS=y.toISOString().slice(0,10);S.streak=(S.lastDoneDate===yS)?S.streak+1:1;S.lastDoneDate=today;}
     // Track special stats
     const todayKey=todayS();
     if(!S.tasksToday||S.tasksToday.date!==todayKey)S.tasksToday={date:todayKey,count:0};
     S.tasksToday.count++;
-    if(S.tasksToday.count>(S.maxTasksInDay||0))S.maxTasksInDay=S.tasksToday.count;
+    if(S.tasksToday.count&gt;(S.maxTasksInDay||0))S.maxTasksInDay=S.tasksToday.count;
     if(!S.xpToday||S.xpToday.date!==todayKey)S.xpToday={date:todayKey,total:0};
-    S.xpToday.total+=finalXP;if(S.xpToday.total>(S.maxXPInDay||0))S.maxXPInDay=S.xpToday.total;
+    S.xpToday.total+=finalXP;if(S.xpToday.total&gt;(S.maxXPInDay||0))S.maxXPInDay=S.xpToday.total;
   }
   const sm=getStrMult();
   S.history.unshift({id:Date.now(),taskName:tk.name,icon:tk.icon,xp:finalXP,negative:false,neutral:true,date:now.toISOString(),sm,neuVal:val,taskId:tk.id});
-  if(S.history.length>200)S.history=S.history.slice(0,200);
+  if(S.history.length&gt;200)S.history=S.history.slice(0,200);
   saveS();updateAll();render();checkAch();
-  toast(finalXP>=0?'xpg':'xpl',finalXP>=0?'⚡':'⚖️',`${finalXP>=0?'+':''}${finalXP} XP · ${tk.name}`);
+  toast(finalXP&gt;=0?'xpg':'xpl',finalXP&gt;=0?'⚡':'⚖️',`${finalXP&gt;=0?'+':''}${finalXP} XP · ${tk.name}`);
   closeNcdModal();
 }
 
@@ -2092,7 +2109,7 @@ function openModal(editId=null){
   renderTplGrid();
   buildDaysPicker();
   if(editId){
-    const tk=S.tasks.find(x=>x.id===editId);if(!tk)return;
+    const tk=S.tasks.find(x=&gt;x.id===editId);if(!tk)return;
     document.getElementById('fName').value=tk.name;
     document.getElementById('fNotes').value=tk.notes||'';
     document.getElementById('fImp').value=tk.importance;
@@ -2101,7 +2118,7 @@ function openModal(editId=null){
     document.getElementById('fTime').value=tk.time||'';
     document.getElementById('fDeadline').value=tk.deadline||'';
     // restore task type
-    if(tk.neutral&&!tk.negative){
+    if(tk.neutral&amp;&amp;!tk.negative){
       setTaskType('neutral');
       const nc=tk.neutral;
       setNeuType(nc.type);
@@ -2131,10 +2148,10 @@ function openModal(editId=null){
     document.getElementById('fHasProg').checked=!!tk.progress;
     if(tk.progress){document.getElementById('fProgCur').value=tk.progress.current;document.getElementById('fProgTarget').value=tk.progress.target;document.getElementById('fProgUnit').value=tk.progress.unit;document.getElementById('fProgStep').value=tk.progress.step;}
     buildIcons();onRepeatChg();onProgToggle();onImpChg();
-    document.querySelectorAll('.day-btn').forEach(b=>{b.classList.toggle('sel',UI.selDays.includes(parseInt(b.dataset.day)));});
+    document.querySelectorAll('.day-btn').forEach(b=&gt;{b.classList.toggle('sel',UI.selDays.includes(parseInt(b.dataset.day)));});
   }else{resetForm();}
   document.getElementById('modalOverlay').classList.add('open');
-  setTimeout(()=>document.getElementById('fName').focus(),80);
+  setTimeout(()=&gt;document.getElementById('fName').focus(),80);
 }
 function closeModal(){document.getElementById('modalOverlay').classList.remove('open');UI.editId=null;}
 function resetForm(){
@@ -2148,14 +2165,14 @@ function resetForm(){
   setTaskType('positive');
   NUI.neuType='value';NUI.dir='more';NUI.tdir='early';NUI.ddir='early';
   setNeuType('value');setDir('more');setTDir('early');setDDir('early');
-  buildIcons();document.querySelectorAll('.day-btn').forEach(b=>b.classList.remove('sel'));
+  buildIcons();document.querySelectorAll('.day-btn').forEach(b=&gt;b.classList.remove('sel'));
   onRepeatChg();onProgToggle();onImpChg();
 }
 function buildIcons(){
   const g=document.getElementById('iconGrid');g.innerHTML='';
-  ICONS.forEach(ic=>{
+  ICONS.forEach(ic=&gt;{
     const b=document.createElement('button');b.type='button';b.className='ico-opt'+(ic===UI.selIcon?' sel':'');
-    b.textContent=ic;b.onclick=()=>{document.querySelectorAll('.ico-opt').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');UI.selIcon=ic;};
+    b.textContent=ic;b.onclick=()=&gt;{document.querySelectorAll('.ico-opt').forEach(x=&gt;x.classList.remove('sel'));b.classList.add('sel');UI.selIcon=ic;};
     g.appendChild(b);
   });
 }
@@ -2165,17 +2182,17 @@ let tplActiveCat='all';
 function buildTplCats(){
   const L=LANGS[UI.lang]||LANGS.es;
   const allLabel=L.tpl_all||'Todos';
-  const catKeys=[...new Set(TEMPLATES.map(tk=>tk.catKey))];
+  const catKeys=[...new Set(TEMPLATES.map(tk=&gt;tk.catKey))];
   const el=document.getElementById('tplCats');
-  el.innerHTML=`<button class="tpl-cat ${tplActiveCat==='all'?'on':''}" onclick="setTplCat('all',this)">${allLabel}</button>`+
-    catKeys.map(ck=>{
+  el.innerHTML=`&lt;button class=&quot;tpl-cat ${tplActiveCat==='all'?'on':''}&quot; onclick=&quot;setTplCat('all',this)&quot;&gt;${allLabel}&lt;/button&gt;`+
+    catKeys.map(ck=&gt;{
       const label=t(TPL_CATS[ck])||ck;
-      return`<button class="tpl-cat ${tplActiveCat===ck?'on':''}" onclick="setTplCat('${ck}',this)">${label}</button>`;
+      return`&lt;button class=&quot;tpl-cat ${tplActiveCat===ck?'on':''}&quot; onclick=&quot;setTplCat('${ck}',this)&quot;&gt;${label}&lt;/button&gt;`;
     }).join('');
 }
 function setTplCat(cat,btn){
   tplActiveCat=cat;
-  document.querySelectorAll('.tpl-cat').forEach(b=>b.classList.remove('on'));
+  document.querySelectorAll('.tpl-cat').forEach(b=&gt;b.classList.remove('on'));
   btn.classList.add('on');
   renderTplGrid();
 }
@@ -2183,29 +2200,29 @@ function filterTpls(){renderTplGrid();}
 function renderTplGrid(){
   const L=LANGS[UI.lang]||LANGS.es;
   const q=(document.getElementById('tplSearch').value||'').toLowerCase();
-  const filtered=TEMPLATES.filter(tk=>{
+  const filtered=TEMPLATES.filter(tk=&gt;{
     const nm=tplName(tk.nameKey).toLowerCase();
     const catOk=tplActiveCat==='all'||tk.catKey===tplActiveCat;
     const qOk=!q||nm.includes(q);
-    return catOk&&qOk;
+    return catOk&amp;&amp;qOk;
   });
   const el=document.getElementById('tplGrid');
-  if(!filtered.length){el.innerHTML=`<div style="grid-column:1/-1;text-align:center;padding:12px;font-size:.8rem;color:var(--muted)">${t('tpl_none')}</div>`;return;}
-  el.innerHTML=filtered.map((tk)=>{
+  if(!filtered.length){el.innerHTML=`&lt;div style=&quot;grid-column:1/-1;text-align:center;padding:12px;font-size:.8rem;color:var(--muted)&quot;&gt;${t('tpl_none')}&lt;/div&gt;`;return;}
+  el.innerHTML=filtered.map((tk)=&gt;{
     const nm=tplName(tk.nameKey);
     const xpV=tk.neutral?tk.neutral.baseXP||Math.round(tk.importance*1.5):Math.round(tk.importance*1.5);
     let xpStr;
-    if(tk.neutral)xpStr=`<span class="tpl-xp" style="color:var(--accent3)">⚖️ ±${xpV}xp</span>`;
-    else if(tk.negative)xpStr=`<span class="tpl-xp neg">−${xpV}xp</span>`;
-    else xpStr=`<span class="tpl-xp">+${xpV}xp</span>`;
+    if(tk.neutral)xpStr=`&lt;span class=&quot;tpl-xp&quot; style=&quot;color:var(--accent3)&quot;&gt;⚖️ ±${xpV}xp&lt;/span&gt;`;
+    else if(tk.negative)xpStr=`&lt;span class=&quot;tpl-xp neg&quot;&gt;−${xpV}xp&lt;/span&gt;`;
+    else xpStr=`&lt;span class=&quot;tpl-xp&quot;&gt;+${xpV}xp&lt;/span&gt;`;
     const cls=tk.neutral?'tpl-card neu-tpl':tk.negative?'tpl-card neg-tpl':'tpl-card';
-    return`<div class="${cls}" onclick="applyTpl(${TEMPLATES.indexOf(tk)})">
-      <span class="tpl-ico">${tk.icon}</span>
-      <div class="tpl-info">
-        <div class="tpl-name" title="${nm}">${nm}</div>
-        <div class="tpl-meta">${xpStr}<span>${L.rl[tk.repeat]||tk.repeat}</span></div>
-      </div>
-    </div>`;
+    return`&lt;div class=&quot;${cls}&quot; onclick=&quot;applyTpl(${TEMPLATES.indexOf(tk)})&quot;&gt;
+      &lt;span class=&quot;tpl-ico&quot;&gt;${tk.icon}&lt;/span&gt;
+      &lt;div class=&quot;tpl-info&quot;&gt;
+        &lt;div class=&quot;tpl-name&quot; title=&quot;${nm}&quot;&gt;${nm}&lt;/div&gt;
+        &lt;div class=&quot;tpl-meta&quot;&gt;${xpStr}&lt;span&gt;${L.rl[tk.repeat]||tk.repeat}&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;`;
   }).join('');
 }
 function applyTpl(idx){
@@ -2216,7 +2233,7 @@ function applyTpl(idx){
   document.getElementById('fGroup').value=tpl.group;
   document.getElementById('fRepeat').value=tpl.repeat;
   UI.selIcon=tpl.icon;UI.selDays=[];
-  document.querySelectorAll('.day-btn').forEach(b=>b.classList.remove('sel'));
+  document.querySelectorAll('.day-btn').forEach(b=&gt;b.classList.remove('sel'));
   // Set task type
   if(tpl.neutral){
     setTaskType('neutral');
@@ -2264,7 +2281,7 @@ function onUnitChg(){document.getElementById('custUnitG').style.display=document
 function toggleDay(btn){
   btn.classList.toggle('sel');const d=parseInt(btn.dataset.day);
   if(btn.classList.contains('sel')){if(!UI.selDays.includes(d))UI.selDays.push(d);}
-  else{UI.selDays=UI.selDays.filter(x=>x!==d);}
+  else{UI.selDays=UI.selDays.filter(x=&gt;x!==d);}
 }
 function onImpChg(){
   const v=parseInt(document.getElementById('fImp').value);
@@ -2328,17 +2345,17 @@ function saveTask(){
     negative:isNeg,neutral,done:false,progress,subtasks:[],createdAt:new Date().toISOString(),lastDone:null,
   };
   if(UI.editId){
-    const idx=S.tasks.findIndex(x=>x.id===UI.editId);
-    if(idx>=0){task.done=S.tasks[idx].done;task.subtasks=S.tasks[idx].subtasks||[];task.lastDone=S.tasks[idx].lastDone;}
+    const idx=S.tasks.findIndex(x=&gt;x.id===UI.editId);
+    if(idx&gt;=0){task.done=S.tasks[idx].done;task.subtasks=S.tasks[idx].subtasks||[];task.lastDone=S.tasks[idx].lastDone;}
     S.tasks[idx]=task;
   }else{S.tasks.unshift(task);}
   saveS();render();updateAll();closeModal();
-  toast('inf',isNeu?'⚖️':isNeg?'⚠️':'✅',`"${name}" ${t('toast_saved')}`);
+  toast('inf',isNeu?'⚖️':isNeg?'⚠️':'✅',`&quot;${name}&quot; ${t('toast_saved')}`);
 }
 
 // ── COMPLETE ──
 function completeTask(id){
-  const tk=S.tasks.find(x=>x.id===id);if(!tk||tk.done)return;
+  const tk=S.tasks.find(x=&gt;x.id===id);if(!tk||tk.done)return;
   const xpAmt=Math.round(tk.importance*1.5);const sm=getStrMult();
   const finalXP=tk.negative?-xpAmt:Math.round(xpAmt*sm);
   const now=new Date();
@@ -2355,55 +2372,55 @@ function completeTask(id){
   // Track special achievement stats
   const todayKey=todayS();
   const hr=now.getHours();
-  if(hr>=0&&hr<3)S.nightOwl=true;
-  if(hr>=4&&hr<6)S.earlyBird=true;
+  if(hr&gt;=0&amp;&amp;hr&lt;3)S.nightOwl=true;
+  if(hr&gt;=4&amp;&amp;hr&lt;6)S.earlyBird=true;
   if(!S.tasksToday||S.tasksToday.date!==todayKey)S.tasksToday={date:todayKey,count:0};
   S.tasksToday.count++;
-  if(S.tasksToday.count>(S.maxTasksInDay||0))S.maxTasksInDay=S.tasksToday.count;
+  if(S.tasksToday.count&gt;(S.maxTasksInDay||0))S.maxTasksInDay=S.tasksToday.count;
   if(!S.xpToday||S.xpToday.date!==todayKey)S.xpToday={date:todayKey,total:0};
-  if(finalXP>0){S.xpToday.total+=finalXP;if(S.xpToday.total>(S.maxXPInDay||0))S.maxXPInDay=S.xpToday.total;}
+  if(finalXP&gt;0){S.xpToday.total+=finalXP;if(S.xpToday.total&gt;(S.maxXPInDay||0))S.maxXPInDay=S.xpToday.total;}
   if(tk.negative){S.lastNegDate=todayKey;}
   S.history.unshift({id:Date.now(),taskName:tk.name,icon:tk.icon,xp:finalXP,negative:tk.negative,date:now.toISOString(),sm,taskId:tk.id});
-  if(S.history.length>200)S.history=S.history.slice(0,200);
+  if(S.history.length&gt;200)S.history=S.history.slice(0,200);
   saveS();updateAll();render();
   if(tk.negative)toast('xpl','\u26a0\ufe0f',`\u2212${xpAmt} XP \u00b7 ${tk.name}`);
-  else toast('xpg','\u26a1',`+${finalXP} XP${sm>1?` (\u00d7${sm}!)`:''} \u00b7 ${tk.name}`);
+  else toast('xpg','\u26a1',`+${finalXP} XP${sm&gt;1?` (\u00d7${sm}!)`:''} \u00b7 ${tk.name}`);
   checkAch();
 }
-function getStrMult(){if(S.streak>=30)return 3;if(S.streak>=14)return 2.5;if(S.streak>=7)return 2;if(S.streak>=3)return 1.5;return 1;}
+function getStrMult(){if(S.streak&gt;=30)return 3;if(S.streak&gt;=14)return 2.5;if(S.streak&gt;=7)return 2;if(S.streak&gt;=3)return 1.5;return 1;}
 function deleteTask(id){
-  const tk=S.tasks.find(x=>x.id===id);
+  const tk=S.tasks.find(x=&gt;x.id===id);
   if(!tk)return;
   const msg=(t('confirm_delete')||'Delete?')+'\n'+tk.name;
   if(!window.confirm(msg))return;
   // If task was done, revert its XP contribution from history
   if(tk.done){
-    const histIdx=S.history.findIndex(h=>h.taskId===tk.id&&!h.penalty);
-    if(histIdx>=0){
+    const histIdx=S.history.findIndex(h=&gt;h.taskId===tk.id&amp;&amp;!h.penalty);
+    if(histIdx&gt;=0){
       const h=S.history[histIdx];
       // Revert XP
       S.xp=Math.max(0,S.xp-h.xp);
-      if(h.xp>0)S.done=Math.max(0,S.done-1);
-      else if(h.xp<0)S.negDone=Math.max(0,S.negDone-1);
+      if(h.xp&gt;0)S.done=Math.max(0,S.done-1);
+      else if(h.xp&lt;0)S.negDone=Math.max(0,S.negDone-1);
       // Check if this was the ONLY task done today → revert streak
       const taskDate=h.date.slice(0,10);
-      const todayTasks=S.history.filter((x,i)=>i!==histIdx&&x.date.slice(0,10)===taskDate&&!x.penalty&&x.xp>0);
-      if(todayTasks.length===0&&S.lastDoneDate===taskDate){
+      const todayTasks=S.history.filter((x,i)=&gt;i!==histIdx&amp;&amp;x.date.slice(0,10)===taskDate&amp;&amp;!x.penalty&amp;&amp;x.xp&gt;0);
+      if(todayTasks.length===0&amp;&amp;S.lastDoneDate===taskDate){
         S.streak=Math.max(0,S.streak-1);
         // Recalculate lastDoneDate to the previous day that had activity
-        const prevHist=S.history.filter((x,i)=>i!==histIdx&&!x.penalty&&x.xp>0&&x.date.slice(0,10)<taskDate);
+        const prevHist=S.history.filter((x,i)=&gt;i!==histIdx&amp;&amp;!x.penalty&amp;&amp;x.xp&gt;0&amp;&amp;x.date.slice(0,10)&lt;taskDate);
         S.lastDoneDate=prevHist.length?prevHist[0].date.slice(0,10):null;
       }
       S.history.splice(histIdx,1);
     }
   }
-  S.tasks=S.tasks.filter(x=>x.id!==id);
+  S.tasks=S.tasks.filter(x=&gt;x.id!==id);
   saveS();render();updateAll();
 }
 
 // ── PROGRESS ──
-function updProg(id,delta){const tk=S.tasks.find(x=>x.id===id);if(!tk||!tk.progress)return;tk.progress.current=Math.max(0,Math.min(tk.progress.target,tk.progress.current+delta));saveS();render();}
-function setProgVal(id,val){const tk=S.tasks.find(x=>x.id===id);if(!tk||!tk.progress)return;tk.progress.current=Math.max(0,Math.min(tk.progress.target,parseFloat(val)||0));saveS();render();}
+function updProg(id,delta){const tk=S.tasks.find(x=&gt;x.id===id);if(!tk||!tk.progress)return;tk.progress.current=Math.max(0,Math.min(tk.progress.target,tk.progress.current+delta));saveS();render();}
+function setProgVal(id,val){const tk=S.tasks.find(x=&gt;x.id===id);if(!tk||!tk.progress)return;tk.progress.current=Math.max(0,Math.min(tk.progress.target,parseFloat(val)||0));saveS();render();}
 
 // ── SUBTASKS ──
 function addSub(id){
@@ -2411,23 +2428,23 @@ function addSub(id){
   if(!inp)return;
   const txt=inp.value.trim();
   if(!txt)return;
-  const tk=S.tasks.find(x=>x.id===id);
+  const tk=S.tasks.find(x=&gt;x.id===id);
   if(!tk)return;
   tk.subtasks=tk.subtasks||[];
   tk.subtasks.push({id:Date.now(),text:txt,done:false});
   inp.value='';
   saveS();render();
 }
-function togSub(tid,sid){const tk=S.tasks.find(x=>x.id===tid);if(!tk)return;const s=tk.subtasks&&tk.subtasks.find(x=>x.id===sid);if(s)s.done=!s.done;saveS();render();}
-function delSub(tid,sid){const tk=S.tasks.find(x=>x.id===tid);if(!tk)return;tk.subtasks=(tk.subtasks||[]).filter(x=>x.id!==sid);saveS();render();}
+function togSub(tid,sid){const tk=S.tasks.find(x=&gt;x.id===tid);if(!tk)return;const s=tk.subtasks&amp;&amp;tk.subtasks.find(x=&gt;x.id===sid);if(s)s.done=!s.done;saveS();render();}
+function delSub(tid,sid){const tk=S.tasks.find(x=&gt;x.id===tid);if(!tk)return;tk.subtasks=(tk.subtasks||[]).filter(x=&gt;x.id!==sid);saveS();render();}
 
 // ── DRAG DROP ──
 let dragId=null;
 function onDS(e,id){dragId=id;e.dataTransfer.effectAllowed='move';e.currentTarget.classList.add('dragging');}
 function onDE(e){e.currentTarget.classList.remove('dragging');dragId=null;}
-function onDO(e,id){e.preventDefault();if(dragId&&dragId!==id){const el=document.querySelector(`[data-id="${id}"]`);if(el)el.classList.add('drag-over');}}
+function onDO(e,id){e.preventDefault();if(dragId&amp;&amp;dragId!==id){const el=document.querySelector(`[data-id=&quot;${id}&quot;]`);if(el)el.classList.add('drag-over');}}
 function onDL(e){e.currentTarget.classList.remove('drag-over');}
-function onDrop(e,id){e.preventDefault();e.currentTarget.classList.remove('drag-over');if(!dragId||dragId===id)return;const from=S.tasks.findIndex(x=>x.id===dragId);const to=S.tasks.findIndex(x=>x.id===id);if(from<0||to<0)return;const[item]=S.tasks.splice(from,1);S.tasks.splice(to,0,item);saveS();render();}
+function onDrop(e,id){e.preventDefault();e.currentTarget.classList.remove('drag-over');if(!dragId||dragId===id)return;const from=S.tasks.findIndex(x=&gt;x.id===dragId);const to=S.tasks.findIndex(x=&gt;x.id===id);if(from&lt;0||to&lt;0)return;const[item]=S.tasks.splice(from,1);S.tasks.splice(to,0,item);saveS();render();}
 
 // ── RENDER ──
 function render(){
@@ -2443,14 +2460,14 @@ function getFiltered(){
   const q=document.getElementById('searchInput').value.toLowerCase();
   const sort=document.getElementById('sortSel').value;
   const today=new Date();
-  let tasks=[...S.tasks].filter(tk=>{
-    const isNeu=!!tk.neutral&&!tk.negative;
-    if(q&&!tk.name.toLowerCase().includes(q)&&!(tk.notes||'').toLowerCase().includes(q))return false;
-    if(UI.gf!=='all'&&tk.group!==UI.gf)return false;
-    if(UI.polarity==='pos'&&(tk.negative||isNeu))return false;
-    if(UI.polarity==='neg'&&!tk.negative)return false;
-    if(UI.polarity==='neu'&&!isNeu)return false;
-    if(UI.dayFilter==='today'&&!isTaskToday(tk))return false;
+  let tasks=[...S.tasks].filter(tk=&gt;{
+    const isNeu=!!tk.neutral&amp;&amp;!tk.negative;
+    if(q&amp;&amp;!tk.name.toLowerCase().includes(q)&amp;&amp;!(tk.notes||'').toLowerCase().includes(q))return false;
+    if(UI.gf!=='all'&amp;&amp;tk.group!==UI.gf)return false;
+    if(UI.polarity==='pos'&amp;&amp;(tk.negative||isNeu))return false;
+    if(UI.polarity==='neg'&amp;&amp;!tk.negative)return false;
+    if(UI.polarity==='neu'&amp;&amp;!isNeu)return false;
+    if(UI.dayFilter==='today'&amp;&amp;!isTaskToday(tk))return false;
     if(UI.filter==='done')return tk.done;
     if(UI.filter==='negative')return tk.negative;
     if(UI.filter==='neutral')return isNeu;
@@ -2458,12 +2475,12 @@ function getFiltered(){
     if(UI.filter!=='all')return tk.repeat===UI.filter;
     return true;
   });
-  tasks.sort((a,b)=>{
+  tasks.sort((a,b)=&gt;{
     if(sort==='importance')return b.importance-a.importance;
     if(sort==='name')return a.name.localeCompare(b.name);
     if(sort==='xp')return(b.importance*1.5)-(a.importance*1.5);
     if(sort==='created')return new Date(b.createdAt)-new Date(a.createdAt);
-    if(sort==='deadline'){if(!a.deadline&&!b.deadline)return 0;if(!a.deadline)return 1;if(!b.deadline)return-1;return new Date(a.deadline)-new Date(b.deadline);}
+    if(sort==='deadline'){if(!a.deadline&amp;&amp;!b.deadline)return 0;if(!a.deadline)return 1;if(!b.deadline)return-1;return new Date(a.deadline)-new Date(b.deadline);}
     return 0;
   });
   return tasks;
@@ -2472,10 +2489,10 @@ function getFiltered(){
 function renderTasks(){
   const tasks=getFiltered();
   const area=document.getElementById('taskArea');
-  if(tasks.length===0){area.innerHTML=`<div class="empty"><div class="ei">🚀</div><h3>${t('empty_tasks')}</h3></div>`;return;}
-  area.innerHTML='<div class="task-list" id="taskList"></div>';
+  if(tasks.length===0){area.innerHTML=`&lt;div class=&quot;empty&quot;&gt;&lt;div class=&quot;ei&quot;&gt;🚀&lt;/div&gt;&lt;h3&gt;${t('empty_tasks')}&lt;/h3&gt;&lt;/div&gt;`;return;}
+  area.innerHTML='&lt;div class=&quot;task-list&quot; id=&quot;taskList&quot;&gt;&lt;/div&gt;';
   const list=document.getElementById('taskList');
-  tasks.forEach(tk=>{list.innerHTML+=buildCard(tk);});
+  tasks.forEach(tk=&gt;{list.innerHTML+=buildCard(tk);});
   // Attach event delegation once
   list.addEventListener('click',taskListClick);
   list.addEventListener('change',taskListChange);
@@ -2516,111 +2533,111 @@ function taskListKeydown(e){
 
 function buildCard(tk){
   const L=LANGS[UI.lang]||LANGS.es;
-  const isNeu=!!tk.neutral&&!tk.negative;
+  const isNeu=!!tk.neutral&amp;&amp;!tk.negative;
   const imp=tk.importance;const hue=Math.round(imp*1.2);
   const ic=tk.negative?'var(--neg)':isNeu?'var(--accent3)':`hsl(${hue},100%,55%)`;
-  const baseXP=isNeu&&tk.neutral?.baseXP?tk.neutral.baseXP:Math.round(imp*1.5);
+  const baseXP=isNeu&amp;&amp;tk.neutral?.baseXP?tk.neutral.baseXP:Math.round(imp*1.5);
   const sm=getStrMult();
   const effXP=tk.negative?-baseXP:Math.round(baseXP*sm);
   let dlBadge='';
-  if(tk.deadline){const dl=new Date(tk.deadline+'T00:00:00');const diff=Math.ceil((dl-new Date())/(864e5));const cls=diff<0?'b-ov':'b-dl';const lbl=diff<0?`-${-diff}d`:diff===0?t('today')||'Hoy!':diff===1?t('tomorrow')||'Mañana':`${diff}d`;dlBadge=`<span class="badge ${cls}">📅 ${lbl}</span>`;}
-  let wkBadge=tk.repeat==='weekly'&&tk.weekDays&&tk.weekDays.length?`<span class="badge b-rep">${tk.weekDays.map(d=>L.dn[d]).join('·')}</span>`:'';
-  let tmBadge=tk.time?`<span class="badge b-time">🕐 ${tk.time}</span>`:'';
-  let notesH=tk.notes?`<div class="task-notes">📝 ${tk.notes}</div>`:'';
-  const subs=tk.subtasks||[];const subsDone=subs.filter(s=>s.done).length;
+  if(tk.deadline){const dl=new Date(tk.deadline+'T00:00:00');const diff=Math.ceil((dl-new Date())/(864e5));const cls=diff&lt;0?'b-ov':'b-dl';const lbl=diff&lt;0?`-${-diff}d`:diff===0?t('today')||'Hoy!':diff===1?t('tomorrow')||'Mañana':`${diff}d`;dlBadge=`&lt;span class=&quot;badge ${cls}&quot;&gt;📅 ${lbl}&lt;/span&gt;`;}
+  let wkBadge=tk.repeat==='weekly'&amp;&amp;tk.weekDays&amp;&amp;tk.weekDays.length?`&lt;span class=&quot;badge b-rep&quot;&gt;${tk.weekDays.map(d=&gt;L.dn[d]).join('·')}&lt;/span&gt;`:'';
+  let tmBadge=tk.time?`&lt;span class=&quot;badge b-time&quot;&gt;🕐 ${tk.time}&lt;/span&gt;`:'';
+  let notesH=tk.notes?`&lt;div class=&quot;task-notes&quot;&gt;📝 ${tk.notes}&lt;/div&gt;`:'';
+  const subs=tk.subtasks||[];const subsDone=subs.filter(s=&gt;s.done).length;
   let subH='';
   if(subs.length){
-    subH=`<div class="sub-list">${subs.map(s=>`
-      <div class="sub-item">
-        <input type="checkbox" class="sub-chk" data-tid="${tk.id}" data-sid="${s.id}" ${s.done?'checked':''}>
-        <span class="sub-txt ${s.done?'done':''}">${s.text.replace(/</g,'&lt;')}</span>
-        <button class="sub-del" data-tid="${tk.id}" data-sid="${s.id}">✕</button>
-      </div>`).join('')}</div>`;
+    subH=`&lt;div class=&quot;sub-list&quot;&gt;${subs.map(s=&gt;`
+      &lt;div class=&quot;sub-item&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;sub-chk&quot; data-tid=&quot;${tk.id}&quot; data-sid=&quot;${s.id}&quot; ${s.done?'checked':''}&gt;
+        &lt;span class=&quot;sub-txt ${s.done?'done':''}&quot;&gt;${s.text.replace(/&lt;/g,'&amp;lt;')}&lt;/span&gt;
+        &lt;button class=&quot;sub-del&quot; data-tid=&quot;${tk.id}&quot; data-sid=&quot;${s.id}&quot;&gt;✕&lt;/button&gt;
+      &lt;/div&gt;`).join('')}&lt;/div&gt;`;
   }
   let progH='';
-  if(tk.progress){const pct=Math.min(100,(tk.progress.current/tk.progress.target)*100).toFixed(0);progH=`<div class="prog-section"><div class="prog-top"><span class="prog-lbl">${t('prog_lbl')}</span><div class="prog-bar"><div class="prog-fill" style="width:${pct}%"></div></div><span class="prog-pct">${pct}%</span></div><div class="prog-ctrl"><button class="prog-btn" data-prog-id="${tk.id}" data-delta="-${tk.progress.step}">−</button><input class="prog-inp" type="number" value="${tk.progress.current}" data-prog-set="${tk.id}"><span class="prog-unit">${tk.progress.unit} / ${tk.progress.target}</span><button class="prog-btn" data-prog-id="${tk.id}" data-delta="${tk.progress.step}">+</button></div></div>`;}
+  if(tk.progress){const pct=Math.min(100,(tk.progress.current/tk.progress.target)*100).toFixed(0);progH=`&lt;div class=&quot;prog-section&quot;&gt;&lt;div class=&quot;prog-top&quot;&gt;&lt;span class=&quot;prog-lbl&quot;&gt;${t('prog_lbl')}&lt;/span&gt;&lt;div class=&quot;prog-bar&quot;&gt;&lt;div class=&quot;prog-fill&quot; style=&quot;width:${pct}%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;prog-pct&quot;&gt;${pct}%&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;prog-ctrl&quot;&gt;&lt;button class=&quot;prog-btn&quot; data-prog-id=&quot;${tk.id}&quot; data-delta=&quot;-${tk.progress.step}&quot;&gt;−&lt;/button&gt;&lt;input class=&quot;prog-inp&quot; type=&quot;number&quot; value=&quot;${tk.progress.current}&quot; data-prog-set=&quot;${tk.id}&quot;&gt;&lt;span class=&quot;prog-unit&quot;&gt;${tk.progress.unit} / ${tk.progress.target}&lt;/span&gt;&lt;button class=&quot;prog-btn&quot; data-prog-id=&quot;${tk.id}&quot; data-delta=&quot;${tk.progress.step}&quot;&gt;+&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;`;}
 
   let xpB;
-  if(isNeu){xpB=`<span class="badge b-xpneu">⚖️ ±${baseXP}xp</span>`;}
-  else if(tk.negative){xpB=`<span class="badge b-xpneg">⚠ −${baseXP}xp</span>`;}
-  else{xpB=sm>1?`<span class="badge b-xp">⚡${baseXP}×${sm}=${effXP}</span>`:`<span class="badge b-xp">⚡${baseXP}xp</span>`;}
+  if(isNeu){xpB=`&lt;span class=&quot;badge b-xpneu&quot;&gt;⚖️ ±${baseXP}xp&lt;/span&gt;`;}
+  else if(tk.negative){xpB=`&lt;span class=&quot;badge b-xpneg&quot;&gt;⚠ −${baseXP}xp&lt;/span&gt;`;}
+  else{xpB=sm&gt;1?`&lt;span class=&quot;badge b-xp&quot;&gt;⚡${baseXP}×${sm}=${effXP}&lt;/span&gt;`:`&lt;span class=&quot;badge b-xp&quot;&gt;⚡${baseXP}xp&lt;/span&gt;`;}
 
   let neuBadge='';
-  if(isNeu&&tk.neutral){
+  if(isNeu&amp;&amp;tk.neutral){
     const nc=tk.neutral;
     if(nc.type==='value'){
       const tolStr=nc.useTol?` [${nc.tolMin}–${nc.tolMax}]`:'';
-      neuBadge=`<span class="badge b-xpneu">🎯 ${nc.target}${nc.unit}${tolStr} ${nc.dir==='more'?'↑':'↓'}</span>`;
-    }else if(nc.type==='time')neuBadge=`<span class="badge b-xpneu">🕐 ${nc.target} ±${nc.tolerance}m</span>`;
-    else if(nc.type==='date')neuBadge=`<span class="badge b-xpneu">📅 ${nc.dateTarget}</span>`;
+      neuBadge=`&lt;span class=&quot;badge b-xpneu&quot;&gt;🎯 ${nc.target}${nc.unit}${tolStr} ${nc.dir==='more'?'↑':'↓'}&lt;/span&gt;`;
+    }else if(nc.type==='time')neuBadge=`&lt;span class=&quot;badge b-xpneu&quot;&gt;🕐 ${nc.target} ±${nc.tolerance}m&lt;/span&gt;`;
+    else if(nc.type==='date')neuBadge=`&lt;span class=&quot;badge b-xpneu&quot;&gt;📅 ${nc.dateTarget}&lt;/span&gt;`;
   }
 
   let lastNeuH='';
-  if(isNeu&&tk.lastNeuVal){lastNeuH=`<div class="task-notes" style="color:var(--accent3)">⚖️ ${t('last_val')||'Último'}: ${tk.lastNeuVal}</div>`;}
+  if(isNeu&amp;&amp;tk.lastNeuVal){lastNeuH=`&lt;div class=&quot;task-notes&quot; style=&quot;color:var(--accent3)&quot;&gt;⚖️ ${t('last_val')||'Último'}: ${tk.lastNeuVal}&lt;/div&gt;`;}
 
   let doneBtn;
-  if(tk.done){doneBtn=`<button class="btn-cmp" disabled>${t('done_btn')}</button>`;}
-  else if(isNeu){doneBtn=`<button class="btn-cmp neu" data-neu-id="${tk.id}">⚖️ ${t('register')}</button>`;}
-  else if(tk.negative){doneBtn=`<button class="btn-cmp neg" data-cmp-id="${tk.id}">${t('register')}</button>`;}
-  else{doneBtn=`<button class="btn-cmp" data-cmp-id="${tk.id}">${t('complete')}</button>`;}
+  if(tk.done){doneBtn=`&lt;button class=&quot;btn-cmp&quot; disabled&gt;${t('done_btn')}&lt;/button&gt;`;}
+  else if(isNeu){doneBtn=`&lt;button class=&quot;btn-cmp neu&quot; data-neu-id=&quot;${tk.id}&quot;&gt;⚖️ ${t('register')}&lt;/button&gt;`;}
+  else if(tk.negative){doneBtn=`&lt;button class=&quot;btn-cmp neg&quot; data-cmp-id=&quot;${tk.id}&quot;&gt;${t('register')}&lt;/button&gt;`;}
+  else{doneBtn=`&lt;button class=&quot;btn-cmp&quot; data-cmp-id=&quot;${tk.id}&quot;&gt;${t('complete')}&lt;/button&gt;`;}
 
   const typeClass=isNeu?'neu-task':tk.negative?'neg-task':'pos-task';
-  const typeTag=isNeu?`<span class="neu-tag">⚖️</span>`:tk.negative?`<span class="neg-tag">−XP</span>`:'';
+  const typeTag=isNeu?`&lt;span class=&quot;neu-tag&quot;&gt;⚖️&lt;/span&gt;`:tk.negative?`&lt;span class=&quot;neg-tag&quot;&gt;−XP&lt;/span&gt;`:'';
   const grpLabel=L.gl[tk.group]||tk.group;
   const repLabel=L.rl[tk.repeat]||tk.repeat;
-  return `<div class="task-card ${typeClass} ${tk.done?'done':''}" style="--importance-color:${ic}" data-id="${tk.id}" draggable="true" ondragstart="onDS(event,${tk.id})" ondragend="onDE(event)" ondragover="onDO(event,${tk.id})" ondragleave="onDL(event)" ondrop="onDrop(event,${tk.id})">
-    <div class="task-row">
-      <div class="task-icon">${tk.icon}</div>
-      <div class="task-info">
-        <div class="task-name-row"><span class="task-name">${tk.name.replace(/</g,'&lt;')}</span>${typeTag}</div>
-        <div class="task-badges"><span class="badge b-rep">${repLabel}</span>${wkBadge}<span class="badge b-grp">${grpLabel}</span>${xpB}${neuBadge}${dlBadge}${tmBadge}${subs.length?`<span class="badge" style="color:var(--muted2)">📋${subsDone}/${subs.length}</span>`:''}</div>
-        <div class="imp-row"><span class="imp-lbl">IMP</span><div class="imp-track"><div class="imp-fill" style="width:${imp}%;background:${ic}"></div></div><span class="imp-val" style="color:${ic}">${imp}</span></div>
+  return `&lt;div class=&quot;task-card ${typeClass} ${tk.done?'done':''}&quot; style=&quot;--importance-color:${ic}&quot; data-id=&quot;${tk.id}&quot; draggable=&quot;true&quot; ondragstart=&quot;onDS(event,${tk.id})&quot; ondragend=&quot;onDE(event)&quot; ondragover=&quot;onDO(event,${tk.id})&quot; ondragleave=&quot;onDL(event)&quot; ondrop=&quot;onDrop(event,${tk.id})&quot;&gt;
+    &lt;div class=&quot;task-row&quot;&gt;
+      &lt;div class=&quot;task-icon&quot;&gt;${tk.icon}&lt;/div&gt;
+      &lt;div class=&quot;task-info&quot;&gt;
+        &lt;div class=&quot;task-name-row&quot;&gt;&lt;span class=&quot;task-name&quot;&gt;${tk.name.replace(/&lt;/g,'&amp;lt;')}&lt;/span&gt;${typeTag}&lt;/div&gt;
+        &lt;div class=&quot;task-badges&quot;&gt;&lt;span class=&quot;badge b-rep&quot;&gt;${repLabel}&lt;/span&gt;${wkBadge}&lt;span class=&quot;badge b-grp&quot;&gt;${grpLabel}&lt;/span&gt;${xpB}${neuBadge}${dlBadge}${tmBadge}${subs.length?`&lt;span class=&quot;badge&quot; style=&quot;color:var(--muted2)&quot;&gt;📋${subsDone}/${subs.length}&lt;/span&gt;`:''}&lt;/div&gt;
+        &lt;div class=&quot;imp-row&quot;&gt;&lt;span class=&quot;imp-lbl&quot;&gt;IMP&lt;/span&gt;&lt;div class=&quot;imp-track&quot;&gt;&lt;div class=&quot;imp-fill&quot; style=&quot;width:${imp}%;background:${ic}&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;imp-val&quot; style=&quot;color:${ic}&quot;&gt;${imp}&lt;/span&gt;&lt;/div&gt;
         ${notesH}${lastNeuH}
-      </div>
-      <div class="task-actions">${doneBtn}<button class="btn-ico" data-edit-id="${tk.id}">✏️</button><button class="btn-ico del" data-del-id="${tk.id}">🗑</button></div>
-    </div>
-    <div class="subs-section">${subH}
-      <div class="sub-add">
-        <input id="si-${tk.id}" class="sub-inp" type="text" placeholder="${t('sub_ph')}">
-        <button class="sub-submit" data-sub-add="${tk.id}">+</button>
-      </div>
-    </div>
+      &lt;/div&gt;
+      &lt;div class=&quot;task-actions&quot;&gt;${doneBtn}&lt;button class=&quot;btn-ico&quot; data-edit-id=&quot;${tk.id}&quot;&gt;✏️&lt;/button&gt;&lt;button class=&quot;btn-ico del&quot; data-del-id=&quot;${tk.id}&quot;&gt;🗑&lt;/button&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;subs-section&quot;&gt;${subH}
+      &lt;div class=&quot;sub-add&quot;&gt;
+        &lt;input id=&quot;si-${tk.id}&quot; class=&quot;sub-inp&quot; type=&quot;text&quot; placeholder=&quot;${t('sub_ph')}&quot;&gt;
+        &lt;button class=&quot;sub-submit&quot; data-sub-add=&quot;${tk.id}&quot;&gt;+&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
     ${progH}
-  </div>`;
+  &lt;/div&gt;`;
 }
 
 function renderChart(){
   const L=LANGS[UI.lang]||LANGS.es;
-  const last7=[];for(let i=6;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);last7.push(d.toISOString().slice(0,10));}
-  const xpByDay=last7.map(day=>S.history.filter(h=>h.date.slice(0,10)===day).reduce((s,h)=>s+h.xp,0));
+  const last7=[];for(let i=6;i&gt;=0;i--){const d=new Date();d.setDate(d.getDate()-i);last7.push(d.toISOString().slice(0,10));}
+  const xpByDay=last7.map(day=&gt;S.history.filter(h=&gt;h.date.slice(0,10)===day).reduce((s,h)=&gt;s+h.xp,0));
   const maxXP=Math.max(...xpByDay.map(Math.abs),1);
-  const bars=last7.map((day,i)=>{const v=xpByDay[i];const h=Math.abs(v)/maxXP*100;const cls=v<0?'neg-b':'';const lbl=new Date(day+'T12:00').toLocaleDateString(UI.lang,{weekday:'short'});return`<div class="bar-col"><div class="bar-val">${v>0?'+':''}${v}</div><div class="bar-fill-wrap"><div class="bar-rect ${cls}" style="height:${h}%"></div></div><div class="bar-lbl">${lbl}</div></div>`;}).join('');
-  const byG={};S.tasks.forEach(tk=>{byG[tk.group]=(byG[tk.group]||0)+1;});
-  const gBars=Object.entries(byG).map(([g,c])=>{const h=c/Math.max(...Object.values(byG))*100;return`<div class="bar-col"><div class="bar-val">${c}</div><div class="bar-fill-wrap"><div class="bar-rect" style="height:${h}%"></div></div><div class="bar-lbl" style="font-size:.55rem">${(L.gl[g]||g).replace(/[^\w\s]/g,'').trim().slice(0,5)}</div></div>`;}).join('');
-  document.getElementById('taskArea').innerHTML=`<div class="chart-wrap">
-    <div class="chart-section"><div class="chart-title">${t('xp_chart')}</div><div class="bar-chart">${bars}</div></div>
-    <div class="chart-section"><div class="chart-title">${t('group_chart')}</div><div class="bar-chart" style="height:80px">${gBars}</div></div>
-    <div class="chart-section"><div class="chart-title">${t('summary')}</div>
-      <div style="display:flex;flex-direction:column;gap:6px;margin-top:4px">
-        <div class="stat-box" style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;">
-          <div style="display:flex;align-items:center;gap:8px"><span style="font-size:1.1rem">⚡</span><span class="stat-lbl" style="font-size:.72rem">${t('net_xp_lbl')}</span></div>
-          <div class="stat-val c-accent" style="font-size:1.2rem">${S.xp}</div>
-        </div>
-        <div class="stat-box" style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;">
-          <div style="display:flex;align-items:center;gap:8px"><span style="font-size:1.1rem">✅</span><span class="stat-lbl" style="font-size:.72rem">${t('tasks_done_lbl')}</span></div>
-          <div class="stat-val c-green" style="font-size:1.2rem">${S.done}</div>
-        </div>
-        <div class="stat-box" style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;">
-          <div style="display:flex;align-items:center;gap:8px"><span style="font-size:1.1rem">⚠️</span><span class="stat-lbl" style="font-size:.72rem">${t('xp_lost_lbl')}</span></div>
-          <div class="stat-val c-red" style="font-size:1.2rem">${S.negXP}</div>
-        </div>
-        <div class="stat-box" style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;">
-          <div style="display:flex;align-items:center;gap:8px"><span style="font-size:1.1rem">🔥</span><span class="stat-lbl" style="font-size:.72rem">${t('streak_lbl')}</span></div>
-          <div class="stat-val c-gold" style="font-size:1.2rem">${S.streak} ${t('days')}</div>
-        </div>
-      </div>
-    </div>
-  </div>`;
+  const bars=last7.map((day,i)=&gt;{const v=xpByDay[i];const h=Math.abs(v)/maxXP*100;const cls=v&lt;0?'neg-b':'';const lbl=new Date(day+'T12:00').toLocaleDateString(UI.lang,{weekday:'short'});return`&lt;div class=&quot;bar-col&quot;&gt;&lt;div class=&quot;bar-val&quot;&gt;${v&gt;0?'+':''}${v}&lt;/div&gt;&lt;div class=&quot;bar-fill-wrap&quot;&gt;&lt;div class=&quot;bar-rect ${cls}&quot; style=&quot;height:${h}%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;bar-lbl&quot;&gt;${lbl}&lt;/div&gt;&lt;/div&gt;`;}).join('');
+  const byG={};S.tasks.forEach(tk=&gt;{byG[tk.group]=(byG[tk.group]||0)+1;});
+  const gBars=Object.entries(byG).map(([g,c])=&gt;{const h=c/Math.max(...Object.values(byG))*100;return`&lt;div class=&quot;bar-col&quot;&gt;&lt;div class=&quot;bar-val&quot;&gt;${c}&lt;/div&gt;&lt;div class=&quot;bar-fill-wrap&quot;&gt;&lt;div class=&quot;bar-rect&quot; style=&quot;height:${h}%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;bar-lbl&quot; style=&quot;font-size:.55rem&quot;&gt;${(L.gl[g]||g).replace(/[^\w\s]/g,'').trim().slice(0,5)}&lt;/div&gt;&lt;/div&gt;`;}).join('');
+  document.getElementById('taskArea').innerHTML=`&lt;div class=&quot;chart-wrap&quot;&gt;
+    &lt;div class=&quot;chart-section&quot;&gt;&lt;div class=&quot;chart-title&quot;&gt;${t('xp_chart')}&lt;/div&gt;&lt;div class=&quot;bar-chart&quot;&gt;${bars}&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;chart-section&quot;&gt;&lt;div class=&quot;chart-title&quot;&gt;${t('group_chart')}&lt;/div&gt;&lt;div class=&quot;bar-chart&quot; style=&quot;height:80px&quot;&gt;${gBars}&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;chart-section&quot;&gt;&lt;div class=&quot;chart-title&quot;&gt;${t('summary')}&lt;/div&gt;
+      &lt;div style=&quot;display:flex;flex-direction:column;gap:6px;margin-top:4px&quot;&gt;
+        &lt;div class=&quot;stat-box&quot; style=&quot;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;&quot;&gt;
+          &lt;div style=&quot;display:flex;align-items:center;gap:8px&quot;&gt;&lt;span style=&quot;font-size:1.1rem&quot;&gt;⚡&lt;/span&gt;&lt;span class=&quot;stat-lbl&quot; style=&quot;font-size:.72rem&quot;&gt;${t('net_xp_lbl')}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;stat-val c-accent&quot; style=&quot;font-size:1.2rem&quot;&gt;${S.xp}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;stat-box&quot; style=&quot;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;&quot;&gt;
+          &lt;div style=&quot;display:flex;align-items:center;gap:8px&quot;&gt;&lt;span style=&quot;font-size:1.1rem&quot;&gt;✅&lt;/span&gt;&lt;span class=&quot;stat-lbl&quot; style=&quot;font-size:.72rem&quot;&gt;${t('tasks_done_lbl')}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;stat-val c-green&quot; style=&quot;font-size:1.2rem&quot;&gt;${S.done}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;stat-box&quot; style=&quot;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;&quot;&gt;
+          &lt;div style=&quot;display:flex;align-items:center;gap:8px&quot;&gt;&lt;span style=&quot;font-size:1.1rem&quot;&gt;⚠️&lt;/span&gt;&lt;span class=&quot;stat-lbl&quot; style=&quot;font-size:.72rem&quot;&gt;${t('xp_lost_lbl')}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;stat-val c-red&quot; style=&quot;font-size:1.2rem&quot;&gt;${S.negXP}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;stat-box&quot; style=&quot;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;&quot;&gt;
+          &lt;div style=&quot;display:flex;align-items:center;gap:8px&quot;&gt;&lt;span style=&quot;font-size:1.1rem&quot;&gt;🔥&lt;/span&gt;&lt;span class=&quot;stat-lbl&quot; style=&quot;font-size:.72rem&quot;&gt;${t('streak_lbl')}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class=&quot;stat-val c-gold&quot; style=&quot;font-size:1.2rem&quot;&gt;${S.streak} ${t('days')}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;`;
 }
 
 function renderAch(){
@@ -2628,55 +2645,55 @@ function renderAch(){
   const L=ACH_LANG[UI.lang]||ACH_LANG.es;
   const SL=ACH_SECTIONS_LANG[UI.lang]||ACH_SECTIONS_LANG.es;
   const sectionOrder=['tasks','xp','streak','level','negative','neutral','pomodoro','special'];
-  let html='<div class="ach-wrap">';
-  sectionOrder.forEach(sec=>{
-    const secAchs=ACHS.filter(a=>a.sec===sec);
+  let html='&lt;div class=&quot;ach-wrap&quot;&gt;';
+  sectionOrder.forEach(sec=&gt;{
+    const secAchs=ACHS.filter(a=&gt;a.sec===sec);
     if(!secAchs.length)return;
-    const unlocked=secAchs.filter(a=>!!S.unlockedAch[a.id]||a.check(stats)).length;
-    html+=`<div class="ach-section">
-      <div class="ach-sec-hdr">
-        <span class="ach-sec-title">${SL[sec]||sec}</span>
-        <span class="ach-sec-count">${unlocked}/${secAchs.length}</span>
-      </div>
-      <div class="ach-grid">`;
-    secAchs.forEach(a=>{
+    const unlocked=secAchs.filter(a=&gt;!!S.unlockedAch[a.id]||a.check(stats)).length;
+    html+=`&lt;div class=&quot;ach-section&quot;&gt;
+      &lt;div class=&quot;ach-sec-hdr&quot;&gt;
+        &lt;span class=&quot;ach-sec-title&quot;&gt;${SL[sec]||sec}&lt;/span&gt;
+        &lt;span class=&quot;ach-sec-count&quot;&gt;${unlocked}/${secAchs.length}&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ach-grid&quot;&gt;`;
+    secAchs.forEach(a=&gt;{
       const on=!!S.unlockedAch[a.id]||a.check(stats);
       const info=L[a.id]||{name:a.id,desc:''};
-      const dt=S.unlockedAch[a.id]?`<div class="ach-date">${new Date(S.unlockedAch[a.id]).toLocaleDateString(UI.lang)}</div>`:'';
-      html+=`<div class="ach ${on?'on':''}">
-        <div class="ach-ico">${a.icon}</div>
-        <div class="ach-name">${info.name}</div>
-        <div class="ach-desc">${info.desc}</div>
+      const dt=S.unlockedAch[a.id]?`&lt;div class=&quot;ach-date&quot;&gt;${new Date(S.unlockedAch[a.id]).toLocaleDateString(UI.lang)}&lt;/div&gt;`:'';
+      html+=`&lt;div class=&quot;ach ${on?'on':''}&quot;&gt;
+        &lt;div class=&quot;ach-ico&quot;&gt;${a.icon}&lt;/div&gt;
+        &lt;div class=&quot;ach-name&quot;&gt;${info.name}&lt;/div&gt;
+        &lt;div class=&quot;ach-desc&quot;&gt;${info.desc}&lt;/div&gt;
         ${on?dt:''}
-      </div>`;
+      &lt;/div&gt;`;
     });
-    html+='</div></div>';
+    html+='&lt;/div&gt;&lt;/div&gt;';
   });
-  html+='</div>';
+  html+='&lt;/div&gt;';
   document.getElementById('taskArea').innerHTML=html;
 }
 
 function renderHistory(){
-  if(!S.history.length){document.getElementById('taskArea').innerHTML=`<div class="empty"><div class="ei">📜</div><h3>${t('empty_hist')}</h3></div>`;return;}
-  const items=S.history.slice(0,100).map((h,i)=>{
+  if(!S.history.length){document.getElementById('taskArea').innerHTML=`&lt;div class=&quot;empty&quot;&gt;&lt;div class=&quot;ei&quot;&gt;📜&lt;/div&gt;&lt;h3&gt;${t('empty_hist')}&lt;/h3&gt;&lt;/div&gt;`;return;}
+  const items=S.history.slice(0,100).map((h,i)=&gt;{
     const d=new Date(h.date);
     const ds=d.toLocaleDateString(UI.lang)+' '+d.toLocaleTimeString(UI.lang,{hour:'2-digit',minute:'2-digit'});
-    const xs=h.xp>=0?`+${h.xp}`:String(h.xp);
+    const xs=h.xp&gt;=0?`+${h.xp}`:String(h.xp);
     const isPenalty=h.penalty;
-    const undoBtn=!isPenalty?`<button class="btn-ico" data-hist-undo="${i}" title="${t('hist_undo_xp')}" style="font-size:.65rem;width:28px;height:28px;">↩</button>`:'';
-    return`<div class="hist-item" data-hi="${i}">
-      <div class="hist-ico">${h.icon||'⚡'}</div>
-      <div class="hist-info">
-        <div class="hist-name">${(h.taskName||'').replace(/</g,'&lt;')}${isPenalty?` <span style="font-size:.65rem;color:var(--neg)">😴</span>`:''}</div>
-        <div class="hist-meta">${ds}${h.sm>1?` · ×${h.sm}`:''}</div>
-      </div>
-      <div class="hist-xp ${h.xp<0?'neg':''}">${xs} XP</div>
+    const undoBtn=!isPenalty?`&lt;button class=&quot;btn-ico&quot; data-hist-undo=&quot;${i}&quot; title=&quot;${t('hist_undo_xp')}&quot; style=&quot;font-size:.65rem;width:28px;height:28px;&quot;&gt;↩&lt;/button&gt;`:'';
+    return`&lt;div class=&quot;hist-item&quot; data-hi=&quot;${i}&quot;&gt;
+      &lt;div class=&quot;hist-ico&quot;&gt;${h.icon||'⚡'}&lt;/div&gt;
+      &lt;div class=&quot;hist-info&quot;&gt;
+        &lt;div class=&quot;hist-name&quot;&gt;${(h.taskName||'').replace(/&lt;/g,'&amp;lt;')}${isPenalty?` &lt;span style=&quot;font-size:.65rem;color:var(--neg)&quot;&gt;😴&lt;/span&gt;`:''}&lt;/div&gt;
+        &lt;div class=&quot;hist-meta&quot;&gt;${ds}${h.sm&gt;1?` · ×${h.sm}`:''}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;hist-xp ${h.xp&lt;0?'neg':''}&quot;&gt;${xs} XP&lt;/div&gt;
       ${undoBtn}
-    </div>`;
+    &lt;/div&gt;`;
   }).join('');
   const area=document.getElementById('taskArea');
-  area.innerHTML=`<div style="padding:10px">${items}</div>`;
-  area.addEventListener('click',e=>{
+  area.innerHTML=`&lt;div style=&quot;padding:10px&quot;&gt;${items}&lt;/div&gt;`;
+  area.addEventListener('click',e=&gt;{
     const undoBtn=e.target.closest('[data-hist-undo]');
     if(undoBtn){undoHistXP(parseInt(undoBtn.dataset.histUndo));}
   });
@@ -2687,20 +2704,20 @@ function undoHistXP(idx){
   const taskDate=h.date.slice(0,10);
   // Revert XP and counters
   S.xp=Math.max(0,S.xp-xp);
-  if(xp>0){S.done=Math.max(0,S.done-1);if(h.neutral)S.neuDone=Math.max(0,(S.neuDone||0)-1);}
-  else if(xp<0&&!h.penalty)S.negDone=Math.max(0,S.negDone-1);
+  if(xp&gt;0){S.done=Math.max(0,S.done-1);if(h.neutral)S.neuDone=Math.max(0,(S.neuDone||0)-1);}
+  else if(xp&lt;0&amp;&amp;!h.penalty)S.negDone=Math.max(0,S.negDone-1);
   // Revert streak if this was the only positive task today
-  if(xp>0&&!h.penalty){
-    const otherTasksToday=S.history.filter((x,i)=>i!==idx&&x.date.slice(0,10)===taskDate&&!x.penalty&&x.xp>0);
-    if(otherTasksToday.length===0&&S.lastDoneDate===taskDate){
+  if(xp&gt;0&amp;&amp;!h.penalty){
+    const otherTasksToday=S.history.filter((x,i)=&gt;i!==idx&amp;&amp;x.date.slice(0,10)===taskDate&amp;&amp;!x.penalty&amp;&amp;x.xp&gt;0);
+    if(otherTasksToday.length===0&amp;&amp;S.lastDoneDate===taskDate){
       S.streak=Math.max(0,S.streak-1);
-      const prevHist=S.history.filter((x,i)=>i!==idx&&!x.penalty&&x.xp>0&&x.date.slice(0,10)<taskDate);
+      const prevHist=S.history.filter((x,i)=&gt;i!==idx&amp;&amp;!x.penalty&amp;&amp;x.xp&gt;0&amp;&amp;x.date.slice(0,10)&lt;taskDate);
       S.lastDoneDate=prevHist.length?prevHist[0].date.slice(0,10):null;
     }
   }
   // Mark the task as undone if it still exists
   if(h.taskId){
-    const tk=S.tasks.find(x=>x.id===h.taskId);
+    const tk=S.tasks.find(x=&gt;x.id===h.taskId);
     if(tk){tk.done=false;tk.lastDone=null;}
   }
   S.history.splice(idx,1);
@@ -2721,22 +2738,22 @@ function taskActiveOnDate(tk, dateObj) {
     // Once tasks with deadline: active from creation date through deadline date
     if (tk.deadline) {
       const createdStr = tk.createdAt ? tk.createdAt.slice(0, 10) : dateStr;
-      return dateStr >= createdStr && dateStr <= tk.deadline;
+      return dateStr &gt;= createdStr &amp;&amp; dateStr &lt;= tk.deadline;
     }
     // Once tasks without deadline: active only on creation date
-    if (tk.createdAt && tk.createdAt.slice(0, 10) === dateStr) return true;
+    if (tk.createdAt &amp;&amp; tk.createdAt.slice(0, 10) === dateStr) return true;
     return false;
   }
   if (tk.repeat === 'weekly') {
-    return !!(tk.weekDays && tk.weekDays.includes(dayOfWeek));
+    return !!(tk.weekDays &amp;&amp; tk.weekDays.includes(dayOfWeek));
   }
   if (tk.repeat === 'annual') {
     const created = tk.createdAt ? new Date(tk.createdAt) : null;
-    if (created) return created.getMonth() === month && created.getDate() === day;
+    if (created) return created.getMonth() === month &amp;&amp; created.getDate() === day;
     return false;
   }
   // Also include tasks with a deadline on this specific date
-  if (tk.deadline && tk.deadline === dateStr) return true;
+  if (tk.deadline &amp;&amp; tk.deadline === dateStr) return true;
   return false;
 }
 
@@ -2747,7 +2764,7 @@ function isTaskToday(tk) {
 // ── DAY FILTER SWITCH ──
 function setDayFilter(f, btn) {
   UI.dayFilter = f;
-  document.querySelectorAll('.dsw-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.dsw-btn').forEach(b =&gt; b.classList.remove('active'));
   if (btn) btn.classList.add('active');
   render();
 }
@@ -2761,48 +2778,48 @@ function renderAgenda() {
   const monthNames = L.mn || ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
   // --- TODAY'S TASKS SECTION ---
-  const todayTasks = S.tasks.filter(tk => isTaskToday(tk));
-  const wT = todayTasks.filter(tk => tk.time).sort((a, b) => a.time.localeCompare(b.time));
-  const nT = todayTasks.filter(tk => !tk.time);
+  const todayTasks = S.tasks.filter(tk =&gt; isTaskToday(tk));
+  const wT = todayTasks.filter(tk =&gt; tk.time).sort((a, b) =&gt; a.time.localeCompare(b.time));
+  const nT = todayTasks.filter(tk =&gt; !tk.time);
 
-  let html = '<div class="agenda-today-section">';
-  html += '<div class="cal-section-hdr" style="margin:0 0 8px">📅 ' + (t('agenda_today') || "Tareas de hoy") + '</div>';
+  let html = '&lt;div class=&quot;agenda-today-section&quot;&gt;';
+  html += '&lt;div class=&quot;cal-section-hdr&quot; style=&quot;margin:0 0 8px&quot;&gt;📅 ' + (t('agenda_today') || &quot;Tareas de hoy&quot;) + '&lt;/div&gt;';
 
   if (!todayTasks.length) {
-    html += '<div class="agenda-slot" style="justify-content:center;color:var(--muted)">' + (t('agenda_no_tasks') || 'Sin tareas') + '</div>';
+    html += '&lt;div class=&quot;agenda-slot&quot; style=&quot;justify-content:center;color:var(--muted)&quot;&gt;' + (t('agenda_no_tasks') || 'Sin tareas') + '&lt;/div&gt;';
   } else {
     if (wT.length) {
-      html += '<div class="cal-section-hdr">🕐 ' + (t('agenda_with_time') || 'Con horario') + '</div>';
-      html += wT.map(tk => {
+      html += '&lt;div class=&quot;cal-section-hdr&quot;&gt;🕐 ' + (t('agenda_with_time') || 'Con horario') + '&lt;/div&gt;';
+      html += wT.map(tk =&gt; {
         const doneStyle = tk.done ? 'opacity:.5;text-decoration:line-through;' : '';
         const btnHtml = tk.done ? '' : (tk.neutral
-          ? `<button class="btn-cmp neu" onclick="openNcdModal(${tk.id})">${t('register') || '⚖ Registrar'}</button>`
-          : `<button class="btn-cmp ${tk.negative ? 'neg' : ''}" onclick="completeTask(${tk.id})">${t('complete') || '✓'}</button>`);
-        return `<div class="agenda-slot">
-          <span style="font-family:'Orbitron',monospace;font-size:.68rem;color:var(--accent2);min-width:42px">${tk.time}</span>
-          <span style="font-size:1.1rem">${tk.icon}</span>
-          <span style="font-weight:600;flex:1;font-size:.86rem;${doneStyle}">${tk.name}</span>
+          ? `&lt;button class=&quot;btn-cmp neu&quot; onclick=&quot;openNcdModal(${tk.id})&quot;&gt;${t('register') || '⚖ Registrar'}&lt;/button&gt;`
+          : `&lt;button class=&quot;btn-cmp ${tk.negative ? 'neg' : ''}&quot; onclick=&quot;completeTask(${tk.id})&quot;&gt;${t('complete') || '✓'}&lt;/button&gt;`);
+        return `&lt;div class=&quot;agenda-slot&quot;&gt;
+          &lt;span style=&quot;font-family:'Orbitron',monospace;font-size:.68rem;color:var(--accent2);min-width:42px&quot;&gt;${tk.time}&lt;/span&gt;
+          &lt;span style=&quot;font-size:1.1rem&quot;&gt;${tk.icon}&lt;/span&gt;
+          &lt;span style=&quot;font-weight:600;flex:1;font-size:.86rem;${doneStyle}&quot;&gt;${tk.name}&lt;/span&gt;
           ${btnHtml}
-        </div>`;
+        &lt;/div&gt;`;
       }).join('');
     }
     if (nT.length) {
-      html += '<div class="cal-section-hdr" style="margin-top:8px">— ' + (t('agenda_no_time') || 'Sin horario') + '</div>';
-      html += nT.map(tk => {
+      html += '&lt;div class=&quot;cal-section-hdr&quot; style=&quot;margin-top:8px&quot;&gt;— ' + (t('agenda_no_time') || 'Sin horario') + '&lt;/div&gt;';
+      html += nT.map(tk =&gt; {
         const doneStyle = tk.done ? 'opacity:.5;text-decoration:line-through;' : '';
-        const btnHtml = tk.done ? `<span style="font-size:.72rem;color:var(--muted)">✓</span>` : (tk.neutral
-          ? `<button class="btn-cmp neu" onclick="openNcdModal(${tk.id})">${t('register') || '⚖'}</button>`
-          : `<button class="btn-cmp ${tk.negative ? 'neg' : ''}" onclick="completeTask(${tk.id})">${t('complete') || '✓'}</button>`);
-        return `<div class="agenda-slot">
-          <span style="color:var(--muted);font-size:.8rem;min-width:42px">—</span>
-          <span style="font-size:1.1rem">${tk.icon}</span>
-          <span style="font-weight:600;flex:1;font-size:.86rem;${doneStyle}">${tk.name}</span>
+        const btnHtml = tk.done ? `&lt;span style=&quot;font-size:.72rem;color:var(--muted)&quot;&gt;✓&lt;/span&gt;` : (tk.neutral
+          ? `&lt;button class=&quot;btn-cmp neu&quot; onclick=&quot;openNcdModal(${tk.id})&quot;&gt;${t('register') || '⚖'}&lt;/button&gt;`
+          : `&lt;button class=&quot;btn-cmp ${tk.negative ? 'neg' : ''}&quot; onclick=&quot;completeTask(${tk.id})&quot;&gt;${t('complete') || '✓'}&lt;/button&gt;`);
+        return `&lt;div class=&quot;agenda-slot&quot;&gt;
+          &lt;span style=&quot;color:var(--muted);font-size:.8rem;min-width:42px&quot;&gt;—&lt;/span&gt;
+          &lt;span style=&quot;font-size:1.1rem&quot;&gt;${tk.icon}&lt;/span&gt;
+          &lt;span style=&quot;font-weight:600;flex:1;font-size:.86rem;${doneStyle}&quot;&gt;${tk.name}&lt;/span&gt;
           ${btnHtml}
-        </div>`;
+        &lt;/div&gt;`;
       }).join('');
     }
   }
-  html += '</div>';
+  html += '&lt;/div&gt;';
 
   // --- MONTHLY CALENDAR SECTION ---
   if (UI.calMonth === null || UI.calYear === null) {
@@ -2815,58 +2832,58 @@ function renderAgenda() {
   const startDow = firstDay.getDay(); // 0=Sun
   const totalDays = lastDay.getDate();
 
-  html += '<div class="cal-wrap">';
-  html += `<div class="cal-hdr">
-    <div class="cal-title">${monthNames[cm]} ${cy}</div>
-    <div class="cal-nav">
-      <button class="cal-nav-btn" onclick="calNav(-1)">‹</button>
-      <button class="cal-nav-btn" onclick="calNav(0)">●</button>
-      <button class="cal-nav-btn" onclick="calNav(1)">›</button>
-    </div>
-  </div>`;
+  html += '&lt;div class=&quot;cal-wrap&quot;&gt;';
+  html += `&lt;div class=&quot;cal-hdr&quot;&gt;
+    &lt;div class=&quot;cal-title&quot;&gt;${monthNames[cm]} ${cy}&lt;/div&gt;
+    &lt;div class=&quot;cal-nav&quot;&gt;
+      &lt;button class=&quot;cal-nav-btn&quot; onclick=&quot;calNav(-1)&quot;&gt;‹&lt;/button&gt;
+      &lt;button class=&quot;cal-nav-btn&quot; onclick=&quot;calNav(0)&quot;&gt;●&lt;/button&gt;
+      &lt;button class=&quot;cal-nav-btn&quot; onclick=&quot;calNav(1)&quot;&gt;›&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;`;
 
-  html += '<div class="cal-grid">';
+  html += '&lt;div class=&quot;cal-grid&quot;&gt;';
   // Day of week headers
-  dayNames.forEach(d => { html += `<div class="cal-dow">${d}</div>`; });
+  dayNames.forEach(d =&gt; { html += `&lt;div class=&quot;cal-dow&quot;&gt;${d}&lt;/div&gt;`; });
 
   // Leading blank cells
-  for (let i = 0; i < startDow; i++) {
-    html += '<div class="cal-day other-month"></div>';
+  for (let i = 0; i &lt; startDow; i++) {
+    html += '&lt;div class=&quot;cal-day other-month&quot;&gt;&lt;/div&gt;';
   }
 
   // Day cells
-  for (let d = 1; d <= totalDays; d++) {
+  for (let d = 1; d &lt;= totalDays; d++) {
     const cellDate = new Date(cy, cm, d);
     const cellStr = cellDate.toISOString().slice(0, 10);
     const isToday = cellStr === todayStr;
 
     // Find tasks active on this date
-    const dayTasks = S.tasks.filter(tk => taskActiveOnDate(tk, cellDate));
-    const hasTasks = dayTasks.length > 0;
+    const dayTasks = S.tasks.filter(tk =&gt; taskActiveOnDate(tk, cellDate));
+    const hasTasks = dayTasks.length &gt; 0;
 
     // Build dots (max 4, colored by type)
     let dots = '';
     const shown = dayTasks.slice(0, 5);
-    shown.forEach(tk => {
+    shown.forEach(tk =&gt; {
       const cls = tk.done ? 'cal-dot-done' : tk.negative ? 'cal-dot-neg' : tk.neutral ? 'cal-dot-neu' : 'cal-dot-pos';
-      dots += `<span class="cal-dot ${cls}"></span>`;
+      dots += `&lt;span class=&quot;cal-dot ${cls}&quot;&gt;&lt;/span&gt;`;
     });
-    if (dayTasks.length > 5) dots += `<span class="cal-dot" style="background:var(--muted)"></span>`;
+    if (dayTasks.length &gt; 5) dots += `&lt;span class=&quot;cal-dot&quot; style=&quot;background:var(--muted)&quot;&gt;&lt;/span&gt;`;
 
-    html += `<div class="cal-day${isToday ? ' today' : ''}${hasTasks ? ' has-tasks' : ''}" onclick="calDayClick(${d},${cm},${cy},event)" title="${hasTasks ? dayTasks.length + ' tarea(s)' : ''}">
-      <span class="cal-dn">${d}</span>
-      ${hasTasks ? `<div class="cal-dots">${dots}</div>` : ''}
-    </div>`;
+    html += `&lt;div class=&quot;cal-day${isToday ? ' today' : ''}${hasTasks ? ' has-tasks' : ''}&quot; onclick=&quot;calDayClick(${d},${cm},${cy},event)&quot; title=&quot;${hasTasks ? dayTasks.length + ' tarea(s)' : ''}&quot;&gt;
+      &lt;span class=&quot;cal-dn&quot;&gt;${d}&lt;/span&gt;
+      ${hasTasks ? `&lt;div class=&quot;cal-dots&quot;&gt;${dots}&lt;/div&gt;` : ''}
+    &lt;/div&gt;`;
   }
 
   // Trailing blank cells
   const totalCells = startDow + totalDays;
   const trailing = (7 - (totalCells % 7)) % 7;
-  for (let i = 0; i < trailing; i++) {
-    html += '<div class="cal-day other-month"></div>';
+  for (let i = 0; i &lt; trailing; i++) {
+    html += '&lt;div class=&quot;cal-day other-month&quot;&gt;&lt;/div&gt;';
   }
 
-  html += '</div></div>'; // close cal-grid and cal-wrap
+  html += '&lt;/div&gt;&lt;/div&gt;'; // close cal-grid and cal-wrap
 
   document.getElementById('taskArea').innerHTML = html;
 }
@@ -2877,8 +2894,8 @@ function calNav(dir) {
     UI.calYear = new Date().getFullYear();
   } else {
     UI.calMonth += dir;
-    if (UI.calMonth < 0) { UI.calMonth = 11; UI.calYear--; }
-    if (UI.calMonth > 11) { UI.calMonth = 0; UI.calYear++; }
+    if (UI.calMonth &lt; 0) { UI.calMonth = 11; UI.calYear--; }
+    if (UI.calMonth &gt; 11) { UI.calMonth = 0; UI.calYear++; }
   }
   renderAgenda();
 }
@@ -2894,47 +2911,47 @@ function calDayClick(day, month, year, event) {
   const dayNames = L.dn || ['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
   const monthNames = L.mn || [];
 
-  const dayTasks = S.tasks.filter(tk => taskActiveOnDate(tk, cellDate));
-  const withTime = dayTasks.filter(tk => tk.time).sort((a, b) => a.time.localeCompare(b.time));
-  const noTime = dayTasks.filter(tk => !tk.time);
+  const dayTasks = S.tasks.filter(tk =&gt; taskActiveOnDate(tk, cellDate));
+  const withTime = dayTasks.filter(tk =&gt; tk.time).sort((a, b) =&gt; a.time.localeCompare(b.time));
+  const noTime = dayTasks.filter(tk =&gt; !tk.time);
 
   const dateLabel = dayNames[cellDate.getDay()] + ' ' + day + (monthNames[month] ? ' · ' + monthNames[month] : '');
 
-  let popHtml = `<div class="cal-popup-hdr">
-    <span class="cal-popup-date">${dateLabel}</span>
-    <button class="cal-popup-close" onclick="document.getElementById('calPopup').remove()">✕</button>
-  </div><div class="cal-popup-body">`;
+  let popHtml = `&lt;div class=&quot;cal-popup-hdr&quot;&gt;
+    &lt;span class=&quot;cal-popup-date&quot;&gt;${dateLabel}&lt;/span&gt;
+    &lt;button class=&quot;cal-popup-close&quot; onclick=&quot;document.getElementById('calPopup').remove()&quot;&gt;✕&lt;/button&gt;
+  &lt;/div&gt;&lt;div class=&quot;cal-popup-body&quot;&gt;`;
 
   if (!dayTasks.length) {
-    popHtml += `<div class="cal-popup-empty">${t('agenda_no_tasks') || 'Sin tareas'}</div>`;
+    popHtml += `&lt;div class=&quot;cal-popup-empty&quot;&gt;${t('agenda_no_tasks') || 'Sin tareas'}&lt;/div&gt;`;
   } else {
     if (withTime.length) {
-      popHtml += `<div class="cal-popup-sec">🕐 ${t('agenda_with_time') || 'Con horario'}</div>`;
-      withTime.forEach(tk => {
+      popHtml += `&lt;div class=&quot;cal-popup-sec&quot;&gt;🕐 ${t('agenda_with_time') || 'Con horario'}&lt;/div&gt;`;
+      withTime.forEach(tk =&gt; {
         const doneClass = tk.done ? ' done' : '';
-        const dlBadge = tk.deadline ? `<span style="font-size:.58rem;color:var(--accent3);white-space:nowrap">📅 ${tk.deadline}</span>` : '';
-        popHtml += `<div class="cal-popup-task${doneClass}">
-          <span style="font-size:1rem">${tk.icon}</span>
-          <span class="cal-popup-time">${tk.time}</span>
-          <span class="cal-popup-name">${tk.name}${dlBadge ? '<br>' + dlBadge : ''}</span>
-          ${tk.done ? '<span style="color:var(--muted);font-size:.7rem">✓</span>' : ''}
-        </div>`;
+        const dlBadge = tk.deadline ? `&lt;span style=&quot;font-size:.58rem;color:var(--accent3);white-space:nowrap&quot;&gt;📅 ${tk.deadline}&lt;/span&gt;` : '';
+        popHtml += `&lt;div class=&quot;cal-popup-task${doneClass}&quot;&gt;
+          &lt;span style=&quot;font-size:1rem&quot;&gt;${tk.icon}&lt;/span&gt;
+          &lt;span class=&quot;cal-popup-time&quot;&gt;${tk.time}&lt;/span&gt;
+          &lt;span class=&quot;cal-popup-name&quot;&gt;${tk.name}${dlBadge ? '&lt;br&gt;' + dlBadge : ''}&lt;/span&gt;
+          ${tk.done ? '&lt;span style=&quot;color:var(--muted);font-size:.7rem&quot;&gt;✓&lt;/span&gt;' : ''}
+        &lt;/div&gt;`;
       });
     }
     if (noTime.length) {
-      popHtml += `<div class="cal-popup-sec" style="margin-top:${withTime.length ? '8' : '0'}px">— ${t('agenda_no_time') || 'Sin horario'}</div>`;
-      noTime.forEach(tk => {
+      popHtml += `&lt;div class=&quot;cal-popup-sec&quot; style=&quot;margin-top:${withTime.length ? '8' : '0'}px&quot;&gt;— ${t('agenda_no_time') || 'Sin horario'}&lt;/div&gt;`;
+      noTime.forEach(tk =&gt; {
         const doneClass = tk.done ? ' done' : '';
-        const dlBadge = tk.deadline ? `<span style="font-size:.58rem;color:var(--accent3);white-space:nowrap">📅 ${tk.deadline}</span>` : '';
-        popHtml += `<div class="cal-popup-task${doneClass}">
-          <span style="font-size:1rem">${tk.icon}</span>
-          <span class="cal-popup-name">${tk.name}${dlBadge ? '<br>' + dlBadge : ''}</span>
-          ${tk.done ? '<span style="color:var(--muted);font-size:.7rem">✓</span>' : ''}
-        </div>`;
+        const dlBadge = tk.deadline ? `&lt;span style=&quot;font-size:.58rem;color:var(--accent3);white-space:nowrap&quot;&gt;📅 ${tk.deadline}&lt;/span&gt;` : '';
+        popHtml += `&lt;div class=&quot;cal-popup-task${doneClass}&quot;&gt;
+          &lt;span style=&quot;font-size:1rem&quot;&gt;${tk.icon}&lt;/span&gt;
+          &lt;span class=&quot;cal-popup-name&quot;&gt;${tk.name}${dlBadge ? '&lt;br&gt;' + dlBadge : ''}&lt;/span&gt;
+          ${tk.done ? '&lt;span style=&quot;color:var(--muted);font-size:.7rem&quot;&gt;✓&lt;/span&gt;' : ''}
+        &lt;/div&gt;`;
       });
     }
   }
-  popHtml += '</div>';
+  popHtml += '&lt;/div&gt;';
 
   const popup = document.createElement('div');
   popup.id = 'calPopup';
@@ -2947,32 +2964,32 @@ function calDayClick(day, month, year, event) {
   const pw = 260, ph = 300;
   let left = rect.left + window.scrollX;
   let top = rect.bottom + window.scrollY + 4;
-  if (left + pw > window.innerWidth - 10) left = window.innerWidth - pw - 10;
-  if (top + ph > window.innerHeight - 10) top = rect.top + window.scrollY - ph - 4;
+  if (left + pw &gt; window.innerWidth - 10) left = window.innerWidth - pw - 10;
+  if (top + ph &gt; window.innerHeight - 10) top = rect.top + window.scrollY - ph - 4;
   popup.style.left = left + 'px';
   popup.style.top = top + 'px';
 
   // Close on outside click
-  setTimeout(() => {
+  setTimeout(() =&gt; {
     document.addEventListener('click', function handler(e) {
       if (!popup.contains(e.target)) { popup.remove(); document.removeEventListener('click', handler); }
     });
   }, 50);
 }
 
-// ── FILTERS & VIEWS ──
+// ── FILTERS &amp; VIEWS ──
 function setFilter(f,btn){
   UI.filter=f;
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.filter-btn').forEach(b=&gt;b.classList.remove('active'));
   btn.classList.add('active');
   const lb=t('filter_labels');
   document.getElementById('mainTitle').textContent='// '+(lb[f]||f);
   render();
 }
-function setGF(g,btn){UI.gf=g;document.querySelectorAll('.group-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render();}
+function setGF(g,btn){UI.gf=g;document.querySelectorAll('.group-btn').forEach(b=&gt;b.classList.remove('active'));btn.classList.add('active');render();}
 function setView(v,btn){
   UI.view=v;
-  document.querySelectorAll('.vtab').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.vtab').forEach(b=&gt;b.classList.remove('active'));
   btn.classList.add('active');
   document.getElementById('polarityBar').style.display=v==='tasks'?'flex':'none';
   // Close any open calendar popup
@@ -2981,7 +2998,7 @@ function setView(v,btn){
 }
 function setPol(p){
   UI.polarity=p;
-  ['all','pos','neu','neg'].forEach(k=>{
+  ['all','pos','neu','neg'].forEach(k=&gt;{
     const el=document.getElementById('pol'+k.charAt(0).toUpperCase()+k.slice(1));
     if(el)el.className='pol-btn'+(p===k?` active-${k==='neu'?'pos':k}`:'');
   });
@@ -2989,7 +3006,7 @@ function setPol(p){
   else{const el=document.getElementById('polNeu');if(el){el.style.borderColor='';el.style.color='';el.style.background='';}}
   render();
 }
-function updCounts(){const c={all:S.tasks.length,once:S.tasks.filter(tk=>tk.repeat==='once').length,daily:S.tasks.filter(tk=>tk.repeat==='daily').length,weekly:S.tasks.filter(tk=>tk.repeat==='weekly').length,annual:S.tasks.filter(tk=>tk.repeat==='annual').length,progress:S.tasks.filter(tk=>!!tk.progress).length,negative:S.tasks.filter(tk=>tk.negative).length,neutral:S.tasks.filter(tk=>!!tk.neutral&&!tk.negative).length,done:S.tasks.filter(tk=>tk.done).length};Object.entries(c).forEach(([k,v])=>{const el=document.getElementById('fc-'+k);if(el)el.textContent=v;});}
+function updCounts(){const c={all:S.tasks.length,once:S.tasks.filter(tk=&gt;tk.repeat==='once').length,daily:S.tasks.filter(tk=&gt;tk.repeat==='daily').length,weekly:S.tasks.filter(tk=&gt;tk.repeat==='weekly').length,annual:S.tasks.filter(tk=&gt;tk.repeat==='annual').length,progress:S.tasks.filter(tk=&gt;!!tk.progress).length,negative:S.tasks.filter(tk=&gt;tk.negative).length,neutral:S.tasks.filter(tk=&gt;!!tk.neutral&amp;&amp;!tk.negative).length,done:S.tasks.filter(tk=&gt;tk.done).length};Object.entries(c).forEach(([k,v])=&gt;{const el=document.getElementById('fc-'+k);if(el)el.textContent=v;});}
 
 // ── UPDATE ALL ──
 function updateAll(){updXP();updStats();updProfile();}
@@ -3003,7 +3020,7 @@ function updXP(){
   document.getElementById('bXpNxt').textContent=xpNeed;
   document.getElementById('bLvl').textContent=lvl+1;
   document.getElementById('bStreakN').textContent=S.streak;
-  const sm=getStrMult();document.getElementById('bMult').textContent=sm>1?`×${sm}`:'';
+  const sm=getStrMult();document.getElementById('bMult').textContent=sm&gt;1?`×${sm}`:'';
 }
 function updStats(){document.getElementById('sTotalXP').textContent=S.xp;document.getElementById('sDone').textContent=S.done;document.getElementById('sStreak').textContent=S.streak;document.getElementById('sNeg').textContent=S.negXP;}
 function updProfile(){
@@ -3028,8 +3045,8 @@ function getAchStats(){
 function checkAch(){
   const stats=getAchStats();
   const L=ACH_LANG[UI.lang]||ACH_LANG.es;
-  ACHS.forEach(a=>{
-    if(!S.unlockedAch[a.id]&&a.check(stats)){
+  ACHS.forEach(a=&gt;{
+    if(!S.unlockedAch[a.id]&amp;&amp;a.check(stats)){
       S.unlockedAch[a.id]=new Date().toISOString();
       const info=L[a.id]||{name:a.id};
       toast('ach','🏆',`${info.name} ${a.icon}`);
@@ -3039,15 +3056,15 @@ function checkAch(){
 }
 
 // ── TOAST ──
-function toast(type,icon,msg){const c=document.getElementById('toastC');const t=document.createElement('div');t.className=`toast ${type}`;t.innerHTML=`<span>${icon}</span><span>${msg}</span>`;c.appendChild(t);requestAnimationFrame(()=>requestAnimationFrame(()=>t.classList.add('show')));setTimeout(()=>{t.classList.remove('show');setTimeout(()=>t.remove(),400);},2800);}
+function toast(type,icon,msg){const c=document.getElementById('toastC');const t=document.createElement('div');t.className=`toast ${type}`;t.innerHTML=`&lt;span&gt;${icon}&lt;/span&gt;&lt;span&gt;${msg}&lt;/span&gt;`;c.appendChild(t);requestAnimationFrame(()=&gt;requestAnimationFrame(()=&gt;t.classList.add('show')));setTimeout(()=&gt;{t.classList.remove('show');setTimeout(()=&gt;t.remove(),400);},2800);}
 
 // ── POMODORO ──
 function pomoStart(){
   if(PS.active){clearInterval(PS.interval);PS.active=false;document.getElementById('pomoBtnS').textContent='▶';document.getElementById('pomoBtnS').classList.remove('on');return;}
   PS.active=true;document.getElementById('pomoBtnS').textContent='⏸';document.getElementById('pomoBtnS').classList.add('on');
-  PS.interval=setInterval(()=>{
+  PS.interval=setInterval(()=&gt;{
     PS.timeLeft--;
-    if(PS.timeLeft<=0){clearInterval(PS.interval);PS.active=false;document.getElementById('pomoBtnS').textContent='▶';document.getElementById('pomoBtnS').classList.remove('on');
+    if(PS.timeLeft&lt;=0){clearInterval(PS.interval);PS.active=false;document.getElementById('pomoBtnS').textContent='▶';document.getElementById('pomoBtnS').classList.remove('on');
       if(PS.mode==='work'){S.pomos++;S.xp+=50;saveS();checkAch();toast('xpg','🍅',t('toast_pomo'));updateAll();}
       PS.mode=PS.mode==='work'?'break':'work';PS.timeLeft=PS.mode==='work'?25*60:5*60;PS.total=PS.timeLeft;
     }
@@ -3072,10 +3089,10 @@ function exportData(){const b=new Blob([JSON.stringify(S,null,2)],{type:'applica
 function todayS(){return new Date().toISOString().slice(0,10);}
 function autoReset(){
   const today=todayS();const todayDay=new Date().getDay();
-  S.tasks.forEach(tk=>{if(!tk.done||!tk.lastDone)return;const ld=tk.lastDone.slice(0,10);
-    if(tk.repeat==='daily'&&ld!==today){tk.done=false;}
-    if(tk.repeat==='weekly'&&tk.weekDays&&tk.weekDays.includes(todayDay)&&ld!==today){tk.done=false;}
-    if(tk.repeat==='annual'){const n=new Date();const c=new Date(tk.createdAt);if(n.getMonth()===c.getMonth()&&n.getDate()===c.getDate()&&ld!==today){tk.done=false;}}
+  S.tasks.forEach(tk=&gt;{if(!tk.done||!tk.lastDone)return;const ld=tk.lastDone.slice(0,10);
+    if(tk.repeat==='daily'&amp;&amp;ld!==today){tk.done=false;}
+    if(tk.repeat==='weekly'&amp;&amp;tk.weekDays&amp;&amp;tk.weekDays.includes(todayDay)&amp;&amp;ld!==today){tk.done=false;}
+    if(tk.repeat==='annual'){const n=new Date();const c=new Date(tk.createdAt);if(n.getMonth()===c.getMonth()&amp;&amp;n.getDate()===c.getDate()&amp;&amp;ld!==today){tk.done=false;}}
   });
   // Update noNegDays
   if(S.lastNegDate){
@@ -3104,7 +3121,7 @@ function applyDailyPenalty(){
   const last=new Date(S.lastDoneDate+'T12:00:00');
   const now=new Date(today+'T12:00:00');
   const daysMissed=Math.round((now-last)/(864e5));
-  if(daysMissed<=0)return; // did something today
+  if(daysMissed&lt;=0)return; // did something today
   const level=calcLevel(S.xp);
   const penaltyPerDay=level*100;
   const totalPenalty=penaltyPerDay*daysMissed;
@@ -3112,39 +3129,39 @@ function applyDailyPenalty(){
   S.streak=0;
   S.lastPenaltyDate=today;
   // Add to history
-  for(let i=0;i<Math.min(daysMissed,7);i++){
+  for(let i=0;i&lt;Math.min(daysMissed,7);i++){
     const d=new Date(last);d.setDate(d.getDate()+i+1);
     S.history.unshift({id:Date.now()+i,taskName:`😴 ${t('penalty_toast')||'Sin actividad'}`,icon:'😴',xp:-penaltyPerDay,negative:true,penalty:true,date:d.toISOString(),sm:1});
   }
-  if(S.history.length>200)S.history=S.history.slice(0,200);
+  if(S.history.length&gt;200)S.history=S.history.slice(0,200);
   saveS();
-  if(totalPenalty>0){
-    setTimeout(()=>toast('xpl','😴',`${t('penalty_toast')||'Sin actividad'} −${totalPenalty} XP (${daysMissed}d × Nv${level})`),800);
+  if(totalPenalty&gt;0){
+    setTimeout(()=&gt;toast('xpl','😴',`${t('penalty_toast')||'Sin actividad'} −${totalPenalty} XP (${daysMissed}d × Nv${level})`),800);
   }
 }
 
 function calcLevel(xp){
   // Level thresholds: 0, 500, 1500, 3000, 5000, 8000, ...
-  if(xp<500)return 1;
-  if(xp<1500)return 2;
-  if(xp<3000)return 3;
-  if(xp<5000)return 4;
-  if(xp<8000)return 5;
-  if(xp<12000)return 6;
-  if(xp<17000)return 7;
-  if(xp<23000)return 8;
-  if(xp<30000)return 9;
+  if(xp&lt;500)return 1;
+  if(xp&lt;1500)return 2;
+  if(xp&lt;3000)return 3;
+  if(xp&lt;5000)return 4;
+  if(xp&lt;8000)return 5;
+  if(xp&lt;12000)return 6;
+  if(xp&lt;17000)return 7;
+  if(xp&lt;23000)return 8;
+  if(xp&lt;30000)return 9;
   return Math.floor(xp/5000)+1;
 }
 
 // ── KEYBOARD ──
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if(e.key==='n'&&!e.target.matches('input,select,textarea'))openModal();});
-document.getElementById('modalOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeModal();});
+document.addEventListener('keydown',e=&gt;{if(e.key==='Escape')closeModal();if(e.key==='n'&amp;&amp;!e.target.matches('input,select,textarea'))openModal();});
+document.getElementById('modalOverlay').addEventListener('click',e=&gt;{if(e.target===e.currentTarget)closeModal();});
 
 // ── INIT ──
 // ── AVATAR MODAL ──
 const AVT_CATS = [
-  { label:'⭐ Todos', emojis:'😀😎🤩🥳😇🤔😴😤🤯🥰🔥💪🧠👑💎🏆🎯🚀🌟✨💫⚡🎮🎨🎵🎸🎹🏋️🧘🏃🌈🦁🐯🦊🐺🦋🐉🦄🦸🧙👾🤖🐼🐨🐸🦝🌙☀️🌊🌋🏔️🌿🍀🌺🌸🎃🎄🎆🍕🍔🍜🍣🍰🎂🧁🍩☕🍺🫧🏠🏙️🎪🎭🔮🪄🗡️⚔️🛡️🔑🗝️🎁🎀🎊🎉🧩♟️🎲🃏🪬🧿💈🌀🌐🔵🟣🟠🔶🔷⬛🔲🏁🚩❤️🧡💛💚💙💜🖤🤍🤎💔❤️‍🔥💖💗💓💞💝'.split('').filter(e=>e.trim()&&[...e].length<=2)}
+  { label:'⭐ Todos', emojis:'😀😎🤩🥳😇🤔😴😤🤯🥰🔥💪🧠👑💎🏆🎯🚀🌟✨💫⚡🎮🎨🎵🎸🎹🏋️🧘🏃🌈🦁🐯🦊🐺🦋🐉🦄🦸🧙👾🤖🐼🐨🐸🦝🌙☀️🌊🌋🏔️🌿🍀🌺🌸🎃🎄🎆🍕🍔🍜🍣🍰🎂🧁🍩☕🍺🫧🏠🏙️🎪🎭🔮🪄🗡️⚔️🛡️🔑🗝️🎁🎀🎊🎉🧩♟️🎲🃏🪬🧿💈🌀🌐🔵🟣🟠🔶🔷⬛🔲🏁🚩❤️🧡💛💚💙💜🖤🤍🤎💔❤️‍🔥💖💗💓💞💝'.split('').filter(e=&gt;e.trim()&amp;&amp;[...e].length&lt;=2)}
 ];
 
 let _avtTab = 0;
@@ -3158,7 +3175,7 @@ function openAvatarModal() {
   buildAvatarCats();
   // Mark current selection
   const cur = S.profileAvatar || '';
-  document.querySelectorAll('.avt-emoji').forEach(el => {
+  document.querySelectorAll('.avt-emoji').forEach(el =&gt; {
     el.classList.toggle('selected', el.dataset.e === cur);
   });
 }
@@ -3169,7 +3186,7 @@ function closeAvatarModal() {
 
 function switchAvatarTab(n) {
   _avtTab = n;
-  [0,1].forEach(i => {
+  [0,1].forEach(i =&gt; {
     document.getElementById('avtPane'+i).style.display = i===n ? '' : 'none';
     document.getElementById('avtTab'+i).classList.toggle('active', i===n);
   });
@@ -3182,8 +3199,8 @@ function buildAvatarEmojiGrid(list) {
   const grid = document.getElementById('avtGrid');
   const emojis = list || AVT_CATS[0].emojis;
   const cur = S.profileAvatar || '';
-  grid.innerHTML = emojis.filter(e=>e.trim()).map(e =>
-    `<div class="avt-emoji${e===cur?' selected':''}" data-e="${e}" onclick="selectAvatarEmoji('${e}')" title="${e}">${e}</div>`
+  grid.innerHTML = emojis.filter(e=&gt;e.trim()).map(e =&gt;
+    `&lt;div class=&quot;avt-emoji${e===cur?' selected':''}&quot; data-e=&quot;${e}&quot; onclick=&quot;selectAvatarEmoji('${e}')&quot; title=&quot;${e}&quot;&gt;${e}&lt;/div&gt;`
   ).join('');
 }
 
@@ -3191,7 +3208,7 @@ function filterAvatarEmojis() {
   const q = (document.getElementById('avtSearch').value || '').trim();
   if (!q) { buildAvatarEmojiGrid(); return; }
   const all = AVT_CATS[0].emojis;
-  buildAvatarEmojiGrid(all.filter(e => e.trim()));
+  buildAvatarEmojiGrid(all.filter(e =&gt; e.trim()));
 }
 
 function selectAvatarEmoji(emoji) {
@@ -3206,7 +3223,7 @@ function selectAvatarEmoji(emoji) {
 function applyAvatarToUI() {
   const av = document.getElementById('pAvatar');
   if (S.profilePhoto) {
-    av.innerHTML = `<img src="${S.profilePhoto}" alt="avatar" style="width:44px;height:44px;object-fit:cover;border-radius:50%;">`;
+    av.innerHTML = `&lt;img src=&quot;${S.profilePhoto}&quot; alt=&quot;avatar&quot; style=&quot;width:44px;height:44px;object-fit:cover;border-radius:50%;&quot;&gt;`;
   } else {
     const emoji = S.profileAvatar || AVT[Math.min(Math.floor((getLevelFromXP(S.xp))/3), AVT.length-1)];
     av.textContent = emoji;
@@ -3279,7 +3296,7 @@ function setupCropDrag() {
     drawCropCanvas();
     e.preventDefault();
   };
-  canvas.onmouseup = canvas.ontouchend = () => { _cropDragging = false; };
+  canvas.onmouseup = canvas.ontouchend = () =&gt; { _cropDragging = false; };
 }
 
 function applyAvatarCrop() {
@@ -3307,65 +3324,67 @@ function clearAvatarPhoto() {
 
 function init(){
   loadTheme();loadS();loadLang();loadSidebarState();loadSbState();autoReset();buildIcons();buildDaysPicker();updateAll();applyLang();updPomo();checkAch();
-  if(S.lastDoneDate){const today=todayS();const y=new Date();y.setDate(y.getDate()-1);const yS=y.toISOString().slice(0,10);if(S.lastDoneDate!==today&&S.lastDoneDate!==yS){S.streak=0;saveS();}}
+  if(S.lastDoneDate){const today=todayS();const y=new Date();y.setDate(y.getDate()-1);const yS=y.toISOString().slice(0,10);if(S.lastDoneDate!==today&amp;&amp;S.lastDoneDate!==yS){S.streak=0;saveS();}}
   applyDailyPenalty();
-  document.getElementById('neuCompleteModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeNcdModal();});
+  document.getElementById('neuCompleteModal').addEventListener('click',e=&gt;{if(e.target===e.currentTarget)closeNcdModal();});
 }
 init();
-</script>
-<!-- AVATAR MODAL -->
-<div class="modal-overlay" id="avatarModal" onclick="if(event.target===this)closeAvatarModal()">
-  <div class="modal-box" style="max-width:420px;max-height:85vh;display:flex;flex-direction:column;">
-    <div class="modal-hdr">
-      <span class="modal-title" style="font-size:.75rem">✏️ FOTO DE PERFIL</span>
-      <button class="modal-close" onclick="closeAvatarModal()">✕</button>
-    </div>
-    <div style="overflow-y:auto;flex:1;padding:14px;">
+&lt;/script&gt;
+&lt;!-- AVATAR MODAL --&gt;
+&lt;div class=&quot;modal-overlay&quot; id=&quot;avatarModal&quot; onclick=&quot;if(event.target===this)closeAvatarModal()&quot;&gt;
+  &lt;div class=&quot;modal-box&quot; style=&quot;max-width:420px;max-height:85vh;display:flex;flex-direction:column;&quot;&gt;
+    &lt;div class=&quot;modal-hdr&quot;&gt;
+      &lt;span class=&quot;modal-title&quot; style=&quot;font-size:.75rem&quot;&gt;✏️ FOTO DE PERFIL&lt;/span&gt;
+      &lt;button class=&quot;modal-close&quot; onclick=&quot;closeAvatarModal()&quot;&gt;✕&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;overflow-y:auto;flex:1;padding:14px;&quot;&gt;
 
-      <!-- TABS -->
-      <div class="avt-tabs">
-        <button class="avt-tab active" id="avtTab0" onclick="switchAvatarTab(0)">😀 Emojis</button>
-        <button class="avt-tab" id="avtTab1" onclick="switchAvatarTab(1)">🖼️ Foto</button>
-      </div>
+      &lt;!-- TABS --&gt;
+      &lt;div class=&quot;avt-tabs&quot;&gt;
+        &lt;button class=&quot;avt-tab active&quot; id=&quot;avtTab0&quot; onclick=&quot;switchAvatarTab(0)&quot;&gt;😀 Emojis&lt;/button&gt;
+        &lt;button class=&quot;avt-tab&quot; id=&quot;avtTab1&quot; onclick=&quot;switchAvatarTab(1)&quot;&gt;🖼️ Foto&lt;/button&gt;
+      &lt;/div&gt;
 
-      <!-- TAB 0: EMOJI GRID -->
-      <div id="avtPane0">
-        <div class="avt-search-row">
-          <input class="fi" id="avtSearch" type="text" placeholder="Buscar emoji..." oninput="filterAvatarEmojis()" style="flex:1;">
-        </div>
-        <div id="avtCatBar" style="display:none;"></div>
-        <div class="avt-grid" id="avtGrid"></div>
-      </div>
+      &lt;!-- TAB 0: EMOJI GRID --&gt;
+      &lt;div id=&quot;avtPane0&quot;&gt;
+        &lt;div class=&quot;avt-search-row&quot;&gt;
+          &lt;input class=&quot;fi&quot; id=&quot;avtSearch&quot; type=&quot;text&quot; placeholder=&quot;Buscar emoji...&quot; oninput=&quot;filterAvatarEmojis()&quot; style=&quot;flex:1;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;avtCatBar&quot; style=&quot;display:none;&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;avt-grid&quot; id=&quot;avtGrid&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
 
-      <!-- TAB 1: PHOTO UPLOAD + CROP -->
-      <div id="avtPane1" style="display:none;">
-        <div class="avt-upload-area" id="avtUploadArea" onclick="document.getElementById('avtFileIn').click()">
-          <div style="font-size:2.5rem">📁</div>
-          <div style="font-size:.82rem;color:var(--muted2);margin-top:6px;">Haz clic para seleccionar una imagen<br><span style="font-size:.72rem;color:var(--muted)">JPG, PNG, GIF, WEBP</span></div>
-        </div>
-        <input type="file" id="avtFileIn" accept="image/*" onchange="loadAvatarFile(event)" style="display:none;">
+      &lt;!-- TAB 1: PHOTO UPLOAD + CROP --&gt;
+      &lt;div id=&quot;avtPane1&quot; style=&quot;display:none;&quot;&gt;
+        &lt;div class=&quot;avt-upload-area&quot; id=&quot;avtUploadArea&quot; onclick=&quot;document.getElementById('avtFileIn').click()&quot;&gt;
+          &lt;div style=&quot;font-size:2.5rem&quot;&gt;📁&lt;/div&gt;
+          &lt;div style=&quot;font-size:.82rem;color:var(--muted2);margin-top:6px;&quot;&gt;Haz clic para seleccionar una imagen&lt;br&gt;&lt;span style=&quot;font-size:.72rem;color:var(--muted)&quot;&gt;JPG, PNG, GIF, WEBP&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;input type=&quot;file&quot; id=&quot;avtFileIn&quot; accept=&quot;image/*&quot; onchange=&quot;loadAvatarFile(event)&quot; style=&quot;display:none;&quot;&gt;
 
-        <!-- Crop area (hidden until image loaded) -->
-        <div id="avtCropWrap" style="display:none;margin-top:12px;">
-          <div style="font-size:.72rem;color:var(--muted);margin-bottom:6px;text-align:center;">Arrastra para reencuadrar · Zoom:</div>
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-            <span style="font-size:.75rem;color:var(--muted)">−</span>
-            <input type="range" id="avtZoom" min="1" max="4" step="0.05" value="1" oninput="drawCropCanvas()" style="flex:1;">
-            <span style="font-size:.75rem;color:var(--muted)">+</span>
-          </div>
-          <div style="position:relative;display:flex;justify-content:center;">
-            <canvas id="avtCropCanvas" width="200" height="200" style="border-radius:50%;border:2px solid var(--accent);cursor:move;display:block;"></canvas>
-          </div>
-          <div style="display:flex;gap:8px;margin-top:10px;">
-            <button class="fi-btn" onclick="clearAvatarPhoto()" style="flex:1;background:var(--bg3);border:1px solid var(--border);color:var(--muted2);padding:7px;border-radius:6px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:.8rem;">✕ Quitar</button>
-            <button class="fi-btn" onclick="applyAvatarCrop()" style="flex:2;background:var(--accent);border:none;color:var(--bg);padding:7px;border-radius:6px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:.82rem;font-weight:700;">✓ Aplicar foto</button>
-          </div>
-        </div>
-      </div>
+        &lt;!-- Crop area (hidden until image loaded) --&gt;
+        &lt;div id=&quot;avtCropWrap&quot; style=&quot;display:none;margin-top:12px;&quot;&gt;
+          &lt;div style=&quot;font-size:.72rem;color:var(--muted);margin-bottom:6px;text-align:center;&quot;&gt;Arrastra para reencuadrar · Zoom:&lt;/div&gt;
+          &lt;div style=&quot;display:flex;align-items:center;gap:8px;margin-bottom:8px;&quot;&gt;
+            &lt;span style=&quot;font-size:.75rem;color:var(--muted)&quot;&gt;−&lt;/span&gt;
+            &lt;input type=&quot;range&quot; id=&quot;avtZoom&quot; min=&quot;1&quot; max=&quot;4&quot; step=&quot;0.05&quot; value=&quot;1&quot; oninput=&quot;drawCropCanvas()&quot; style=&quot;flex:1;&quot;&gt;
+            &lt;span style=&quot;font-size:.75rem;color:var(--muted)&quot;&gt;+&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div style=&quot;position:relative;display:flex;justify-content:center;&quot;&gt;
+            &lt;canvas id=&quot;avtCropCanvas&quot; width=&quot;200&quot; height=&quot;200&quot; style=&quot;border-radius:50%;border:2px solid var(--accent);cursor:move;display:block;&quot;&gt;&lt;/canvas&gt;
+          &lt;/div&gt;
+          &lt;div style=&quot;display:flex;gap:8px;margin-top:10px;&quot;&gt;
+            &lt;button class=&quot;fi-btn&quot; onclick=&quot;clearAvatarPhoto()&quot; style=&quot;flex:1;background:var(--bg3);border:1px solid var(--border);color:var(--muted2);padding:7px;border-radius:6px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:.8rem;&quot;&gt;✕ Quitar&lt;/button&gt;
+            &lt;button class=&quot;fi-btn&quot; onclick=&quot;applyAvatarCrop()&quot; style=&quot;flex:2;background:var(--accent);border:none;color:var(--bg);padding:7px;border-radius:6px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:.82rem;font-weight:700;&quot;&gt;✓ Aplicar foto&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
-    </div>
-  </div>
-</div>
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 </body>
 </html>
